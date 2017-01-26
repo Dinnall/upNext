@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "michaeldinnall",
+    "password": null,
+    "database": "upNext",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "michaeldinnall",
+    "password": null,
+    "database": "upNext",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "michaeldinnall",
+    "password": null,
+    "database": "upNext",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
