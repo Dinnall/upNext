@@ -21,7 +21,7 @@ Change the fields for development, test, and production
 
 ## Start
 First: `npm install`
-To start: `npm start`
+Second: `npm start`
 
 ## Testing
 You can add new tests in the `test` folder.
