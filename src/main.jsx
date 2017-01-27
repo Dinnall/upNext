@@ -2,6 +2,18 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory, hashHistory, Link, IndexRoute } from 'react-router';
 
+
+
+// Place All Componets here
+
+// import AllListings from '../front/allVideos';
+// import GuestLogin from '../front/GuestLogin';
+
+
+
+
+
+
 const Main = React.createClass({
   render(){
     return(

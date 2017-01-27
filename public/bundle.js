@@ -56,6 +56,12 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// Place All Componets here
+	
+	// import AllListings from '../front/allVideos';
+	// import GuestLogin from '../front/GuestLogin';
+	
+	
 	var Main = _react2.default.createClass({
 	  displayName: 'Main',
 	  render: function render() {
