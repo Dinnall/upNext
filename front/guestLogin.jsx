@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link,browserHistory} from 'react-router';
 import { withRouter } from 'react-router'
-import './Main.css';
+
 
  {/*GALLERY COMPONENT & SIDEBAR*/}
 var GuestLogin = React.createClass({

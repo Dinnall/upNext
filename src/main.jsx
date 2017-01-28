@@ -2,6 +2,9 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory, hashHistory, Link, IndexRoute } from 'react-router';
 
+// CSS files 
+
+import './style/App.css';
 
 
 // Place All Componets here
