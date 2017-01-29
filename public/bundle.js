@@ -56,13 +56,15 @@
 	
 	__webpack_require__(233);
 	
+	var _homePage = __webpack_require__(237);
+	
+	var _homePage2 = _interopRequireDefault(_homePage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// Place All Componets here
+	// <MainPage />
 	
-	// import AllListings from '../front/allVideos';
-	// import GuestLogin from '../front/GuestLogin';
-	
+	// CSS files 
 	
 	var Main = _react2.default.createClass({
 	  displayName: 'Main',
@@ -70,98 +72,22 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'Hello'
-	      ),
-	      _react2.default.createElement(
-	        'nav',
-	        null,
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: 'page1' },
-	          'Page1'
-	        ),
-	        _react2.default.createElement(
-	          _reactRouter.Link,
-	          { to: 'page2' },
-	          'Page2'
-	        )
-	      ),
+	      'hello',
 	      this.props.children
 	    );
 	  }
 	});
 	
-	// CSS files 
+	// Place All Componets here
 	
-	var Page1 = _react2.default.createClass({
-	  displayName: 'Page1',
-	  getInitialState: function getInitialState() {
-	    return { counter: 0 };
-	  },
-	  handleChange: function handleChange(e) {
-	    this.setState({ counter: this.state.counter + 1 });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        ' Page 1'
-	      ),
-	      _react2.default.createElement(
-	        'h3',
-	        null,
-	        this.state.counter
-	      ),
-	      _react2.default.createElement(
-	        'button',
-	        { onClick: this.handleChange },
-	        'Increment counter'
-	      )
-	    );
-	  }
-	});
-	
-	var Page2 = _react2.default.createClass({
-	  displayName: 'Page2',
-	
-	  getInitialState: function getInitialState() {
-	    return {
-	      text: ''
-	    };
-	  },
-	
-	  handleChange: function handleChange(e) {
-	    this.setState({ text: e.target.value });
-	  },
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h2',
-	        null,
-	        'Page 2'
-	      ),
-	      _react2.default.createElement('input', { onChange: handleChange })
-	    );
-	  }
-	});
 	
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
-	    { path: '/', component: Main },
-	    _react2.default.createElement(_reactRouter.IndexRoute, { component: Page1 }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'page1', component: Page1 }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'page2', component: Page2 })
+	    { path: '/', component: _homePage2.default },
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage2.default })
 	  )
 	), document.getElementById('main'));
 
@@ -26512,7 +26438,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body{\n\tbackground-color: #efeee8;\n\tfont-size: 16px;\n\tpadding-top: 50px;\n    padding-right: 2px;\n    padding-bottom: 80px;\n    padding-left: 30px;\n    font-family: 'Source Code Pro', monospace;\n}\n", ""]);
+	exports.push([module.id, "body{\n\tbackground-color: #f8f2ff;\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n   }\n\n\n.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}\n\n.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\t/*width: 460px;*/\n\n\n", ""]);
 	
 	// exports
 
@@ -26824,6 +26750,64 @@
 			URL.revokeObjectURL(oldSrc);
 	}
 
+
+/***/ },
+/* 237 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MainPage = _react2.default.createClass({
+	  displayName: 'MainPage',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'nav',
+	        null,
+	        _react2.default.createElement(
+	          'div',
+	          null,
+	          _react2.default.createElement(
+	            'ul',
+	            { className: 'ulLink' },
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'li1' },
+	              'Sign-Up'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              { className: 'li2' },
+	              'Log-In'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'h1',
+	          { className: 'smarter' },
+	          'A smarter way to learn'
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = MainPage;
 
 /***/ }
 /******/ ]);

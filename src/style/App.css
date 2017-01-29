@@ -1,9 +1,64 @@
 body{
-	background-color: #efeee8;
+	background-color: #f8f2ff;
 	font-size: 16px;
-	padding-top: 50px;
-    padding-right: 2px;
-    padding-bottom: 80px;
-    padding-left: 30px;
     font-family: 'Source Code Pro', monospace;
+   }
+
+
+.ulLink{
+    background-color: #0f081c;
+	width: 1024px;
+    height: 672px;
+    top: 27px;
+    left: 0px;
+    display: flex;
+    padding-left: 1;
+	text-decoration: none;
+	justify-content: flex-end;
+	list-style-type: none;
+    align-self: flex-end;
+    position:fixed;
+    padding:0;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
 }
+
+.li1{
+margin-right: 15px;
+font-size: 24px;
+color:#e78062;
+}
+
+
+.li2{
+margin-right: 15px;
+font-size: 22px;
+color:#e78062;
+}
+
+
+
+.li1 a{
+  text-decoration: none;
+}
+
+.li2 a{
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.h1{
+	display: flex;
+	justify-content: flex-end;
+    align-self: flex-end;
+    background-color: white;
+    color:black;
+    text-align: end;
+    align-self: end;
+}
+	/*width: 460px;*/
+
+
