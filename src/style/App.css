@@ -60,5 +60,18 @@ color:#e78062;
     align-self: end;
 }
 	/*width: 460px;*/
+.secondBorder{
+    background-color: #e6f3ff;
+    width: 1300px;
+    height: 272px;
+    top: 400px;
+    left: 0px;
+    position:fixed;
+    padding:0;
+    margin:0;
+    order: 0;
+    flex: 1 1 auto;
+    align-self: center;
 
+}
 

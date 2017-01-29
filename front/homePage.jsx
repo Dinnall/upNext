@@ -14,6 +14,8 @@ const MainPage = React.createClass ({
              </div>
              <h1 className="smarter">A smarter way to learn</h1>
         </nav>
+      <div className="secondBorder"> 
+      </div>
         
       </div>
       )
