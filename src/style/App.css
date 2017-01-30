@@ -1,5 +1,5 @@
 body{
-	background-color: #f8f2ff;
+	
 	font-size: 16px;
     font-family: 'Source Code Pro', monospace;
    }
@@ -59,7 +59,17 @@ color:#e78062;
     text-align: end;
     align-self: end;
 }
-	/*width: 460px;*/
+
+.smarter{
+    display: flex;
+    justify-content: flex-end;
+    align-self: flex-end;
+    background-color: white;
+    color:black;
+    text-align: end;
+}
+
+	
 .secondBorder{
     background-color: #e6f3ff;
     width: 1300px;
@@ -68,10 +78,54 @@ color:#e78062;
     left: 0px;
     position:fixed;
     padding:0;
+    order: 0;
+    flex: 1 1 auto;
+    align-self: flex-end;
+    padding-top: 400px;
+    padding-right: 30px;
+    padding-bottom: 600px;
+    padding-left: 80px
+
+}
+
+/*.thirdBorder{
+    background-color: #ffffff;
+    width: 1300px;
+    height: 100px;
+    top: 150px;
+    left: 0px;
+    position:fixed;
     margin:0;
     order: 0;
     flex: 1 1 auto;
-    align-self: center;
+    align-self:center;
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 100px;
+    padding-left: 80px;
+}*/
 
+.spaceBetween{
+     background-color: #0f081c;
+    width: 300px;
+    height: 672px;
+    top: 10px;
+    left: 0px;
+    display: flex;
+    padding-left: 1;
+    text-decoration: none;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-self: flex-end;
+    position:fixed;
+    margin:0;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    padding-top: 400px;
+    padding-right: 30px;
+    padding-bottom: 600px;
+    padding-left: 80px;
 }
 

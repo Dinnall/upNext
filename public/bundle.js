@@ -26438,7 +26438,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body{\n\tbackground-color: #f8f2ff;\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n   }\n\n\n.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}\n\n.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\t/*width: 460px;*/\n.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: center;\n\n}\n\n", ""]);
+	exports.push([module.id, "body{\n\t\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n   }\n\n\n.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}\n\n.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}\n\n\t\n.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}\n\n", ""]);
 	
 	// exports
 
@@ -26767,6 +26767,10 @@
 	
 	var _reactDom = __webpack_require__(32);
 	
+	var _vimeo = __webpack_require__(238);
+	
+	var _vimeo2 = _interopRequireDefault(_vimeo);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var MainPage = _react2.default.createClass({
@@ -26803,12 +26807,43 @@
 	          'A smarter way to learn'
 	        )
 	      ),
-	      _react2.default.createElement('div', { className: 'secondBorder' })
+	      _react2.default.createElement('div', { className: 'secondBorder' }),
+	      _react2.default.createElement('div', { className: 'thirdBorder' })
 	    );
 	  }
 	});
 	
 	exports.default = MainPage;
+
+/***/ },
+/* 238 */
+/***/ function(module, exports) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var videoListing = [{
+		title: 'Making a chat room using meteor',
+		video: ['https://vimeo.com/40300075'],
+		videoId: 1
+	}, {
+		title: "Get more familar with CSS animation events",
+		video: ['https://vimeo.com/86821694'],
+		videoId: 2
+	}, {
+		title: "Small intro to JSON",
+		video: ['https://vimeo.com/8463462'],
+		videoId: 3
+	}, {
+		title: " Let Loopy with nested Loops!.",
+		video: ['https://vimeo.com/139013372'],
+		videoId: 4
+	}];
+	
+	exports.default = videoListing;
 
 /***/ }
 /******/ ]);

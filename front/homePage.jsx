@@ -1,5 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
+import videoListing from '../src/testVideos/vimeo.jsx'
 
 const MainPage = React.createClass ({
    render: function(){
@@ -14,8 +15,10 @@ const MainPage = React.createClass ({
              </div>
              <h1 className="smarter">A smarter way to learn</h1>
         </nav>
-      <div className="secondBorder"> 
-      </div>
+
+      <div className="secondBorder"></div>
+
+      <div className="thirdBorder"></div>
         
       </div>
       )
