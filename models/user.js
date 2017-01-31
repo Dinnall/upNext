@@ -18,7 +18,8 @@ module.exports = function(sequelize, DataTypes) {
     }, {
     classMethods: {
       associate: function(models) {
-        User.hasOne(models.Video);
+        User.hasMany(models.Video);
+        User.hasMany(models.Pictures);
       }
     }
   });
