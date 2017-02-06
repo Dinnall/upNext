@@ -6,6 +6,10 @@ import { Router, Route, browserHistory, hashHistory, Link, IndexRoute } from 're
 // CSS files 
 import './style/App.css';
 
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> e81494d725625a3108304a0497025e34e7dd2beb
 // Place All Componets here
 import MainPage from '../front/homePage';
 
