@@ -9,4 +9,4 @@ User.sync({force: true})
   {firstName: 'Michael', lastName:'Dinnall', email:'michael@gmail.com', password:'upnext'},
 ]))
 
-.catch((err) => console.log(err));
+.catch((err) => console.log(err)); 

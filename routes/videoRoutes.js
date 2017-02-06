@@ -13,7 +13,7 @@ const allVideos=(req, res) => {
 	})
 	.catch((err)=> console.log(err))
 }
-
+ 
 const createVideo=(req, res) => {
 	Video.create(req.body)
 	.then((video)=> {

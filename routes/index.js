@@ -14,4 +14,4 @@ router.use('/user', require('./userRoutes.js'));
 router.use('/pictures', require('./pictureRoutes.js'));
 router.use('/video', require('./videoRoutes.js'));
 
-module.exports = router;
+module.exports = router; 
