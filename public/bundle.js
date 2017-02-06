@@ -26824,7 +26824,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Header Page CSS */}\n\n.flexContainerHeader {\n\tdisplay: flex;\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tmin-height: 100vh;\n}\n.header {\n\talign-items: flex-start;\n\twidth: 100%;\n\tbackground-color: white; \n}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\tjustify-content: center;\n\tmin-height: 100vh;\n}\n\n.footer {\n\tmargin-top: auto;\n}\n", ""]);
+	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Header Page CSS */}\n\n.flexContainerHeader {\n\tdisplay: flex;\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\tjustify-content: center;\n\tmin-height: 100vh;\n}\n\n.footer {\n\tmargin-top: auto;\n}\n", ""]);
 	
 	// exports
 
@@ -27208,14 +27208,18 @@
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
-	      { className: 'flexContainerFooter' },
+	      { className: 'flexContainerAPP' },
 	      _react2.default.createElement(
 	        'div',
-	        { className: 'footer' },
+	        { className: 'projectsPage' },
 	        _react2.default.createElement(
-	          'h1',
+	          'p',
 	          null,
-	          'Footer Content'
+	          _react2.default.createElement(
+	            'h1',
+	            null,
+	            'render all projects here'
+	          )
 	        )
 	      )
 	    );

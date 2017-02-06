@@ -10,9 +10,11 @@ getInitialState() {
   },
   render: function(){
     return (
-      <div className='flexContainerFooter'>
-        <div className='footer'>
-          <h1>Footer Content</h1>
+      <div className='flexContainerAPP'>
+        <div className='projectsPage'>
+          <p>
+            <h1>render all projects here</h1> 
+          </p>
         </div>
       </div>
     )

@@ -42,13 +42,8 @@
 
 .flexContainerAPP {
 	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}
-.header {
-	align-items: flex-start;
-	width: 100%;
-	background-color: white; 
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 {/**/}

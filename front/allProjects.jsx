@@ -5,21 +5,15 @@ import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'rea
 import '../src/style/nya.css';
 
 const AllProjectsPage = React.createClass ({
-getInitialState() {
+  getInitialState() {
     return {}
   },
   render: function(){
     return (
       <div className='flexContainerAPP'>
-        <div className='header'>
-          <h1>Header Content</h1>
-        </div>
-        <div className='projectsPage'>
-          <h1>Projects Page</h1>
-        </div>
-        <div className='footer'>
-          <h1>Footer Content</h1>
-        </div>
+        <p>
+          Render all projects here 
+        </p>
       </div>
     )
   }
