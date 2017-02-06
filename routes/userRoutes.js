@@ -16,7 +16,7 @@ function postNewUser(req, res) {
 		lastName: req.body.lastName,
 		email: req.body.email,
 		password:req.body.password
- 
+  
 	})
 	.then(function(newUser) {
 		console.log(newUser)

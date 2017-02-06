@@ -8,7 +8,7 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       allowNull: false,
       len: [200, 2000]
-    },
+    }, 
     url: { 
       type: DataTypes.STRING, 
       allowNull: true, 

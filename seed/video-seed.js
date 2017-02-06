@@ -12,7 +12,7 @@ Video.sync({force: true})
 	  url: ['https://vimeo.com/40300075'],
 	  videoId: 1
 	},
- 
+  
 	{
 	  title: "Get more familar with CSS animation events",
 	  description: 'A step-by-step tutorial on listening for CSS animation events with JavaScript and the additional details you can get from them',

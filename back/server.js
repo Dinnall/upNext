@@ -5,7 +5,7 @@ const path = require('path');
 const db = require('../models');
 const Sequelize = require('sequelize');
 const session = require('express-session');
- 
+  
 
 
 app.use(bodyparser.urlencoded({ extended: true }));

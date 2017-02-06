@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-
+ 
 const MainPage = React.createClass ({
    render: function(){
     return(

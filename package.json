@@ -7,7 +7,7 @@
     "start": "webpack --watch & node server.js",
     "seed": "node ./seed/user-seed.js && node ./seed/video-seed.js",
     "test": "mocha --watch"
-  },
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",

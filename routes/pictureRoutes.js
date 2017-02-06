@@ -13,7 +13,7 @@ const allPictures =(req, res) => {
 	})
 	.catch((err)=> console.log(err))
 }
- 
+  
 const createPicture=(req, res) => {
 	Picture.create(req.body)
 	.then((picture)=> {

@@ -5,7 +5,7 @@ import { Router, Route, browserHistory, hashHistory, Link, IndexRoute } from 're
 // CSS files 
 import './style/App.css';
 
-
+ 
 // Place All Componets here
 import MainPage from '../front/homePage';
 
