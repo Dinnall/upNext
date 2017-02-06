@@ -1,18 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom';
+import MentorPage from '../front/becomeMentor'
 import { Router, Route, browserHistory, hashHistory, Link, IndexRoute } from 'react-router';
 
 // CSS files 
-
 import './style/App.css';
-
 
 // Place All Componets here
 import MainPage from '../front/homePage';
-
-
-
-        // <MainPage />
 
 const Main = React.createClass({
   render(){
@@ -25,11 +20,11 @@ const Main = React.createClass({
   }
 })
 
-
 render(
   <Router history={browserHistory}>
     <Route path='/' component={MainPage}>
       <IndexRoute component={MainPage} />
+      <Route path='/becomeMentor' component={MentorPage} />
     </Route>
   </Router>, 
   document.getElementById('main')
