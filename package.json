@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch & node server.js"
-  },
+    "start": "webpack --watch & node server.js",
+    "seed": "node ./seed/user-seed.js && node ./seed/video-seed.js",
+    "test": "mocha --watch"
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -17,9 +19,12 @@
     "css-loader": "^0.26.1",
     "express": "^4.14.0",
     "jquery": "^3.1.1",
+    "mocha": "^3.2.0",
+    "pg": "^6.1.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",
     "react-router": "^3.0.0",
+    "sequelize": "^3.30.1",
     "webpack": "^1.13.3"
   },
   "devDependencies": {
