@@ -14,7 +14,13 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true, 
       validate: { 
         isUrl: true } },
-  }, {
+     
+    vote: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: '0'
+    }
+  },{
     classMethods: {
       associate: function(models) {
         Video.belongsTo(models.User);

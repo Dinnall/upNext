@@ -1,6 +1,5 @@
 import React from 'react';
 import { render } from 'react-dom';
-import videoListing from '../src/testVideos/vimeo.jsx'
 
 const MainPage = React.createClass ({
    render: function(){

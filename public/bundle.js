@@ -62,10 +62,7 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// <MainPage />
-	
 	// CSS files 
-	
 	var Main = _react2.default.createClass({
 	  displayName: 'Main',
 	  render: function render() {
@@ -26767,10 +26764,6 @@
 	
 	var _reactDom = __webpack_require__(32);
 	
-	var _vimeo = __webpack_require__(238);
-	
-	var _vimeo2 = _interopRequireDefault(_vimeo);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var MainPage = _react2.default.createClass({
@@ -26814,36 +26807,6 @@
 	});
 	
 	exports.default = MainPage;
-
-/***/ },
-/* 238 */
-/***/ function(module, exports) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var videoListing = [{
-		title: 'Making a chat room using meteor',
-		video: ['https://vimeo.com/40300075'],
-		videoId: 1
-	}, {
-		title: "Get more familar with CSS animation events",
-		video: ['https://vimeo.com/86821694'],
-		videoId: 2
-	}, {
-		title: "Small intro to JSON",
-		video: ['https://vimeo.com/8463462'],
-		videoId: 3
-	}, {
-		title: " Let Loopy with nested Loops!.",
-		video: ['https://vimeo.com/139013372'],
-		videoId: 4
-	}];
-	
-	exports.default = videoListing;
 
 /***/ }
 /******/ ]);
