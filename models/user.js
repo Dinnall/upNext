@@ -6,19 +6,26 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       isAlpha: true
     },
-    lastName: {
+    lastName: { 
       type: DataTypes.STRING,
       allowNull: false,
       isAlpha: true
     },
+    email: {
+      type: DataTypes.STRING,
+      isEmail: true,
+      allowNull: false
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-      len: [5, 35]  
+      len: [5, 35]
+      }  
     }, {
     classMethods: {
       associate: function(models) {
-        User.hasOne(models.Video);
+        User.hasMany(models.Video);
+        User.hasMany(models.Pictures);
       }
     }
   });
