@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link,browserHistory} from 'react-router';
-import { withRouter } from 'react-router'
+// import { withRouter } from 'react-router'
 
 
  {/*GALLERY COMPONENT & SIDEBAR*/}

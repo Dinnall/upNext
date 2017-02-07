@@ -13,3 +13,4 @@ build
 npm-debug.log
 public/bundle.js
 public/bundle.js.map
+config/config.json
