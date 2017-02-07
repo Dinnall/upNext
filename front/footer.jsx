@@ -4,7 +4,6 @@ import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'rea
 
 import '../src/style/nya.css';
 
-
 const FooterPage = React.createClass ({
 getInitialState() {
     return {}

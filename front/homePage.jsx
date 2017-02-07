@@ -5,6 +5,7 @@ import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'rea
 import '../src/style/nya.css';
 import SignUpPage from './signUp.jsx';
 import LogInPage from './logIn.jsx';
+import FooterPage from './footer.jsx';
 
 const MainPage = React.createClass({
   render: function() {

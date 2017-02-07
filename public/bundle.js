@@ -68,10 +68,6 @@
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
 	
-	var _footer = __webpack_require__(239);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
 	var _homePage = __webpack_require__(240);
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
@@ -84,8 +80,7 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      this.props.children,
-	      _react2.default.createElement(_footer2.default, null)
+	      this.props.children
 	    );
 	  }
 	});
@@ -27182,6 +27177,10 @@
 	var _logIn = __webpack_require__(238);
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
+	
+	var _footer = __webpack_require__(239);
+	
+	var _footer2 = _interopRequireDefault(_footer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	

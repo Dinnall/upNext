@@ -6,15 +6,13 @@ import '../src/style/App.css'
 import '../src/style/nya.css';
 import SignUpPage from './signUp.jsx';
 import LogInPage from './logIn.jsx';
-import FooterPage from './footer.jsx';
-import MainPage from './homePage.jsx'
+import MainPage from './homePage.jsx';
 
 var App = React.createClass({
   render() {
     return (
       <div>
         {this.props.children}
-        <FooterPage />
       </div>
     )
   }
@@ -30,7 +28,3 @@ ReactDOM.render(
   </Router>, 
   document.getElementById('root')
 );
-
-
-
-
