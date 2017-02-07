@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
 
+import '../src/style/App.css'
 import '../src/style/nya.css';
 import SignUpPage from './signUp.jsx';
 import LogInPage from './logIn.jsx';
