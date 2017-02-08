@@ -2,12 +2,24 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
 
-import '../src/style/App.css'
+
+
+
+// CSS files 
+import '../src/style/App.css';
 import '../src/style/nya.css';
-import SignUpPage from './signUp.jsx';
-import LogInPage from './logIn.jsx';
-import FooterPage from './footer.jsx';
-import MainPage from './homePage.jsx'
+import '../src/style/dee.css';
+import '../src/style/craig.css';
+
+
+
+
+// Place All Componets here
+import SignUpPage from '../front/signUp.jsx';
+import LogInPage from '../front/logIn.jsx';
+import FooterPage from '../front/footer.jsx';
+import MainPage from '../front/homePage.jsx';
+import MentorPage from '../front/becomeMentor.jsx';
 
 var App = React.createClass({
   render() {
