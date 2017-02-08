@@ -40,6 +40,16 @@
 	flex-wrap: wrap;
 }
 
+{/*Log In Page CSS*/}
+
+.flexContainerLIP {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+{/* Sign Up Page CSS */}
+{/**/}
 {/**/}
 
 {/* Footer Page CSS */}

@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
+import { IndexRoute, Link, Router, Route, browserHistory, hashHistory } from 'react-router';
 
 import '../src/style/nya.css';
 
@@ -10,7 +10,7 @@ const LogInPage = React.createClass ({
   },
   render: function(){
     return (
-      <div className='flexContainer'>
+      <div className='flexContainerLIP'>
         <div>
           <h1>Log In</h1>
             <form onSubmit={this.handleSubmit}>
