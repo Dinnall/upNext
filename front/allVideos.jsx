@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {Link} from 'react-router';
 
-const AllListings = React.createClass({
+const allVideos = React.createClass({
 	getInitialState(){
 		return {video: []}
 	},
@@ -47,4 +47,4 @@ const AllListings = React.createClass({
 	}
 })
 
-export default AllListings;
+export default allVideos;

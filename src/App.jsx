@@ -20,6 +20,8 @@ import LogInPage from '../front/logIn.jsx';
 import FooterPage from '../front/footer.jsx';
 import MainPage from '../front/homePage.jsx';
 import MentorPage from '../front/becomeMentor.jsx';
+import allVideos from '../front/allVideos.jsx';
+
 
 var App = React.createClass({
   render() {
