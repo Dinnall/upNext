@@ -12,7 +12,7 @@ getInitialState() {
     return (
       <div className='flexContainerFooter'>
         <div className='footer'>
-          <h1>Footer Content</h1>
+          <h1>Footer Content!!</h1>
         </div>
       </div>
     )

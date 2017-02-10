@@ -13,7 +13,7 @@ const Main = React.createClass({
   render(){
     return(
       <div>
-      hello
+      he
        {this.props.children}
       </div>
       )
@@ -23,11 +23,11 @@ const Main = React.createClass({
 render(
   <Router history={browserHistory}>
     <Route path='/' component={MainPage}>
-      <IndexRoute component={MainPage} />
+      <IndexRoute component={Home} />
       <Route path='/becomeMentor' component={MentorPage} />
     </Route>
   </Router>, 
-  document.getElementById('main')
+  document.getElementById('root')
 )
 
 

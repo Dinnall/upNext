@@ -44,22 +44,42 @@
 
 .flexContainerLIP {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
+.titleLIP {
+	order: 1;
+}
+.formLIP {
+	order: 2;
+}
 
 {/* Sign Up Page CSS */}
+
+.flexContainerSUP {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background-color: blue;
+	padding: 250px 0px 250px 0px;
+}
+
+.leftSUP {
+	background-color: green;
+}
+
+.rightSUP {
+	background-color: yellow;
+}
 {/**/}
+
 {/**/}
 
 {/* Footer Page CSS */}
 
 .flexContainerFooter {
 	display: flex;
-	justify-content: center;
-	min-height: 100vh;
-}
-
-.footer {
-	margin-top: auto;
+	align-items: flex-end;
+	background-color: green;
 }

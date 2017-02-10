@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { IndexRoute, Link, Router, Route, browserHistory, hashHistory } from 'react-router';
 
 import '../src/style/nya.css';
+import FooterPage from './footer.jsx';
 
 const LogInPage = React.createClass ({
   getInitialState() {
@@ -11,9 +12,8 @@ const LogInPage = React.createClass ({
   render: function(){
     return (
       <div className='flexContainerLIP'>
-        <div>
-          <h1>Log In</h1>
-            <form onSubmit={this.handleSubmit}>
+          <h1 className='titleLIP'>Log In</h1>
+          <form className='formLIP'onSubmit={this.handleSubmit}>
             <table>
             <tbody>
               <tr>
@@ -33,8 +33,7 @@ const LogInPage = React.createClass ({
               </tr>
             </tbody>
             </table>
-            </form>
-        </div>
+          </form>
       </div>
     )
   }

@@ -20,6 +20,7 @@ const MainPage = React.createClass({
         <h1 className='smarter'>A smarter way to learn</h1>
         <div className='secondBorder'></div>
         <div className='thirdBorder'></div>
+        <FooterPage />
       </div>
     )
   }
