@@ -5,7 +5,7 @@ import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'rea
 
 
 
-// CSS files 
+// CSS files
 import '../src/style/App.css';
 import '../src/style/nya.css';
 import '../src/style/dee.css';
@@ -20,6 +20,7 @@ import LogInPage from '../front/logIn.jsx';
 import FooterPage from '../front/footer.jsx';
 import MainPage from '../front/homePage.jsx';
 import MentorPage from '../front/becomeMentor.jsx';
+import ProfilePage from '../front/profilePage.jsx';
 
 var App = React.createClass({
   render() {
@@ -38,11 +39,8 @@ ReactDOM.render(
       <IndexRoute component={MainPage} />
         <Route path='/signup' component={SignUpPage} />
         <Route path='/login' component={LogInPage} />
+        <Route path='/profile' component={ProfilePage} />
     </Route>
   </Router>, 
   document.getElementById('root')
 );
-
-
-
-
