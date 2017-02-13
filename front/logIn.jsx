@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { IndexRoute, Link, Router, Route, browserHistory, hashHistory } from 'react-router';
 
 import '../src/style/nya.css';
+import allProjects from '../front/allProjects.jsx';
 import FooterPage from './footer.jsx';
 
 const LogInPage = React.createClass ({
@@ -28,7 +29,7 @@ const LogInPage = React.createClass ({
               </tr>
               <tr>
                 <td>
-                  <button>Log In</button>
+                  <button><Link to='/allProjects'>Log In</Link></button>
                 </td>
               </tr>
             </tbody>

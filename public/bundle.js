@@ -68,19 +68,27 @@
 	
 	var _signUp2 = _interopRequireDefault(_signUp);
 	
-	var _logIn = __webpack_require__(244);
+	var _logIn = __webpack_require__(246);
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
+	
+	var _allVideos = __webpack_require__(248);
+	
+	var _allVideos2 = _interopRequireDefault(_allVideos);
+	
+	var _allProjects = __webpack_require__(247);
+	
+	var _allProjects2 = _interopRequireDefault(_allProjects);
 	
 	var _footer = __webpack_require__(245);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _homePage = __webpack_require__(246);
+	var _homePage = __webpack_require__(249);
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
 	
-	var _becomeMentor = __webpack_require__(247);
+	var _becomeMentor = __webpack_require__(250);
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
@@ -111,7 +119,9 @@
 	    { path: '/', component: App },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _signUp2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _logIn2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _logIn2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/allProjects', component: _allProjects2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/allvideos', component: _allVideos2.default })
 	  )
 	), document.getElementById('root'));
 
@@ -26964,7 +26974,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tbackground-color: blue;\n\tpadding: 250px 0px 250px 0px;\n}\n\n.leftSUP {\n\tbackground-color: green;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\talign-items: flex-end;\n\tbackground-color: green;\n}", ""]);
+	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\talign-items: flex-end;\n}", ""]);
 	
 	// exports
 
@@ -27067,7 +27077,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _jquery = __webpack_require__(248);
+	var _jquery = __webpack_require__(244);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -27108,9 +27118,11 @@
 	          ' in the Tech Industry'
 	        ),
 	        _react2.default.createElement(
-	          'h4',
+	          'h3',
 	          null,
-	          'Find Mentors to help Develop Your Skills'
+	          'Find Mentors to Help ',
+	          _react2.default.createElement('br', null),
+	          ' Develop Your Skills'
 	        )
 	      ),
 	      _react2.default.createElement(
@@ -27120,501 +27132,36 @@
 	          'div',
 	          null,
 	          _react2.default.createElement(
+	            'h1',
+	            { className: 'titleSUP' },
+	            'Get Started!'
+	          ),
+	          _react2.default.createElement(
 	            'form',
 	            null,
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'Username', required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'First Name', required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', required: true }),
 	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('input', { type: 'password', placeholder: 'Password', required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Email', required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Password', required: true }),
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'button',
-	              null,
+	              { className: 'SUPbutton', type: 'submit' },
 	              'Sign Up'
 	            )
 	          )
 	        )
-	      )
+	      ),
+	      _react2.default.createElement(_footer2.default, { className: 'flexContainerFooter' })
 	    );
 	  }
 	});
-	
-	{/* <div className='container-fluid'>
-	         <div className='row'>
-	           <div className='col-md-6 leftSUP'>
-	             <h2>Showcase Your Projects!</h2>
-	             <h3>Discover Up & Coming Talent <br/> in the Tech Industry</h3>
-	             <h4>Find Mentors to help Develop Your Skills</h4>
-	           </div>
-	           <div className='col-md-6 rightSUP'>
-	             <h1>Get Started Today!</h1>
-	             <form>
-	               <div className='row'>
-	                 <input type="text" placeholder="First Name" required />
-	                 <input type="text" placeholder="Last Name" required />
-	               </div>
-	               <div className='row'>
-	                 <input type="text" placeholder="Email" required />
-	                 <input type="text" placeholder="Password" required />
-	               </div>
-	               <button class="btn btn-default" type="submit">Button</button>
-	             </form>
-	           </div>
-	         </div>
-	       </div>
-	  */}
 	
 	exports.default = SignUpPage;
 
 /***/ },
 /* 244 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(237);
-	
-	var _footer = __webpack_require__(245);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var LogInPage = _react2.default.createClass({
-	  displayName: 'LogInPage',
-	  getInitialState: function getInitialState() {
-	    return {};
-	  },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'flexContainerLIP' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'titleLIP' },
-	        'Log In'
-	      ),
-	      _react2.default.createElement(
-	        'form',
-	        { className: 'formLIP', onSubmit: this.handleSubmit },
-	        _react2.default.createElement(
-	          'table',
-	          null,
-	          _react2.default.createElement(
-	            'tbody',
-	            null,
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement(
-	                  'button',
-	                  null,
-	                  'Log In'
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = LogInPage;
-
-/***/ },
-/* 245 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(237);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var FooterPage = _react2.default.createClass({
-	  displayName: 'FooterPage',
-	  getInitialState: function getInitialState() {
-	    return {};
-	  },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'flexContainerFooter' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'footer' },
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Footer Content!!'
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = FooterPage;
-
-/***/ },
-/* 246 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(237);
-	
-	var _signUp = __webpack_require__(243);
-	
-	var _signUp2 = _interopRequireDefault(_signUp);
-	
-	var _logIn = __webpack_require__(244);
-	
-	var _logIn2 = _interopRequireDefault(_logIn);
-	
-	var _footer = __webpack_require__(245);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var MainPage = _react2.default.createClass({
-	  displayName: 'MainPage',
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'nav',
-	        null,
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'ulLink' },
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'li1' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/signup' },
-	              'Sign Up'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'li2' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/login' },
-	              'Log In'
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'smarter' },
-	        'A smarter way to learn'
-	      ),
-	      _react2.default.createElement('div', { className: 'secondBorder' }),
-	      _react2.default.createElement('div', { className: 'thirdBorder' }),
-	      _react2.default.createElement(_footer2.default, null)
-	    );
-	  }
-	});
-	
-	exports.default = MainPage;
-
-/***/ },
-/* 247 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(237);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var MentorPage = _react2.default.createClass({
-	  displayName: 'MentorPage',
-	  getInitialState: function getInitialState() {
-	    return { name: '', email: '', website: '', about: '' };
-	  },
-	  handleSubmit: function handleSubmit(event) {
-	    alert('Thank You! We Will Be In Touch Shortly');
-	    event.preventDefault();
-	  },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'pageTitle' },
-	        'Become A Mentor!'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'flexContainerMP' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'column1' },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Benefits of Mentorship'
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Provide a fascinating link to what is happening in the younger, less experienced part of the tech industry.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Helping the mentee develop and advance through their career.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Find talent for your development team.'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Requirements'
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '5+ Years of experince as Designer/Developer'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'The willingness to educates the mentoree on how to accept feedback in important areas, such as communications, technical abilities, change management, and leadership skills.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'A positive attitude! \u263A'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'column2' },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'upNext Mentor Sign Up'
-	          ),
-	          _react2.default.createElement(
-	            'h6',
-	            null,
-	            '* Required '
-	          ),
-	          _react2.default.createElement(
-	            'form',
-	            { onSubmit: this.handleSubmit },
-	            _react2.default.createElement(
-	              'table',
-	              null,
-	              _react2.default.createElement(
-	                'tbody',
-	                null,
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Name: *'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { onChange: this.handleChange, type: 'text', size: '30', required: true })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Email: *'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { type: 'text', size: '30', required: true })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Website: '
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { type: 'text', size: '30' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    'I am a:'
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    { className: 'radio' },
-	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'dev' }),
-	                    ' Developer',
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'des' }),
-	                    ' Designer'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Tell Us About ',
-	                      _react2.default.createElement('br', null),
-	                      ' Yourself:'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('textarea', { cols: '30', rows: '6', required: true })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { type: 'submit', className: 'submitForm', value: 'Submit' })
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = MentorPage;
-
-/***/ },
-/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -37838,6 +37385,579 @@
 	return jQuery;
 	} );
 
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var FooterPage = _react2.default.createClass({
+	  displayName: 'FooterPage',
+	  getInitialState: function getInitialState() {
+	    return {};
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'flexContainerFooter' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'footer' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Footer Content!!'
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = FooterPage;
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	var _allProjects = __webpack_require__(247);
+	
+	var _allProjects2 = _interopRequireDefault(_allProjects);
+	
+	var _footer = __webpack_require__(245);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var LogInPage = _react2.default.createClass({
+	  displayName: 'LogInPage',
+	  getInitialState: function getInitialState() {
+	    return {};
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'flexContainerLIP' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'titleLIP' },
+	        'Log In'
+	      ),
+	      _react2.default.createElement(
+	        'form',
+	        { className: 'formLIP', onSubmit: this.handleSubmit },
+	        _react2.default.createElement(
+	          'table',
+	          null,
+	          _react2.default.createElement(
+	            'tbody',
+	            null,
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'button',
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: '/allProjects' },
+	                    'Log In'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = LogInPage;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var AllProjectsPage = _react2.default.createClass({
+	  displayName: 'AllProjectsPage',
+	  getInitialState: function getInitialState() {
+	    return {};
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement('ul', { className: 'flexContainerAPP' });
+	  }
+	});
+	
+	exports.default = AllProjectsPage;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _jquery = __webpack_require__(244);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var AllListings = _react2.default.createClass({
+		displayName: 'AllListings',
+		getInitialState: function getInitialState() {
+			return { video: [] };
+		},
+		componentDidMount: function componentDidMount() {
+			var _this = this;
+	
+			{
+				_jquery2.default.ajax({
+					url: '/api/video',
+					type: "GET"
+				}).done(function (data) {
+					_this.setState({ video: data });
+				}).catch(function (error) {
+					console.log(error);
+				});
+			}
+		},
+	
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'h2',
+					null,
+					'All Available Listings'
+				),
+				this.state.video.length === 0 ? "Loading..." : this.state.video.map(function (place, idx) {
+					return _react2.default.createElement(
+						_reactRouter.Link,
+						{ to: "/room/" + place.id, key: idx },
+						_react2.default.createElement(
+							'div',
+							{ className: 'oneList' },
+							_react2.default.createElement('img', { className: 'Img', src: place.images[0] }),
+							_react2.default.createElement(
+								'p',
+								{ className: 'descriptionClass' },
+								_react2.default.createElement(
+									'strong',
+									null,
+									place.description
+								),
+								'/PLACE WHAT HERE'
+							)
+						)
+					);
+				})
+			);
+		}
+	});
+	
+	exports.default = AllListings;
+
+/***/ },
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	var _signUp = __webpack_require__(243);
+	
+	var _signUp2 = _interopRequireDefault(_signUp);
+	
+	var _logIn = __webpack_require__(246);
+	
+	var _logIn2 = _interopRequireDefault(_logIn);
+	
+	var _footer = __webpack_require__(245);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MainPage = _react2.default.createClass({
+	  displayName: 'MainPage',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'nav',
+	        null,
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'ulLink' },
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'li1' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/signup' },
+	              'Sign Up'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'li2' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/login' },
+	              'Log In'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'smarter' },
+	        'A smarter way to learn'
+	      ),
+	      _react2.default.createElement('div', { className: 'secondBorder' }),
+	      _react2.default.createElement('div', { className: 'thirdBorder' }),
+	      _react2.default.createElement(_footer2.default, null)
+	    );
+	  }
+	});
+	
+	exports.default = MainPage;
+
+/***/ },
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MentorPage = _react2.default.createClass({
+	  displayName: 'MentorPage',
+	  getInitialState: function getInitialState() {
+	    return { name: '', email: '', website: '', about: '' };
+	  },
+	  handleSubmit: function handleSubmit(event) {
+	    alert('Thank You! We Will Be In Touch Shortly');
+	    event.preventDefault();
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'pageTitle' },
+	        'Become A Mentor!'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'flexContainerMP' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'column1' },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Benefits of Mentorship'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Provide a fascinating link to what is happening in the younger, less experienced part of the tech industry.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Helping the mentee develop and advance through their career.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Find talent for your development team.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Requirements'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '5+ Years of experince as Designer/Developer'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'The willingness to educates the mentoree on how to accept feedback in important areas, such as communications, technical abilities, change management, and leadership skills.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'A positive attitude! \u263A'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'column2' },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'upNext Mentor Sign Up'
+	          ),
+	          _react2.default.createElement(
+	            'h6',
+	            null,
+	            '* Required '
+	          ),
+	          _react2.default.createElement(
+	            'form',
+	            { onSubmit: this.handleSubmit },
+	            _react2.default.createElement(
+	              'table',
+	              null,
+	              _react2.default.createElement(
+	                'tbody',
+	                null,
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Name: *'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { onChange: this.handleChange, type: 'text', size: '30', required: true })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Email: *'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { type: 'text', size: '30', required: true })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Website: '
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { type: 'text', size: '30' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'I am a:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    { className: 'radio' },
+	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'dev' }),
+	                    ' Developer',
+	                    _react2.default.createElement('br', null),
+	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'des' }),
+	                    ' Designer'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Tell Us About ',
+	                      _react2.default.createElement('br', null),
+	                      ' Yourself:'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('textarea', { cols: '30', rows: '6', required: true })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { type: 'submit', className: 'submitForm', value: 'Submit' })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = MentorPage;
 
 /***/ }
 /******/ ]);

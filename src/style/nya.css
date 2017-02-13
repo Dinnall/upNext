@@ -61,17 +61,26 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	background-color: blue;
-	padding: 250px 0px 250px 0px;
+	padding: 150px 0px 150px 0px;
+}
+
+.titleSUP {
+	text-align: center;
 }
 
 .leftSUP {
 	background-color: green;
+	text-align: center;
 }
 
 .rightSUP {
 	background-color: yellow;
 }
+
+.SUPbutton {
+	align-items: flex-end;
+}
+
 {/**/}
 
 {/**/}
@@ -81,5 +90,4 @@
 .flexContainerFooter {
 	display: flex;
 	align-items: flex-end;
-	background-color: green;
 }

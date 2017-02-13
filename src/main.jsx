@@ -13,7 +13,6 @@ const Main = React.createClass({
   render(){
     return(
       <div>
-      he
        {this.props.children}
       </div>
       )
