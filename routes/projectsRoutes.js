@@ -6,6 +6,7 @@ const Projects = require('../models').Projects;
 const Picture = require('../models').Picture;
 
 
+
 const allProjects=(req, res) => {
 	Project.findAll()
 	.then((project) => {
