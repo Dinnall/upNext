@@ -24,8 +24,8 @@ module.exports = function(sequelize, DataTypes) {
     }, {
     classMethods: {
       associate: function(models) {
-        // User.hasMany(models.Video);
-        // User.hasMany(models.Pictures);
+        User.hasMany(models.Video);
+        User.hasMany(models.Pictures);
       }
     }
   });
