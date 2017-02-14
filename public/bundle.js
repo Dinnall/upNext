@@ -38146,6 +38146,12 @@
 					console.log(error);
 				});
 			}
+			console.log(this.title.value);
+			console.log(this.desc.value);
+			console.log(this.gitUsername.value);
+			console.log(this.gitRepo.value);
+			console.log(this.siteURL.value);
+			console.log(this.videoURL.value);
 		},
 	
 		render: function render() {
