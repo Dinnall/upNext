@@ -4,7 +4,6 @@ import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'rea
 
 import '../src/style/nya.css';
 
-
 const FooterPage = React.createClass ({
 getInitialState() {
     return {}
@@ -13,7 +12,7 @@ getInitialState() {
     return (
       <div className='flexContainerFooter'>
         <div className='footer'>
-          <h1>Footer Content</h1>
+          <h1>Footer Content!!</h1>
         </div>
       </div>
     )

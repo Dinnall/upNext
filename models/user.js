@@ -2,7 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var User = sequelize.define('User', {
     firstName: {
-     type:DataTypes.STRING,
+     type: DataTypes.STRING,
       allowNull: false,
       isAlpha: true
     },
@@ -25,7 +25,6 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         User.hasMany(models.Projects);
-        User.hasMany(models.Pictures);
       }
     }
   });

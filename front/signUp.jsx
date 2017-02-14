@@ -1,8 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
+import $ from 'jquery';
 
 import '../src/style/nya.css';
+
+import FooterPage from './footer.jsx';
 
 const SignUpPage = React.createClass ({
   getInitialState() {
@@ -13,35 +16,25 @@ const SignUpPage = React.createClass ({
   },
   render: function(){
     return (
-      <div className='flexContainer'>
-        <div>
-          <h1>Sign Up</h1>
-            <form onSubmit={this.handleSubmit}>
-            <table>
-            <tbody>
-              <tr>
-                <td>
-                  <input type="text" size="30" placeholder="Full Name" required/>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input type="text" size="30" placeholder="Email" required />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input type="text" size="30" placeholder="Password" required />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <button> Sign Up </button>
-                </td>
-              </tr>
-            </tbody>
-            </table>
+      <div className='flexContainerSUP'> 
+        <div className='leftSUP'>
+          <h2>Showcase Your Projects!</h2>
+          <h3>Discover Up & Coming Talent <br/> in the Tech Industry</h3>
+          <h3>Find Mentors to Help <br/> Develop Your Skills</h3>
+        </div>
+        <div className='rightSUP'>
+          <div>
+            <h1 className='titleSUP'>Get Started!</h1>
+            <form>
+              <input type="text" placeholder="First Name" required />
+              <input type="text" placeholder="Last Name" required />
+              <br/>
+              <input type="text" placeholder="Email" required />
+              <input type="text" placeholder="Password" required />
+              <br/>
+              <button className='SUPbutton' type="submit">Sign Up</button>
             </form>
+          </div>
         </div>
       </div>
     )

@@ -40,16 +40,54 @@
 	flex-wrap: wrap;
 }
 
+{/*Log In Page CSS*/}
+
+.flexContainerLIP {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.titleLIP {
+	order: 1;
+}
+.formLIP {
+	order: 2;
+}
+
+{/* Sign Up Page CSS */}
+
+.flexContainerSUP {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 150px 0px 150px 0px;
+}
+
+.titleSUP {
+	text-align: center;
+}
+
+.leftSUP {
+	background-color: green;
+	text-align: center;
+}
+
+.rightSUP {
+	background-color: yellow;
+}
+
+.SUPbutton {
+	align-items: flex-end;
+}
+
+{/**/}
+
 {/**/}
 
 {/* Footer Page CSS */}
 
 .flexContainerFooter {
 	display: flex;
-	justify-content: center;
-	min-height: 100vh;
-}
-
-.footer {
-	margin-top: auto;
+	align-items: flex-end;
 }
