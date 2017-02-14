@@ -92,8 +92,13 @@
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
+	var _profilePage = __webpack_require__(251);
+	
+	var _profilePage2 = _interopRequireDefault(_profilePage);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// Place All Componets here
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	  render: function render() {
@@ -105,12 +110,6 @@
 	  }
 	});
 	
-	// Place All Componets here
-	
-	
-	// CSS files 
-	
-	
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
@@ -120,8 +119,7 @@
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _signUp2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _logIn2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/allProjects', component: _allProjects2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/allvideos', component: _allVideos2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/profile', component: _profilePage2.default })
 	  )
 	), document.getElementById('root'));
 
@@ -27054,7 +27052,7 @@
 	
 	
 	// module
-	exports.push([module.id, "", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  color: #222;\n}\n\np {\n  font-size: 13px;\n}\n\n.thecard {\n  width: 300px;\n  margin: 5% auto;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 0px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 1000px;\n}\n\n.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n", ""]);
 	
 	// exports
 
@@ -37958,6 +37956,90 @@
 	});
 	
 	exports.default = MentorPage;
+
+/***/ },
+/* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Profile = _react2.default.createClass({
+	    displayName: "Profile",
+	    render: function render() {
+	        var data = {
+	            "AppName": "Facebook",
+	            "Description": "A Social networking site that connects all people in the world"
+	        };
+	
+	        return _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	                "div",
+	                null,
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "thecard" },
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "card-img" },
+	                        _react2.default.createElement("img", { src: "http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png" })
+	                    ),
+	                    _react2.default.createElement(
+	                        "div",
+	                        { className: "card-caption" },
+	                        _react2.default.createElement(
+	                            "h1",
+	                            null,
+	                            data.AppName
+	                        ),
+	                        _react2.default.createElement(
+	                            "p",
+	                            null,
+	                            data.Description
+	                        )
+	                    ),
+	                    _react2.default.createElement("div", { className: "card-outmore" })
+	                )
+	            ),
+	            _react2.default.createElement(
+	                "div",
+	                { className: "card" },
+	                _react2.default.createElement("img", { src: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png", alt: "Avatar" }),
+	                _react2.default.createElement(
+	                    "div",
+	                    { className: "container" },
+	                    _react2.default.createElement(
+	                        "h4",
+	                        null,
+	                        _react2.default.createElement(
+	                            "b",
+	                            null,
+	                            "John Doe"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "p",
+	                        null,
+	                        "Architect & Engineer"
+	                    )
+	                )
+	            )
+	        );
+	    }
+	});
+	
+	exports.default = Profile;
 
 /***/ }
 /******/ ]);
