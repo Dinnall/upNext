@@ -2,26 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
 
-
-
-
-// CSS files
 import '../src/style/App.css';
 import '../src/style/nya.css';
 import '../src/style/dee.css';
 import '../src/style/craig.css';
 
-
-
-
 // Place All Componets here
 import SignUpPage from '../front/signUp.jsx';
 import LogInPage from '../front/logIn.jsx';
+import allListings from '../front/allVideos.jsx';
+import allProjects from '../front/allProjects.jsx';
 import FooterPage from '../front/footer.jsx';
 import MainPage from '../front/homePage.jsx';
 import MentorPage from '../front/becomeMentor.jsx';
 import Projects from '../front/allVideos.jsx';
 import ProfilePage from '../front/profilePage.jsx';
+import UploadProject from '../front/uploadProject.jsx';
 
 
 var App = React.createClass({
@@ -29,7 +25,6 @@ var App = React.createClass({
     return (
       <div>
         {this.props.children}
-        <FooterPage />
       </div>
     )
   }
@@ -41,6 +36,7 @@ ReactDOM.render(
       <IndexRoute component={MainPage} />
         <Route path='/signup' component={SignUpPage} />
         <Route path='/login' component={LogInPage} />
+        <Route path='/upload' component={UploadProject} />
         <Route path='/profile' component={ProfilePage} />
     </Route>
   </Router>, 

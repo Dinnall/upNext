@@ -10,11 +10,15 @@ const AllProjectsPage = React.createClass ({
   },
   render: function(){
     return (
-      <div className='flexContainerAPP'>
-        <p>
-          Render all projects here 
-        </p>
-      </div>
+      <ul className='flexContainerAPP'>
+        {/*
+          this.state.(idk).map((idk => {
+            return <li idk={idk} key={idk.id}>{idk.name}</li>
+          }))
+        
+
+        */}
+      </ul>
     )
   }
 })

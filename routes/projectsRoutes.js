@@ -8,7 +8,7 @@ const Picture = require('../models').Picture;
 
 
 const allProjects=(req, res) => {
-	Project.findAll()
+	Projects.findAll()
 	.then((project) => {
 		res.send(project)
 	})
@@ -16,7 +16,8 @@ const allProjects=(req, res) => {
 }
   
 const createProject=(req, res) => {
-	Project.create(req.body)
+	console.log(req.body)
+	Projects.create(req.body)
 	.then((project)=> {
 		console.log(project)
 		res.send(project)
@@ -25,7 +26,7 @@ const createProject=(req, res) => {
 }
 
 const getOneProject=(req, res) => {
-	Project.findById(req.params.id, 
+	Projects.findById(req.params.id, 
 		{ include: [ User ]
 	})
 	.then((project)=> {
@@ -35,7 +36,7 @@ const getOneProject=(req, res) => {
 }
 
 const deleteProject =(req, res)=> {
-	Project.findById(req.params.id)
+	Projects.findById(req.params.id)
 	.then((project)=> {
 		Project.destroy()
 	})
