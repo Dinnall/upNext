@@ -20,7 +20,7 @@ import LogInPage from '../front/logIn.jsx';
 import FooterPage from '../front/footer.jsx';
 import MainPage from '../front/homePage.jsx';
 import MentorPage from '../front/becomeMentor.jsx';
-import Videos from '../front/allVideos.jsx';
+import Projects from '../front/allVideos.jsx';
 import ProfilePage from '../front/profilePage.jsx';
 
 

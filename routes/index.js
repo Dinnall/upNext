@@ -11,7 +11,6 @@ const router = require('express').Router();
 
 
 router.use('/user', require('./userRoutes.js'));
-router.use('/pictures', require('./pictureRoutes.js'));
-router.use('/video', require('./videoRoutes.js'));
+router.use('/projects', require('./projectsRoutes.js'));
 
 module.exports = router;  
