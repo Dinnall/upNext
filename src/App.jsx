@@ -17,6 +17,7 @@ import MainPage from '../front/homePage.jsx';
 import MentorPage from '../front/becomeMentor.jsx';
 import Projects from '../front/allVideos.jsx';
 import ProfilePage from '../front/profilePage.jsx';
+import UploadProject from '../front/uploadProject.jsx';
 
 
 var App = React.createClass({
@@ -35,6 +36,7 @@ ReactDOM.render(
       <IndexRoute component={MainPage} />
         <Route path='/signup' component={SignUpPage} />
         <Route path='/login' component={LogInPage} />
+        <Route path='/upload' component={UploadProject} />
         <Route path='/profile' component={ProfilePage} />
     </Route>
   </Router>, 

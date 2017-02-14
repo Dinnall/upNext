@@ -96,8 +96,13 @@
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
+	var _uploadProject = __webpack_require__(252);
+	
+	var _uploadProject2 = _interopRequireDefault(_uploadProject);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	// Place All Componets here
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	  render: function render() {
@@ -109,9 +114,6 @@
 	  }
 	});
 	
-	// Place All Componets here
-	
-	
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
@@ -121,6 +123,7 @@
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _homePage2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _signUp2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _logIn2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/upload', component: _uploadProject2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/profile', component: _profilePage2.default })
 	  )
 	), document.getElementById('root'));
@@ -27152,8 +27155,7 @@
 	            )
 	          )
 	        )
-	      ),
-	      _react2.default.createElement(_footer2.default, { className: 'flexContainerFooter' })
+	      )
 	    );
 	  }
 	});
@@ -38042,6 +38044,124 @@
 	});
 	
 	exports.default = Profile;
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _jquery = __webpack_require__(244);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var UploadProject = _react2.default.createClass({
+		displayName: 'UploadProject',
+		getInitialState: function getInitialState() {
+			return { project: [null] };
+		},
+		componentDidMount: function componentDidMount() {},
+		handleSubmit: function handleSubmit(event) {
+			var _this = this;
+	
+			event.preventDefault();
+			{
+				_jquery2.default.ajax({
+					url: '/api/projects',
+					type: "POST",
+					data: {
+						title: this.title.value,
+						description: this.desc.value,
+						gitUsername: this.gitUsername.value,
+						gitRepo: this.gitRepo.value,
+						url: this.siteURL.value,
+						videoUrl: this.videoURL.value
+					}
+				}).done(function (data) {
+					_this.setState({ project: data });
+				}).catch(function (error) {
+					console.log(error);
+				});
+			}
+			console.log(this.title.value);
+			console.log(this.desc.value);
+			console.log(this.gitUsername.value);
+			console.log(this.gitRepo.value);
+			console.log(this.siteURL.value);
+			console.log(this.videoURL.value);
+		},
+	
+		render: function render() {
+			var _this2 = this;
+	
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'form',
+					{ onSubmit: this.handleSubmit },
+					_react2.default.createElement(
+						'h1',
+						null,
+						'Upload Project'
+					),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Title', ref: function ref(input) {
+							_this2.title = input;
+						}, required: true }),
+					' ',
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'Description', ref: function ref(input) {
+							_this2.desc = input;
+						}, id: 'desc', required: true }),
+					' ',
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'gitUsername', ref: function ref(input) {
+							_this2.gitUsername = input;
+						}, required: true }),
+					' ',
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'text', placeholder: 'gitRepo', ref: function ref(input) {
+							_this2.gitRepo = input;
+						}, required: true }),
+					' ',
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'url', placeholder: 'siteURL', ref: function ref(input) {
+							_this2.siteURL = input;
+						}, required: true }),
+					' ',
+					_react2.default.createElement('br', null),
+					_react2.default.createElement('input', { type: 'url', placeholder: 'videoURL', ref: function ref(input) {
+							_this2.videoURL = input;
+						}, required: true }),
+					' ',
+					_react2.default.createElement('br', null),
+					_react2.default.createElement(
+						'button',
+						{ type: 'submit' },
+						'Submit'
+					)
+				)
+			);
+		}
+	});
+	
+	exports.default = UploadProject;
 
 /***/ }
 /******/ ]);

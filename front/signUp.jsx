@@ -36,7 +36,6 @@ const SignUpPage = React.createClass ({
             </form>
           </div>
         </div>
-        <FooterPage className='flexContainerFooter' />
       </div>
     )
   }
