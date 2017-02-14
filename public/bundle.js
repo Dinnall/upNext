@@ -24846,9 +24846,9 @@
 		switch (opts.arrayFormat) {
 			case 'index':
 				return function (key, value, accumulator) {
-					result = /\[(\d*)]$/.exec(key);
+					result = /\[(\d*)\]$/.exec(key);
 	
-					key = key.replace(/\[\d*]$/, '');
+					key = key.replace(/\[\d*\]$/, '');
 	
 					if (!result) {
 						accumulator[key] = value;
@@ -24864,9 +24864,9 @@
 	
 			case 'bracket':
 				return function (key, value, accumulator) {
-					result = /(\[])$/.exec(key);
+					result = /(\[\])$/.exec(key);
 	
-					key = key.replace(/\[]$/, '');
+					key = key.replace(/\[\]$/, '');
 	
 					if (!result || accumulator[key] === undefined) {
 						accumulator[key] = value;
