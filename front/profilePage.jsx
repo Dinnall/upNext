@@ -13,7 +13,8 @@ const Profile = React.createClass({
            firstName: response.firstName,
            lastName: response.lastName,
            email: response.email,
-           id: response.id
+           id: response.id,
+           projects: response.Projects
          })
        })
      },
@@ -28,8 +29,7 @@ const Profile = React.createClass({
        )
      },
     render() {
-
-
+        console.log("projects",this.state.projects)
         return (
             <div>
 
@@ -44,22 +44,39 @@ const Profile = React.createClass({
                     </div>
                 </div>
 
+
+
                 <div>
+                  <ul>{this.state.projects.map(function(val, idx) {
+                    console.log(val)
+                    return(
 
-                    <div className="thecard">
-                        <div className="card-img">
-                            <img src="http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png"></img>
+
+                        <div key={idx} className="thecard">
+                            <div className="card-img">
+                                <img src="http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png"></img>
+                            </div>
+                            <div className="card-caption">
+
+                                <h1>{val.title}</h1>
+                                <p>{val.description}</p>
+
+                            </div>
+                            <div className="card-outmore"></div>
                         </div>
-                        <div className="card-caption">
 
-                            <h1></h1>
-                            <p></p>
+                    )
 
-                        </div>
-                        <div className="card-outmore"></div>
-                    </div>
+                  })}</ul>
+
+
+
+
 
                 </div>
+
+
+
 
             </div>
         )

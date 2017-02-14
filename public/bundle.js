@@ -37997,7 +37997,8 @@
 	                firstName: response.firstName,
 	                lastName: response.lastName,
 	                email: response.email,
-	                id: response.id
+	                id: response.id,
+	                projects: response.Projects
 	            });
 	        });
 	    },
@@ -38010,7 +38011,7 @@
 	        };
 	    },
 	    render: function render() {
-	
+	        console.log("projects", this.state.projects);
 	        return _react2.default.createElement(
 	            'div',
 	            null,
@@ -38043,20 +38044,35 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'thecard' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'card-img' },
-	                        _react2.default.createElement('img', { src: 'http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'card-caption' },
-	                        _react2.default.createElement('h1', null),
-	                        _react2.default.createElement('p', null)
-	                    ),
-	                    _react2.default.createElement('div', { className: 'card-outmore' })
+	                    'ul',
+	                    null,
+	                    this.state.projects.map(function (val, idx) {
+	                        console.log(val);
+	                        return _react2.default.createElement(
+	                            'div',
+	                            { key: idx, className: 'thecard' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'card-img' },
+	                                _react2.default.createElement('img', { src: 'http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'card-caption' },
+	                                _react2.default.createElement(
+	                                    'h1',
+	                                    null,
+	                                    val.title
+	                                ),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    val.description
+	                                )
+	                            ),
+	                            _react2.default.createElement('div', { className: 'card-outmore' })
+	                        );
+	                    })
 	                )
 	            )
 	        );
