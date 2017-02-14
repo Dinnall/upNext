@@ -15,7 +15,9 @@ import allProjects from '../front/allProjects.jsx';
 import FooterPage from '../front/footer.jsx';
 import MainPage from '../front/homePage.jsx';
 import MentorPage from '../front/becomeMentor.jsx';
+import Videos from '../front/allVideos.jsx';
 import ProfilePage from '../front/profilePage.jsx';
+
 
 var App = React.createClass({
   render() {

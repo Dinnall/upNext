@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(sequelize, DataTypes) {
-  var Video = sequelize.define('Video', {
+  var Projects = sequelize.define('Projects', {
     title: { 
       type: DataTypes.STRING, 
       allowNull: false},
@@ -8,13 +8,25 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       allowNull: false,
       len: [200, 2000]
-    }, 
+    },
+    gitUsername: { 
+      type: DataTypes.STRING, 
+      allowNull: false},  
+    gitRepo: { 
+      type: DataTypes.STRING, 
+      allowNull: false},
     url: { 
       type: DataTypes.STRING, 
       allowNull: true, 
       validate: { 
         isUrl: true } },
-     
+    videoUrl:{
+      type: DataTypes.STRING,
+      allowNull:true,
+      validate:{
+        isUrl:true
+      }
+    },
     vote: {
       type: DataTypes.INTEGER,
       allowNull: false,
@@ -23,9 +35,9 @@ module.exports = function(sequelize, DataTypes) {
   },{
     classMethods: {
       associate: function(models) {
-        Video.belongsTo(models.User);
+        Projects.belongsTo(models.User);
       }
     }
   });
-  return Video;
+  return Projects;
 };

@@ -98,7 +98,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	// Place All Componets here
 	var App = _react2.default.createClass({
 	  displayName: 'App',
 	  render: function render() {
@@ -109,6 +108,9 @@
 	    );
 	  }
 	});
+	
+	// Place All Componets here
+	
 	
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
@@ -37590,20 +37592,20 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var AllListings = _react2.default.createClass({
-		displayName: 'AllListings',
+	var Projects = _react2.default.createClass({
+		displayName: 'Projects',
 		getInitialState: function getInitialState() {
-			return { video: [] };
+			return { project: [] };
 		},
 		componentDidMount: function componentDidMount() {
 			var _this = this;
 	
 			{
 				_jquery2.default.ajax({
-					url: '/api/video',
+					url: '/api/project',
 					type: "GET"
 				}).done(function (data) {
-					_this.setState({ video: data });
+					_this.setState({ project: data });
 				}).catch(function (error) {
 					console.log(error);
 				});
@@ -37619,7 +37621,7 @@
 					null,
 					'All Available Listings'
 				),
-				this.state.video.length === 0 ? "Loading..." : this.state.video.map(function (place, idx) {
+				this.state.project.length === 0 ? "Loading..." : this.state.project.map(function (place, idx) {
 					return _react2.default.createElement(
 						_reactRouter.Link,
 						{ to: "/room/" + place.id, key: idx },
@@ -37644,7 +37646,7 @@
 		}
 	});
 	
-	exports.default = AllListings;
+	exports.default = Projects;
 
 /***/ },
 /* 249 */
