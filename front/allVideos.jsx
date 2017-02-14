@@ -3,18 +3,18 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {Link} from 'react-router';
 
-const allVideos = React.createClass({
+const Projects = React.createClass({
 	getInitialState(){
-		return {video: []}
+		return {project: []}
 	},
 	componentDidMount(){
 		 {
 			$.ajax({
-				url: '/api/video',
+				url: '/api/project',
 				type: "GET"
 			})
 			.done( (data) => {
-				this.setState({video: data})
+				this.setState({project: data})
 			})
 			.catch((error) => {
 				console.log(error);
@@ -27,7 +27,7 @@ const allVideos = React.createClass({
 				<h2>All Available Listings</h2>
 
 				
-					{this.state.video.length=== 0 ? "Loading..." : this.state.video.map((place, idx)=> {
+					{this.state.project.length=== 0 ? "Loading..." : this.state.project.map((place, idx)=> {
 						return (
 
 								<Link to={"/room/" + place.id} key={idx}>
@@ -47,4 +47,4 @@ const allVideos = React.createClass({
 	}
 })
 
-export default allVideos;
+export default Projects;
