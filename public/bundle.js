@@ -27095,13 +27095,36 @@
 	var SignUpPage = _react2.default.createClass({
 	  displayName: 'SignUpPage',
 	  getInitialState: function getInitialState() {
-	    return {};
+	    return { user: [null] };
 	  },
 	  handleSubmit: function handleSubmit(event) {
 	    event.preventDefault();
+	    {
+	      _jquery2.default.ajax({
+	        url: '/api/user',
+	        type: "POST",
+	        data: {
+	          firstName: this.firstName.value,
+	          lastName: this.lastName.value,
+	          email: this.email.value,
+	          password: this.password.value
+	        }
+	      }).done(function (data) {
+	        console.log("Received User Data", data);
+	        _reactRouter.browserHistory.push('/allprojects');
+	      }).catch(function (error) {
+	        console.log(error);
+	      });
+	    }
+	    console.log(this.firstName.value);
+	    console.log(this.lastName.value);
+	    console.log(this.email.value);
+	    console.log(this.password.value);
 	  },
 	
 	  render: function render() {
+	    var _this = this;
+	
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'flexContainerSUP' },
@@ -27141,12 +27164,20 @@
 	          ),
 	          _react2.default.createElement(
 	            'form',
-	            null,
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'First Name', required: true }),
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', required: true }),
+	            { onSubmit: this.handleSubmit },
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'First Name', ref: function ref(input) {
+	                _this.firstName = input;
+	              }, required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', ref: function ref(input) {
+	                _this.lastName = input;
+	              }, required: true }),
 	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'Email', required: true }),
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'Password', required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Email', ref: function ref(input) {
+	                _this.email = input;
+	              }, required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Password', required: true, ref: function ref(input) {
+	                _this.password = input;
+	              } }),
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'button',
@@ -37470,8 +37501,28 @@
 	  getInitialState: function getInitialState() {
 	    return {};
 	  },
+	  handleSubmit: function handleSubmit() {
+	    event.preventDefault();
+	    {
+	      $.ajax({
+	        url: '/api/user',
+	        type: "POST",
+	        data: {
+	          email: this.email.value,
+	          password: this.password.value
+	        }
+	      }).done(function (data) {
+	        console.log("Received User Data", data);
+	        _reactRouter.browserHistory.push('/allprojects');
+	      }).catch(function (error) {
+	        console.log(error);
+	      });
+	    }
+	  },
 	
 	  render: function render() {
+	    var _this = this;
+	
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'flexContainerLIP' },
@@ -37495,7 +37546,9 @@
 	              _react2.default.createElement(
 	                'td',
 	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email' })
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email', ref: function ref(input) {
+	                    _this.email = input;
+	                  }, required: true })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -37504,7 +37557,9 @@
 	              _react2.default.createElement(
 	                'td',
 	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password' })
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password', ref: function ref(input) {
+	                    _this.password = input;
+	                  }, required: true })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -37516,11 +37571,7 @@
 	                _react2.default.createElement(
 	                  'button',
 	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: '/allProjects' },
-	                    'Log In'
-	                  )
+	                  'Log In'
 	                )
 	              )
 	            )
@@ -38099,12 +38150,6 @@
 					console.log(error);
 				});
 			}
-			console.log(this.title.value);
-			console.log(this.desc.value);
-			console.log(this.gitUsername.value);
-			console.log(this.gitRepo.value);
-			console.log(this.siteURL.value);
-			console.log(this.videoURL.value);
 		},
 	
 		render: function render() {

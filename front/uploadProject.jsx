@@ -25,19 +25,13 @@ const UploadProject = React.createClass({
 					videoUrl: this.videoURL.value
 				}
 			})
-			.done( (data) => {
+			.done((data) => {
 				this.setState({project: data})
 			})
 			.catch((error) => {
 				console.log(error);
 			})
 		}
-		console.log(this.title.value)
-		console.log(this.desc.value)
-		console.log(this.gitUsername.value)
-		console.log(this.gitRepo.value)
-		console.log(this.siteURL.value)
-		console.log(this.videoURL.value)
 	},
 	render: function(){
 		return(

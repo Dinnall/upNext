@@ -10,6 +10,26 @@ const LogInPage = React.createClass ({
   getInitialState() {
     return {}
   },
+  handleSubmit() {
+    event.preventDefault();
+    {
+      $.ajax({
+        url: '/api/user',
+        type: "POST",
+        data: {
+          email: this.email.value,
+          password: this.password.value
+        }
+      })
+      .done((data) => {
+        console.log("Received User Data", data);
+        browserHistory.push('/allprojects')
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+    }
+  },
   render: function(){
     return (
       <div className='flexContainerLIP'>
@@ -19,17 +39,17 @@ const LogInPage = React.createClass ({
             <tbody>
               <tr>
                 <td>
-                  <input type="text" size="30" placeholder="Email" />
+                  <input type="text" size="30" placeholder="Email" ref={(input) => {this.email = input;}} required />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <input type="text" size="30" placeholder="Password" />
+                  <input type="text" size="30" placeholder="Password" ref={(input) => {this.password = input;}} required />
                 </td>
               </tr>
               <tr>
                 <td>
-                  <button><Link to='/allProjects'>Log In</Link></button>
+                  <button>Log In</button>
                 </td>
               </tr>
             </tbody>
