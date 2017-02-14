@@ -37,8 +37,8 @@ ReactDOM.render(
         <Route path='/signup' component={SignUpPage} />
         <Route path='/login' component={LogInPage} />
         <Route path='/upload' component={UploadProject} />
-        <Route path='/profile' component={ProfilePage} />
+        <Route path='/profile/:id' component={ProfilePage} />
     </Route>
-  </Router>, 
+  </Router>,
   document.getElementById('root')
 );

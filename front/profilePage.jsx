@@ -1,14 +1,48 @@
 import React from 'react';
+import $ from 'jquery';
+import {withRouter} from "react-router";
 
 const Profile = React.createClass({
+     componentDidMount() {
+       $.ajax({
+         method: 'GET',
+         url: `/api/user/userId/${this.props.router.params.id}`,
+       }).then((response) => {
+         console.log(response)
+         this.setState({
+           firstName: response.firstName,
+           lastName: response.lastName,
+           email: response.email,
+           id: response.id
+         })
+       })
+     },
+     getInitialState() {
+       return (
+         { firstName: "",
+           lastName: "",
+           email: "",
+           imageUrl: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png",
+           projects: []
+         }
+       )
+     },
     render() {
-        var data = {
-            "AppName": "Facebook",
-            "Description": "A Social networking site that connects all people in the world"
-        }
+
 
         return (
             <div>
+
+
+                <div className="card">
+                    <img src={this.state.imageUrl}></img>
+                    <div className="container">
+                        <h4>
+                            <b>{this.state.firstName} {this.state.lastName}</b>
+                        </h4>
+                        <p>{this.state.email}</p>
+                    </div>
+                </div>
 
                 <div>
 
@@ -18,22 +52,13 @@ const Profile = React.createClass({
                         </div>
                         <div className="card-caption">
 
-                            <h1>{data.AppName}</h1>
-                            <p>{data.Description}</p>
+                            <h1></h1>
+                            <p></p>
 
                         </div>
                         <div className="card-outmore"></div>
                     </div>
 
-                </div>
-                <div className="card">
-                    <img src="https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png" alt="Avatar"></img>
-                    <div className="container">
-                        <h4>
-                            <b>John Doe</b>
-                        </h4>
-                        <p>Architect & Engineer</p>
-                    </div>
                 </div>
 
             </div>
@@ -41,4 +66,4 @@ const Profile = React.createClass({
     }
 })
 
-export default Profile;
+export default withRouter(Profile);

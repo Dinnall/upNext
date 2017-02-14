@@ -16,7 +16,7 @@ function postNewUser(req, res) {
 		lastName: req.body.lastName,
 		email: req.body.email,
 		password:req.body.password
-  
+
 	})
 	.then(function(newUser) {
 		console.log(newUser)
@@ -30,7 +30,7 @@ function postNewUser(req, res) {
 
 function getOneUser(req,res){
 	User.findById(req.params.id,{
-		include: [Videon,Picture]
+		include: [Projects]
 	})
 
 	.then(function(user){
