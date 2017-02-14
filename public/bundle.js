@@ -124,7 +124,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _signUp2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _logIn2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/upload', component: _uploadProject2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: '/profile', component: _profilePage2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: '/profile/:id', component: _profilePage2.default })
 	  )
 	), document.getElementById('root'));
 
@@ -38012,7 +38012,7 @@
 /* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
@@ -38022,75 +38022,95 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _jquery = __webpack_require__(244);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	var _reactRouter = __webpack_require__(178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Profile = _react2.default.createClass({
-	    displayName: "Profile",
-	    render: function render() {
-	        var data = {
-	            "AppName": "Facebook",
-	            "Description": "A Social networking site that connects all people in the world"
+	    displayName: 'Profile',
+	    componentDidMount: function componentDidMount() {
+	        var _this = this;
+	
+	        _jquery2.default.ajax({
+	            method: 'GET',
+	            url: '/api/user/userId/' + this.props.router.params.id
+	        }).then(function (response) {
+	            console.log(response);
+	            _this.setState({
+	                firstName: response.firstName,
+	                lastName: response.lastName,
+	                email: response.email,
+	                id: response.id
+	            });
+	        });
+	    },
+	    getInitialState: function getInitialState() {
+	        return { firstName: "",
+	            lastName: "",
+	            email: "",
+	            imageUrl: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png",
+	            projects: []
 	        };
+	    },
+	    render: function render() {
 	
 	        return _react2.default.createElement(
-	            "div",
+	            'div',
 	            null,
 	            _react2.default.createElement(
-	                "div",
-	                null,
+	                'div',
+	                { className: 'card' },
+	                _react2.default.createElement('img', { src: this.state.imageUrl }),
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "thecard" },
+	                    'div',
+	                    { className: 'container' },
 	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "card-img" },
-	                        _react2.default.createElement("img", { src: "http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png" })
-	                    ),
-	                    _react2.default.createElement(
-	                        "div",
-	                        { className: "card-caption" },
+	                        'h4',
+	                        null,
 	                        _react2.default.createElement(
-	                            "h1",
+	                            'b',
 	                            null,
-	                            data.AppName
-	                        ),
-	                        _react2.default.createElement(
-	                            "p",
-	                            null,
-	                            data.Description
+	                            this.state.firstName,
+	                            ' ',
+	                            this.state.lastName
 	                        )
 	                    ),
-	                    _react2.default.createElement("div", { className: "card-outmore" })
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        this.state.email
+	                    )
 	                )
 	            ),
 	            _react2.default.createElement(
-	                "div",
-	                { className: "card" },
-	                _react2.default.createElement("img", { src: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png", alt: "Avatar" }),
+	                'div',
+	                null,
 	                _react2.default.createElement(
-	                    "div",
-	                    { className: "container" },
+	                    'div',
+	                    { className: 'thecard' },
 	                    _react2.default.createElement(
-	                        "h4",
-	                        null,
-	                        _react2.default.createElement(
-	                            "b",
-	                            null,
-	                            "John Doe"
-	                        )
+	                        'div',
+	                        { className: 'card-img' },
+	                        _react2.default.createElement('img', { src: 'http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png' })
 	                    ),
 	                    _react2.default.createElement(
-	                        "p",
-	                        null,
-	                        "Architect & Engineer"
-	                    )
+	                        'div',
+	                        { className: 'card-caption' },
+	                        _react2.default.createElement('h1', null),
+	                        _react2.default.createElement('p', null)
+	                    ),
+	                    _react2.default.createElement('div', { className: 'card-outmore' })
 	                )
 	            )
 	        );
 	    }
 	});
 	
-	exports.default = Profile;
+	exports.default = (0, _reactRouter.withRouter)(Profile);
 
 /***/ },
 /* 252 */
