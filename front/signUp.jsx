@@ -32,10 +32,6 @@ const SignUpPage = React.createClass ({
         console.log(error)
       })
     }
-    console.log(this.firstName.value)
-    console.log(this.lastName.value)
-    console.log(this.email.value)
-    console.log(this.password.value)
   },
   render: function(){
     return (

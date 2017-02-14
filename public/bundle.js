@@ -27116,10 +27116,6 @@
 	        console.log(error);
 	      });
 	    }
-	    console.log(this.firstName.value);
-	    console.log(this.lastName.value);
-	    console.log(this.email.value);
-	    console.log(this.password.value);
 	  },
 	
 	  render: function render() {
@@ -37506,7 +37502,7 @@
 	    {
 	      $.ajax({
 	        url: '/api/user',
-	        type: "POST",
+	        type: "GET",
 	        data: {
 	          email: this.email.value,
 	          password: this.password.value
@@ -37570,7 +37566,7 @@
 	                null,
 	                _react2.default.createElement(
 	                  'button',
-	                  null,
+	                  { type: 'submit' },
 	                  'Log In'
 	                )
 	              )

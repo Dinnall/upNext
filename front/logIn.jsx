@@ -15,7 +15,7 @@ const LogInPage = React.createClass ({
     {
       $.ajax({
         url: '/api/user',
-        type: "POST",
+        type: "GET",
         data: {
           email: this.email.value,
           password: this.password.value
@@ -34,7 +34,7 @@ const LogInPage = React.createClass ({
     return (
       <div className='flexContainerLIP'>
           <h1 className='titleLIP'>Log In</h1>
-          <form className='formLIP'onSubmit={this.handleSubmit}>
+          <form className='formLIP' onSubmit={this.handleSubmit}>
             <table>
             <tbody>
               <tr>
@@ -49,7 +49,7 @@ const LogInPage = React.createClass ({
               </tr>
               <tr>
                 <td>
-                  <button>Log In</button>
+                  <button type='submit'>Log In</button>
                 </td>
               </tr>
             </tbody>
