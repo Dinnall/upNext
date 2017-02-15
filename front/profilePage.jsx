@@ -3,39 +3,40 @@ import $ from 'jquery';
 import {withRouter} from "react-router";
 
 const Profile = React.createClass({
-     componentDidMount() {
-       $.ajax({
-         method: 'GET',
-         url: `/api/user/userId/${this.props.router.params.id}`,
-       }).then((response) => {
-         console.log(response)
-         this.setState({
-           firstName: response.firstName,
-           lastName: response.lastName,
-           email: response.email,
-           id: response.id,
-           projects: response.Projects
-         })
-       })
-     },
-     getInitialState() {
-       return (
-         { firstName: "",
-           lastName: "",
-           email: "",
-           imageUrl: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png",
-           projects: []
-         }
-       )
-     },
+    componentDidMount() {
+        $.ajax({method: 'GET', url: `/api/user/userId/${this.props.router.params.id}`}).then((response) => {
+            console.log(response)
+            this.setState({
+              firstName: response.firstName,
+              lastName: response.lastName,
+              email: response.email,
+              id: response.id,
+              projects: response.Projects,
+              imageUrl: response.imageUrl
+
+            })
+        })
+    },
+    getInitialState() {
+        return ({
+          firstName: "",
+          lastName: "",
+          email: "",
+          imageUrl: "",
+          projects: []
+        })
+    },
     render() {
-        console.log("projects",this.state.projects)
+        console.log("projects", this.state.projects)
         return (
             <div>
 
 
+
                 <div className="card">
+                  <div>
                     <img src={this.state.imageUrl}></img>
+                  </div>
                     <div className="container">
                         <h4>
                             <b>{this.state.firstName} {this.state.lastName}</b>
@@ -47,36 +48,29 @@ const Profile = React.createClass({
 
 
                 <div>
-                  <ul>{this.state.projects.map(function(val, idx) {
-                    console.log(val)
-                    return(
+                    <div className="flex">{this.state.projects.map(function(val, idx) {
+                            return (
 
+                                <div key={idx} className="thecard">
+                                    <div className="card-img">
+                                        <img src={val.pictureUrl}></img>
+                                        {/* <video src={val.videoUrl}></video> */}
+                                    </div>
+                                    <div className="card-caption">
 
-                        <div key={idx} className="thecard">
-                            <div className="card-img">
-                                <img src="http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png"></img>
-                            </div>
-                            <div className="card-caption">
+                                        <h1>{val.title}</h1>
+                                        <p>{val.description}</p>
+                                        <p>{val.url}</p>
 
-                                <h1>{val.title}</h1>
-                                <p>{val.description}</p>
+                                    </div>
+                                    <div className="card-outmore"></div>
+                                </div>
 
-                            </div>
-                            <div className="card-outmore"></div>
-                        </div>
+                            )
 
-                    )
-
-                  })}</ul>
-
-
-
-
+                        })}</div>
 
                 </div>
-
-
-
 
             </div>
         )

@@ -27057,7 +27057,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  color: #222;\n}\n\np {\n  font-size: 13px;\n}\n\n.thecard {\n  width: 300px;\n  margin: 5% auto;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 0px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 1000px;\n}\n\n.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  color: #222;\n}\n\np {\n  font-size: 13px;\n}\n\n.thecard {\n  width: 300px;\n  margin: 5% auto;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 500px;\n}\n\n.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n\n}\n", ""]);
 	
 	// exports
 
@@ -37988,25 +37988,25 @@
 	    componentDidMount: function componentDidMount() {
 	        var _this = this;
 	
-	        _jquery2.default.ajax({
-	            method: 'GET',
-	            url: '/api/user/userId/' + this.props.router.params.id
-	        }).then(function (response) {
+	        _jquery2.default.ajax({ method: 'GET', url: '/api/user/userId/' + this.props.router.params.id }).then(function (response) {
 	            console.log(response);
 	            _this.setState({
 	                firstName: response.firstName,
 	                lastName: response.lastName,
 	                email: response.email,
 	                id: response.id,
-	                projects: response.Projects
+	                projects: response.Projects,
+	                imageUrl: response.imageUrl
+	
 	            });
 	        });
 	    },
 	    getInitialState: function getInitialState() {
-	        return { firstName: "",
+	        return {
+	            firstName: "",
 	            lastName: "",
 	            email: "",
-	            imageUrl: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png",
+	            imageUrl: "",
 	            projects: []
 	        };
 	    },
@@ -38018,7 +38018,11 @@
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'card' },
-	                _react2.default.createElement('img', { src: this.state.imageUrl }),
+	                _react2.default.createElement(
+	                    'div',
+	                    null,
+	                    _react2.default.createElement('img', { src: this.state.imageUrl })
+	                ),
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'container' },
@@ -38044,17 +38048,16 @@
 	                'div',
 	                null,
 	                _react2.default.createElement(
-	                    'ul',
-	                    null,
+	                    'div',
+	                    { className: 'flex' },
 	                    this.state.projects.map(function (val, idx) {
-	                        console.log(val);
 	                        return _react2.default.createElement(
 	                            'div',
 	                            { key: idx, className: 'thecard' },
 	                            _react2.default.createElement(
 	                                'div',
 	                                { className: 'card-img' },
-	                                _react2.default.createElement('img', { src: 'http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png' })
+	                                _react2.default.createElement('img', { src: val.pictureUrl })
 	                            ),
 	                            _react2.default.createElement(
 	                                'div',
@@ -38068,6 +38071,11 @@
 	                                    'p',
 	                                    null,
 	                                    val.description
+	                                ),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    val.url
 	                                )
 	                            ),
 	                            _react2.default.createElement('div', { className: 'card-outmore' })
