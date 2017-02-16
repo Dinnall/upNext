@@ -62,6 +62,39 @@ Projects.sync({force: true})
 	  projectId: 5,
 		UserId: 1
 	},
+	{
+	  title: "Let Loopy with nested Loops!",
+	  description: 'This project looks at loops nested in loops',
+	  gitUsername: 'shiffman',
+	  gitRepo: '',
+	  url: [''],
+	  videoUrl: 'https://vimeo.com/139013372',
+		pictureUrl: 'http://www.evoluted.net/thinktank/wp-content/uploads/2011/05/wb_dribble.jpg',
+	  projectId: 5,
+		UserId: 1
+	},
+	{
+	  title: "Let Loopy with nested Loops!",
+	  description: 'This project looks at loops nested in loops',
+	  gitUsername: 'shiffman',
+	  gitRepo: '',
+	  url: [''],
+	  videoUrl: 'https://vimeo.com/139013372',
+		pictureUrl: 'http://www.carstockphotography.co.uk/news/behance%20jan2013/behance%20page%20tim%20wallace.jpg',
+	  projectId: 5,
+		UserId: 1
+	},
+	{
+	  title: "Let Loopy with nested Loops!",
+	  description: 'This project looks at loops nested in loops',
+	  gitUsername: 'shiffman',
+	  gitRepo: '',
+	  url: [''],
+	  videoUrl: 'https://vimeo.com/139013372',
+		pictureUrl: 'http://www.hugpug.com/photos/sheba_layout5/myspace.jpg',
+	  projectId: 5,
+		UserId: 1
+	},
 ]))
 
 .catch((err) => console.log(err));

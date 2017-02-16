@@ -27057,7 +27057,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  color: #222;\n}\n\np {\n  font-size: 13px;\n}\n\n.thecard {\n  width: 300px;\n  margin: 5% auto;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 500px;\n}\n\n.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  background-color: #222;\n}\n\np {\n  font-size: 13px;\n}\n\n/*.master {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}*/\n\n.thecard {\n  width: 300px;\n  margin: 10% 0%;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n\n\n/*.card-iframe iframe {\n  width: 100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}*/\n\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n/*.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 600px;\n}*/\n\n/*.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}*/\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex-wrapper {\ndisplay: flex;\njustify-content: center;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 78%;\n\n\n}\n\n\n\n\n\n\n\n\n/*********************** PROFILE CARD 2 ********************************************************/\n\n {\n    background: #e2e2e2;\n    width: 98%;\n    /*height: 100vh;*/\n}\n\n .card {\n    width: 1500px;\n    height: 300px;\n    background: transparent;\n    position: relative;\n    left: 0;\n    right: 0;\n    margin: 0 0 30px 15px;\n    top: 0;\n    bottom: 0;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);\n}\n\n .card_left {\n    width: 40%;\n    height: 400px;\n    float: left;\n    overflow: hidden;\n    background: transparent;\n}\n\n .card_left img {\n    width: 100%;\n    height: auto;\n    border-radius: 10px 0 0 10px;\n    -webkit-border-radius: 10px 0 0 10px;\n    -moz-border-radius: 10px 0 0 10px;\n    position: relative;\n}\n\n .card_right {\n    width: 60%;\n    float: left;\n    background: #000000;\n    height: 400px;\n    border-radius: 0 10px 10px 0;\n    -webkit-border-radius: 0 10px 10px 0;\n    -moz-border-radius: 0 10px 10px 0;\n}\n\n .card_right h1 {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    text-align: left;\n    font-size: 40px;\n    margin: 30px 0 0 0;\n    padding: 0 0 0 40px;\n    letter-spacing: 1px;\n}\n\n .card_right__details ul {\n    list-style-type: none;\n    padding: 0 0 0 40px;\n    margin: 10px 0 0 0;\n}\n\n .card_right__details ul li {\n    display: inline;\n    color: #e3e3e3;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    padding: 0 40px 0 0;\n}\n\n .card_right__rating__stars {\n    position: relative;\n    right: 160px;\n    margin: 10px 0 10px 0;\n\n}\n\n .card_right__rating__stars fieldset,  .card_right__rating__stars label {\n    margin: 0;\n    padding: 0;\n}\n\n .card_right__rating__stars .rating {\n    border: none;\n}\n\n .card_right__rating__stars .rating>input {\n    display: none;\n}\n\n .card_right__rating__stars .rating>label:before {\n    margin: 5px;\n    font-size: 1.25em;\n    display: inline-block;\n    content: \"\\F005\";\n    font-family: FontAwesome;\n}\n\n .card_right__rating__stars .rating>.half:before {\n    content: \"\\F089\";\n    position: absolute;\n}\n\n .card_right__rating__stars .rating>label {\n    color: #ddd;\n    float: right;\n}\n\n .card_right__rating__stars .rating>input:checked~label,  .card_right__rating__stars .rating:not(:checked)>label:hover,  .card_right__rating__stars .rating:not(:checked)>label:hover~label {\n    color: #FFD700;\n}\n\n .card_right__rating__stars .rating>input:checked+label:hover,  .card_right__rating__stars .rating>input:checked~label:hover,  .card_right__rating__stars .rating>label:hover~input:checked~label,  .card_right__rating__stars .rating>input:checked~label:hover~label {\n    color: #FFED85;\n}\n\n .card_right__review p {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 12px;\n    padding: 0 40px 0 40px;\n    letter-spacing: 1px;\n    margin: 10px 0 10px 0;\n    line-height: 20px;\n}\n\n .card_right__review a {\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 14px;\n    padding: 0 0 0 40px;\n    color: #ffda00;\n    margin: 0;\n}\n\n .card_right__button {\n    padding: 0 0 0 40px;\n    margin: 30px 0 0 0;\n}\n\n .card_right__button a {\n    color: #ffda00;\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    border: 2px solid #ffda00;\n    padding: 10px 10px 10px 40px;\n    font-size: 12px;\n    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 7% 50%;\n    border-radius: 5px;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n .card_right__button a:hover {\n    color: #000000;\n    background-color: #ffda00;\n    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 10% 50%;\n    cursor: pointer;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n.flax {\n  display: flex;\n  justify-content: center;\n}\n", ""]);
 	
 	// exports
 
@@ -38014,39 +38014,76 @@
 	        console.log("projects", this.state.projects);
 	        return _react2.default.createElement(
 	            'div',
-	            null,
+	            { className: 'master' },
 	            _react2.default.createElement(
 	                'div',
-	                { className: 'card' },
+	                { className: 'flax' },
 	                _react2.default.createElement(
 	                    'div',
-	                    null,
-	                    _react2.default.createElement('img', { src: this.state.imageUrl })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'container' },
+	                    { className: 'card' },
 	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
+	                        'div',
+	                        { className: 'card_left' },
+	                        _react2.default.createElement('img', { src: this.state.imageUrl })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'card_right' },
 	                        _react2.default.createElement(
-	                            'b',
+	                            'h1',
 	                            null,
 	                            this.state.firstName,
 	                            ' ',
 	                            this.state.lastName
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card_right__details' },
+	                            _react2.default.createElement(
+	                                'ul',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'GITHUB'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'LINKED IN'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'WEB APP URL'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'card_right__review' },
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    'The lead character, called \'The Bride,\' was a member',
+	                                    _react2.default.createElement('br', null),
+	                                    'of the Deadly Viper Assassination Squad, led by her',
+	                                    _react2.default.createElement('br', null),
+	                                    'lover \'Bill.\' Upon realizing she was pregnant with Bill\'s',
+	                                    _react2.default.createElement('br', null),
+	                                    'child, \'The Bride\' decided to escape her life as a killer.',
+	                                    _react2.default.createElement('br', null),
+	                                    'She fled to Texas, met a young man, who, on the day',
+	                                    _react2.default.createElement('br', null),
+	                                    'of their wedding rehearsal was gunned down by....'
+	                                )
+	                            )
 	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        this.state.email
 	                    )
 	                )
 	            ),
 	            _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'flex-wrapper' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'flex' },
@@ -38071,11 +38108,6 @@
 	                                    'p',
 	                                    null,
 	                                    val.description
-	                                ),
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    null,
-	                                    val.url
 	                                )
 	                            ),
 	                            _react2.default.createElement('div', { className: 'card-outmore' })
