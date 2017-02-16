@@ -38,6 +38,19 @@ function getOneUser(req,res){
 	})
 }
 
+// ********** GET one User by ID **********
+
+function findByEmail(req,res){
+	User.findOne({
+		where: {
+			email: req.body.email,
+			password: req.body.password
+		}
+	})
+	.then(function(user){
+		res.send(user)
+	})
+}
 
 // ********** GET all Users **********
 function getAllUsers(req, res) {
