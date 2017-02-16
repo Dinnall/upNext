@@ -68,7 +68,7 @@
 	
 	var _signUp2 = _interopRequireDefault(_signUp);
 	
-	var _logIn = __webpack_require__(246);
+	var _logIn = __webpack_require__(244);
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
 	
@@ -76,7 +76,7 @@
 	
 	var _allVideos2 = _interopRequireDefault(_allVideos);
 	
-	var _allProjects = __webpack_require__(247);
+	var _allProjects = __webpack_require__(251);
 	
 	var _allProjects2 = _interopRequireDefault(_allProjects);
 	
@@ -84,15 +84,15 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _homePage = __webpack_require__(249);
+	var _homePage = __webpack_require__(246);
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
 	
-	var _becomeMentor = __webpack_require__(250);
+	var _becomeMentor = __webpack_require__(247);
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
-	var _profilePage = __webpack_require__(251);
+	var _profilePage = __webpack_require__(250);
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
@@ -27080,7 +27080,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _jquery = __webpack_require__(244);
+	var _jquery = __webpack_require__(249);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -27164,6 +27164,544 @@
 
 /***/ },
 /* 244 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	var _allProjects = __webpack_require__(251);
+	
+	var _allProjects2 = _interopRequireDefault(_allProjects);
+	
+	var _footer = __webpack_require__(245);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var LogInPage = _react2.default.createClass({
+	  displayName: 'LogInPage',
+	  getInitialState: function getInitialState() {
+	    return {};
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'flexContainerLIP' },
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'titleLIP' },
+	        'Log In'
+	      ),
+	      _react2.default.createElement(
+	        'form',
+	        { className: 'formLIP', onSubmit: this.handleSubmit },
+	        _react2.default.createElement(
+	          'table',
+	          null,
+	          _react2.default.createElement(
+	            'tbody',
+	            null,
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password' })
+	              )
+	            ),
+	            _react2.default.createElement(
+	              'tr',
+	              null,
+	              _react2.default.createElement(
+	                'td',
+	                null,
+	                _react2.default.createElement(
+	                  'button',
+	                  null,
+	                  _react2.default.createElement(
+	                    _reactRouter.Link,
+	                    { to: '/allProjects' },
+	                    'Log In'
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = LogInPage;
+
+/***/ },
+/* 245 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var FooterPage = _react2.default.createClass({
+	  displayName: 'FooterPage',
+	  getInitialState: function getInitialState() {
+	    return {};
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'flexContainerFooter' },
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'footer' },
+	        _react2.default.createElement(
+	          'h1',
+	          null,
+	          'Footer Content!!'
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = FooterPage;
+
+/***/ },
+/* 246 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	var _signUp = __webpack_require__(243);
+	
+	var _signUp2 = _interopRequireDefault(_signUp);
+	
+	var _logIn = __webpack_require__(244);
+	
+	var _logIn2 = _interopRequireDefault(_logIn);
+	
+	var _footer = __webpack_require__(245);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MainPage = _react2.default.createClass({
+	  displayName: 'MainPage',
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'nav',
+	        null,
+	        _react2.default.createElement(
+	          'ul',
+	          { className: 'ulLink' },
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'li1' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/signup' },
+	              'Sign Up'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'li',
+	            { className: 'li2' },
+	            _react2.default.createElement(
+	              _reactRouter.Link,
+	              { to: '/login' },
+	              'Log In'
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'smarter' },
+	        'A smarter way to learn'
+	      ),
+	      _react2.default.createElement('div', { className: 'secondBorder' }),
+	      _react2.default.createElement('div', { className: 'thirdBorder' }),
+	      _react2.default.createElement(_footer2.default, null)
+	    );
+	  }
+	});
+	
+	exports.default = MainPage;
+
+/***/ },
+/* 247 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	__webpack_require__(237);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var MentorPage = _react2.default.createClass({
+	  displayName: 'MentorPage',
+	  getInitialState: function getInitialState() {
+	    return { name: '', email: '', website: '', about: '' };
+	  },
+	  handleSubmit: function handleSubmit(event) {
+	    alert('Thank You! We Will Be In Touch Shortly');
+	    event.preventDefault();
+	  },
+	
+	  render: function render() {
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        { className: 'pageTitle' },
+	        'Become A Mentor!'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'flexContainerMP' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'column1' },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Benefits of Mentorship'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Provide a fascinating link to what is happening in the younger, less experienced part of the tech industry.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Helping the mentee develop and advance through their career.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'Find talent for your development team.'
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'Requirements'
+	          ),
+	          _react2.default.createElement(
+	            'ul',
+	            null,
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              '5+ Years of experince as Designer/Developer'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'The willingness to educates the mentoree on how to accept feedback in important areas, such as communications, technical abilities, change management, and leadership skills.'
+	            ),
+	            _react2.default.createElement(
+	              'li',
+	              null,
+	              'A positive attitude! \u263A'
+	            )
+	          )
+	        ),
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'column2' },
+	          _react2.default.createElement(
+	            'h3',
+	            null,
+	            'upNext Mentor Sign Up'
+	          ),
+	          _react2.default.createElement(
+	            'h6',
+	            null,
+	            '* Required '
+	          ),
+	          _react2.default.createElement(
+	            'form',
+	            { onSubmit: this.handleSubmit },
+	            _react2.default.createElement(
+	              'table',
+	              null,
+	              _react2.default.createElement(
+	                'tbody',
+	                null,
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Name: *'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { onChange: this.handleChange, type: 'text', size: '30', required: true })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Email: *'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { type: 'text', size: '30', required: true })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Website: '
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { type: 'text', size: '30' })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    'I am a:'
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    { className: 'radio' },
+	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'dev' }),
+	                    ' Developer',
+	                    _react2.default.createElement('br', null),
+	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'des' }),
+	                    ' Designer'
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement(
+	                      'label',
+	                      null,
+	                      'Tell Us About ',
+	                      _react2.default.createElement('br', null),
+	                      ' Yourself:'
+	                    )
+	                  ),
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('textarea', { cols: '30', rows: '6', required: true })
+	                  )
+	                ),
+	                _react2.default.createElement(
+	                  'tr',
+	                  null,
+	                  _react2.default.createElement(
+	                    'td',
+	                    null,
+	                    _react2.default.createElement('input', { type: 'submit', className: 'submitForm', value: 'Submit' })
+	                  )
+	                )
+	              )
+	            )
+	          )
+	        )
+	      )
+	    );
+	  }
+	});
+	
+	exports.default = MentorPage;
+
+/***/ },
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	Object.defineProperty(exports, "__esModule", {
+		value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	var _reactDom = __webpack_require__(32);
+	
+	var _reactDom2 = _interopRequireDefault(_reactDom);
+	
+	var _jquery = __webpack_require__(249);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
+	
+	var _reactRouter = __webpack_require__(178);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Projects = _react2.default.createClass({
+		displayName: 'Projects',
+		getInitialState: function getInitialState() {
+			return { project: [] };
+		},
+		componentDidMount: function componentDidMount() {
+			var _this = this;
+	
+			{
+				_jquery2.default.ajax({
+					url: '/api/project',
+					type: "GET"
+				}).done(function (data) {
+					_this.setState({ project: data });
+				}).catch(function (error) {
+					console.log(error);
+				});
+			}
+		},
+	
+		render: function render() {
+			return _react2.default.createElement(
+				'div',
+				null,
+				_react2.default.createElement(
+					'h2',
+					null,
+					'All Available Listings'
+				),
+				this.state.project.length === 0 ? "Loading..." : this.state.project.map(function (place, idx) {
+					return _react2.default.createElement(
+						_reactRouter.Link,
+						{ to: "/room/" + place.id, key: idx },
+						_react2.default.createElement(
+							'div',
+							{ className: 'oneList' },
+							_react2.default.createElement('img', { className: 'Img', src: place.images[0] }),
+							_react2.default.createElement(
+								'p',
+								{ className: 'descriptionClass' },
+								_react2.default.createElement(
+									'strong',
+									null,
+									place.description
+								),
+								'/PLACE WHAT HERE'
+							)
+						)
+					);
+				})
+			);
+		}
+	});
+	
+	exports.default = Projects;
+
+/***/ },
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -37389,152 +37927,127 @@
 
 
 /***/ },
-/* 245 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _reactDom = __webpack_require__(32);
+	var _jquery = __webpack_require__(249);
+	
+	var _jquery2 = _interopRequireDefault(_jquery);
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(237);
-	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	var FooterPage = _react2.default.createClass({
-	  displayName: 'FooterPage',
-	  getInitialState: function getInitialState() {
-	    return {};
-	  },
+	var Profile = _react2.default.createClass({
+	    displayName: 'Profile',
+	    componentDidMount: function componentDidMount() {
+	        var _this = this;
 	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'flexContainerFooter' },
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'footer' },
-	        _react2.default.createElement(
-	          'h1',
-	          null,
-	          'Footer Content!!'
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = FooterPage;
-
-/***/ },
-/* 246 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(237);
-	
-	var _allProjects = __webpack_require__(247);
-	
-	var _allProjects2 = _interopRequireDefault(_allProjects);
-	
-	var _footer = __webpack_require__(245);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var LogInPage = _react2.default.createClass({
-	  displayName: 'LogInPage',
-	  getInitialState: function getInitialState() {
-	    return {};
-	  },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'flexContainerLIP' },
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'titleLIP' },
-	        'Log In'
-	      ),
-	      _react2.default.createElement(
-	        'form',
-	        { className: 'formLIP', onSubmit: this.handleSubmit },
-	        _react2.default.createElement(
-	          'table',
-	          null,
-	          _react2.default.createElement(
-	            'tbody',
+	        _jquery2.default.ajax({
+	            method: 'GET',
+	            url: '/api/user/userId/' + this.props.router.params.id
+	        }).then(function (response) {
+	            console.log(response);
+	            _this.setState({
+	                firstName: response.firstName,
+	                lastName: response.lastName,
+	                email: response.email,
+	                id: response.id,
+	                projects: response.Projects
+	            });
+	        });
+	    },
+	    getInitialState: function getInitialState() {
+	        return { firstName: "",
+	            lastName: "",
+	            email: "",
+	            imageUrl: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png",
+	            projects: []
+	        };
+	    },
+	    render: function render() {
+	        console.log("projects", this.state.projects);
+	        return _react2.default.createElement(
+	            'div',
 	            null,
 	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email' })
-	              )
+	                'div',
+	                { className: 'card' },
+	                _react2.default.createElement('img', { src: this.state.imageUrl }),
+	                _react2.default.createElement(
+	                    'div',
+	                    { className: 'container' },
+	                    _react2.default.createElement(
+	                        'h4',
+	                        null,
+	                        _react2.default.createElement(
+	                            'b',
+	                            null,
+	                            this.state.firstName,
+	                            ' ',
+	                            this.state.lastName
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'p',
+	                        null,
+	                        this.state.email
+	                    )
+	                )
 	            ),
 	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
-	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password' })
-	              )
-	            ),
-	            _react2.default.createElement(
-	              'tr',
-	              null,
-	              _react2.default.createElement(
-	                'td',
+	                'div',
 	                null,
 	                _react2.default.createElement(
-	                  'button',
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: '/allProjects' },
-	                    'Log In'
-	                  )
+	                    'ul',
+	                    null,
+	                    this.state.projects.map(function (val, idx) {
+	                        console.log(val);
+	                        return _react2.default.createElement(
+	                            'div',
+	                            { key: idx, className: 'thecard' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'card-img' },
+	                                _react2.default.createElement('img', { src: 'http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'card-caption' },
+	                                _react2.default.createElement(
+	                                    'h1',
+	                                    null,
+	                                    val.title
+	                                ),
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    val.description
+	                                )
+	                            ),
+	                            _react2.default.createElement('div', { className: 'card-outmore' })
+	                        );
+	                    })
 	                )
-	              )
 	            )
-	          )
-	        )
-	      )
-	    );
-	  }
+	        );
+	    }
 	});
 	
-	exports.default = LogInPage;
+	exports.default = (0, _reactRouter.withRouter)(Profile);
 
 /***/ },
-/* 247 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37569,503 +38082,6 @@
 	exports.default = AllProjectsPage;
 
 /***/ },
-/* 248 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-		value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactDom2 = _interopRequireDefault(_reactDom);
-	
-	var _jquery = __webpack_require__(244);
-	
-	var _jquery2 = _interopRequireDefault(_jquery);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Projects = _react2.default.createClass({
-		displayName: 'Projects',
-		getInitialState: function getInitialState() {
-			return { project: [] };
-		},
-		componentDidMount: function componentDidMount() {
-			var _this = this;
-	
-			{
-				_jquery2.default.ajax({
-					url: '/api/project',
-					type: "GET"
-				}).done(function (data) {
-					_this.setState({ project: data });
-				}).catch(function (error) {
-					console.log(error);
-				});
-			}
-		},
-	
-		render: function render() {
-			return _react2.default.createElement(
-				'div',
-				null,
-				_react2.default.createElement(
-					'h2',
-					null,
-					'All Available Listings'
-				),
-				this.state.project.length === 0 ? "Loading..." : this.state.project.map(function (place, idx) {
-					return _react2.default.createElement(
-						_reactRouter.Link,
-						{ to: "/room/" + place.id, key: idx },
-						_react2.default.createElement(
-							'div',
-							{ className: 'oneList' },
-							_react2.default.createElement('img', { className: 'Img', src: place.images[0] }),
-							_react2.default.createElement(
-								'p',
-								{ className: 'descriptionClass' },
-								_react2.default.createElement(
-									'strong',
-									null,
-									place.description
-								),
-								'/PLACE WHAT HERE'
-							)
-						)
-					);
-				})
-			);
-		}
-	});
-	
-	exports.default = Projects;
-
-/***/ },
-/* 249 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(237);
-	
-	var _signUp = __webpack_require__(243);
-	
-	var _signUp2 = _interopRequireDefault(_signUp);
-	
-	var _logIn = __webpack_require__(246);
-	
-	var _logIn2 = _interopRequireDefault(_logIn);
-	
-	var _footer = __webpack_require__(245);
-	
-	var _footer2 = _interopRequireDefault(_footer);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var MainPage = _react2.default.createClass({
-	  displayName: 'MainPage',
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'nav',
-	        null,
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'ulLink' },
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'li1' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/signup' },
-	              'Sign Up'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'li2' },
-	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/login' },
-	              'Log In'
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'smarter' },
-	        'A smarter way to learn'
-	      ),
-	      _react2.default.createElement('div', { className: 'secondBorder' }),
-	      _react2.default.createElement('div', { className: 'thirdBorder' }),
-	      _react2.default.createElement(_footer2.default, null)
-	    );
-	  }
-	});
-	
-	exports.default = MainPage;
-
-/***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _reactDom = __webpack_require__(32);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	__webpack_require__(237);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var MentorPage = _react2.default.createClass({
-	  displayName: 'MentorPage',
-	  getInitialState: function getInitialState() {
-	    return { name: '', email: '', website: '', about: '' };
-	  },
-	  handleSubmit: function handleSubmit(event) {
-	    alert('Thank You! We Will Be In Touch Shortly');
-	    event.preventDefault();
-	  },
-	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'pageTitle' },
-	        'Become A Mentor!'
-	      ),
-	      _react2.default.createElement(
-	        'div',
-	        { className: 'flexContainerMP' },
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'column1' },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Benefits of Mentorship'
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Provide a fascinating link to what is happening in the younger, less experienced part of the tech industry.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Helping the mentee develop and advance through their career.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'Find talent for your development team.'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'Requirements'
-	          ),
-	          _react2.default.createElement(
-	            'ul',
-	            null,
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              '5+ Years of experince as Designer/Developer'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'The willingness to educates the mentoree on how to accept feedback in important areas, such as communications, technical abilities, change management, and leadership skills.'
-	            ),
-	            _react2.default.createElement(
-	              'li',
-	              null,
-	              'A positive attitude! \u263A'
-	            )
-	          )
-	        ),
-	        _react2.default.createElement(
-	          'div',
-	          { className: 'column2' },
-	          _react2.default.createElement(
-	            'h3',
-	            null,
-	            'upNext Mentor Sign Up'
-	          ),
-	          _react2.default.createElement(
-	            'h6',
-	            null,
-	            '* Required '
-	          ),
-	          _react2.default.createElement(
-	            'form',
-	            { onSubmit: this.handleSubmit },
-	            _react2.default.createElement(
-	              'table',
-	              null,
-	              _react2.default.createElement(
-	                'tbody',
-	                null,
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Name: *'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { onChange: this.handleChange, type: 'text', size: '30', required: true })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Email: *'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { type: 'text', size: '30', required: true })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Website: '
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { type: 'text', size: '30' })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    'I am a:'
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    { className: 'radio' },
-	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'dev' }),
-	                    ' Developer',
-	                    _react2.default.createElement('br', null),
-	                    _react2.default.createElement('input', { type: 'radio', className: 'radio', value: 'des' }),
-	                    ' Designer'
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement(
-	                      'label',
-	                      null,
-	                      'Tell Us About ',
-	                      _react2.default.createElement('br', null),
-	                      ' Yourself:'
-	                    )
-	                  ),
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('textarea', { cols: '30', rows: '6', required: true })
-	                  )
-	                ),
-	                _react2.default.createElement(
-	                  'tr',
-	                  null,
-	                  _react2.default.createElement(
-	                    'td',
-	                    null,
-	                    _react2.default.createElement('input', { type: 'submit', className: 'submitForm', value: 'Submit' })
-	                  )
-	                )
-	              )
-	            )
-	          )
-	        )
-	      )
-	    );
-	  }
-	});
-	
-	exports.default = MentorPage;
-
-/***/ },
-/* 251 */
-/***/ function(module, exports, __webpack_require__) {
-
-	'use strict';
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	var _jquery = __webpack_require__(244);
-	
-	var _jquery2 = _interopRequireDefault(_jquery);
-	
-	var _reactRouter = __webpack_require__(178);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Profile = _react2.default.createClass({
-	    displayName: 'Profile',
-	    componentDidMount: function componentDidMount() {
-	        var _this = this;
-	
-	        _jquery2.default.ajax({
-	            method: 'GET',
-	            url: '/api/user/userId/' + this.props.router.params.id
-	        }).then(function (response) {
-	            console.log(response);
-	            _this.setState({
-	                firstName: response.firstName,
-	                lastName: response.lastName,
-	                email: response.email,
-	                id: response.id
-	            });
-	        });
-	    },
-	    getInitialState: function getInitialState() {
-	        return { firstName: "",
-	            lastName: "",
-	            email: "",
-	            imageUrl: "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png",
-	            projects: []
-	        };
-	    },
-	    render: function render() {
-	
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                'div',
-	                { className: 'card' },
-	                _react2.default.createElement('img', { src: this.state.imageUrl }),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'container' },
-	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
-	                        _react2.default.createElement(
-	                            'b',
-	                            null,
-	                            this.state.firstName,
-	                            ' ',
-	                            this.state.lastName
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        this.state.email
-	                    )
-	                )
-	            ),
-	            _react2.default.createElement(
-	                'div',
-	                null,
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'thecard' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'card-img' },
-	                        _react2.default.createElement('img', { src: 'http://www.irishmark.net/MEDIA//2010/02/NewFacebook.png' })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'card-caption' },
-	                        _react2.default.createElement('h1', null),
-	                        _react2.default.createElement('p', null)
-	                    ),
-	                    _react2.default.createElement('div', { className: 'card-outmore' })
-	                )
-	            )
-	        );
-	    }
-	});
-	
-	exports.default = (0, _reactRouter.withRouter)(Profile);
-
-/***/ },
 /* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -38083,7 +38099,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _jquery = __webpack_require__(244);
+	var _jquery = __webpack_require__(249);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
