@@ -29,38 +29,77 @@ const Profile = React.createClass({
     render() {
         console.log("projects", this.state.projects)
         return (
-            <div>
-
-
-
-                <div className="card">
-                  <div>
-                    <img src={this.state.imageUrl}></img>
+            <div className="master">
+<div className="flax">
+              <div className='card'>
+                  <div className='card_left'>
+                      <img src={this.state.imageUrl}></img>
                   </div>
+                  <div className='card_right'>
+                    <h1>{this.state.firstName} {this.state.lastName}</h1>
+                      <div className='card_right__details'>
+                          <ul>
+                              <li>GITHUB</li>
+                              <li>LINKED IN</li>
+                              <li>WEB APP URL</li>
+                          </ul>
+                          <div className='card_right__review'>
+                              <p>The lead character, called 'The Bride,' was a member
+                                  <br/>
+                                  of the Deadly Viper Assassination Squad, led by her
+                                  <br/>
+                                  lover 'Bill.' Upon realizing she was pregnant with Bill's<br/>
+                                  child, 'The Bride' decided to escape her life as a killer.<br/>
+                                  She fled to Texas, met a young man, who, on the day<br/>
+                                  of their wedding rehearsal was gunned down by....</p>
+
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                {/* <div className="card">
+
+                    <img className="card-img" src={this.state.imageUrl}></img>
+
                     <div className="container">
                         <h4>
                             <b>{this.state.firstName} {this.state.lastName}</b>
                         </h4>
                         <p>{this.state.email}</p>
                     </div>
-                </div>
+
+                </div> */}
 
 
 
-                <div>
-                    <div className="flex">{this.state.projects.map(function(val, idx) {
+                <div className="flex-wrapper">
+                     <div className="flex">{this.state.projects.map(function(val, idx) {
                             return (
 
                                 <div key={idx} className="thecard">
                                     <div className="card-img">
                                         <img src={val.pictureUrl}></img>
-                                        {/* <video src={val.videoUrl}></video> */}
+                                        {/* <iframe width="560" height="315" src={val.videoUrl} frameBorder="0" allowFullScreen></iframe> */}
                                     </div>
                                     <div className="card-caption">
 
                                         <h1>{val.title}</h1>
                                         <p>{val.description}</p>
-                                        <p>{val.url}</p>
+                                        {/* <a href={val.url}><img src="http://www.freeiconspng.com/uploads/github-logo-icon-30.png" height="10px" width="10px"></img></a> */}
 
                                     </div>
                                     <div className="card-outmore"></div>
@@ -71,6 +110,11 @@ const Profile = React.createClass({
                         })}</div>
 
                 </div>
+
+
+
+
+
 
             </div>
         )
