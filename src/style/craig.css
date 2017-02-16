@@ -13,7 +13,7 @@ p {
   box-shadow: 0 1px 30px rgba(0,0,0,.4);
   display: block;
   background-color: #fff;
-  border-radius: 0px;
+  border-radius: 10px;
   transition: 400ms ease;
 }
 .card-img {
@@ -63,7 +63,7 @@ h1 {
   width: 20%;
   border-radius: 5px;
   background-color: white;
-  height: 1000px;
+  height: 500px;
 }
 
 .card:hover {
@@ -77,4 +77,11 @@ h1 {
 img{
   border-radius: 5px 5px 0 0;
   width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
