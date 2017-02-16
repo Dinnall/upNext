@@ -1,75 +1,55 @@
 import React from 'react';
 import $ from 'jquery';
 import {withRouter} from "react-router";
+import Nav from './navBar.jsx';
 
 const Profile = React.createClass({
     componentDidMount() {
         $.ajax({method: 'GET', url: `/api/user/userId/${this.props.router.params.id}`}).then((response) => {
             console.log(response)
             this.setState({
-              firstName: response.firstName,
-              lastName: response.lastName,
-              email: response.email,
-              id: response.id,
-              projects: response.Projects,
-              imageUrl: response.imageUrl
+                firstName: response.firstName,
+                lastName: response.lastName,
+                email: response.email,
+                id: response.id,
+                projects: response.Projects,
+                imageUrl: response.imageUrl,
+                bio: response.bio
 
             })
         })
     },
     getInitialState() {
-        return ({
-          firstName: "",
-          lastName: "",
-          email: "",
-          imageUrl: "",
-          projects: []
-        })
+        return ({firstName: "", lastName: "", email: "", imageUrl: "", projects: []})
     },
     render() {
         console.log("projects", this.state.projects)
         return (
+
             <div className="master">
-<div className="flax">
-              <div className='card'>
-                  <div className='card_left'>
-                      <img src={this.state.imageUrl}></img>
-                  </div>
-                  <div className='card_right'>
-                    <h1>{this.state.firstName} {this.state.lastName}</h1>
-                      <div className='card_right__details'>
-                          <ul>
-                              <li>GITHUB</li>
-                              <li>LINKED IN</li>
-                              <li>WEB APP URL</li>
-                          </ul>
-                          <div className='card_right__review'>
-                              <p>The lead character, called 'The Bride,' was a member
-                                  <br/>
-                                  of the Deadly Viper Assassination Squad, led by her
-                                  <br/>
-                                  lover 'Bill.' Upon realizing she was pregnant with Bill's<br/>
-                                  child, 'The Bride' decided to escape her life as a killer.<br/>
-                                  She fled to Texas, met a young man, who, on the day<br/>
-                                  of their wedding rehearsal was gunned down by....</p>
+              <Nav />
+                <div className="flax">
+                    <div className='card'>
+                        <div className='card_left'>
+                            <img src={this.state.imageUrl}></img>
+                        </div>
+                        <div className='card_right'>
+                            <h1>{this.state.firstName} {this.state.lastName}</h1>
+                            <div className='card_right__details'>
+                                <ul>
+                                    <li>GITHUB</li>
+                                    <li>LINKED IN</li>
+                                    <li>WEB APP URL</li>
+                                </ul>
+                                <div className='card_right__review'>
+                                    <p>{this.state.bio}</p>
 
-                          </div>
+                                </div>
 
-                      </div>
-                  </div>
-              </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 {/* <div className="card">
 
@@ -84,10 +64,8 @@ const Profile = React.createClass({
 
                 </div> */}
 
-
-
                 <div className="flex-wrapper">
-                     <div className="flex">{this.state.projects.map(function(val, idx) {
+                    <div className="flex">{this.state.projects.map(function(val, idx) {
                             return (
 
                                 <div key={idx} className="thecard">
@@ -110,11 +88,6 @@ const Profile = React.createClass({
                         })}</div>
 
                 </div>
-
-
-
-
-
 
             </div>
         )
