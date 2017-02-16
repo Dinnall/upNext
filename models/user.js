@@ -11,6 +11,11 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       isAlpha: true
     },
+    bio: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      isAlpha: true
+    },
     email: {
       type: DataTypes.STRING,
       isEmail: true,

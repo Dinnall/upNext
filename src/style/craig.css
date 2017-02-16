@@ -1,6 +1,6 @@
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #222;
+  /*background-color: #222;*/
 }
 
 p {
@@ -129,7 +129,7 @@ justify-content: center;
     position: relative;
     left: 0;
     right: 0;
-    margin: 0 0 30px 15px;
+    margin: 5% 0 30px 15px;
     top: 0;
     bottom: 0;
     border-radius: 10px;
@@ -296,4 +296,73 @@ justify-content: center;
 .flax {
   display: flex;
   justify-content: center;
+}
+
+
+
+
+
+
+/*********************************** Nav Bar *******************************************/
+
+#logo {
+  width: 10%;
+}
+
+nav.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #04030F;
+}
+
+/* Float the list items side by side */
+nav.topnav li {float: right;}
+
+/* Style the links inside the list items */
+nav.topnav li a {
+    display: inline-block;
+    color: #73C2BE;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: 'Bree Serif', serif;
+
+}
+
+/* Change background color of links on hover */
+nav.topnav li a:hover {background-color: #555;}
+
+/* Hide the list item that contains the link that shonavd open and close the topnav on small screens */
+nav.topnav li.icon {display: none;}
+
+
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topnav (li.icon) */
+@media screen and (max-width:680px) {
+  nav.topnav li:not(:first-child) {display: none;}
+  nav.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */
+@media screen and (max-width:680px) {
+  nav.topnav.responsive {position: relative;}
+  nav.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  nav.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  nav.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
 }
