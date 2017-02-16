@@ -124,6 +124,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _signUp2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _logIn2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/upload', component: _uploadProject2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/allProjects', component: _allProjects2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/profile/:id', component: _profilePage2.default })
 	  )
 	), document.getElementById('root'));
@@ -37494,25 +37495,22 @@
 	
 	var LogInPage = _react2.default.createClass({
 	  displayName: 'LogInPage',
-	  getInitialState: function getInitialState() {
-	    return {};
-	  },
 	  handleSubmit: function handleSubmit() {
 	    event.preventDefault();
+	    var email = this.email;
+	    var password = this.password;
+	    console.log(email);
+	    console.log(password);
 	    {
 	      $.ajax({
-	        url: '/api/user',
-	        type: "GET",
-	        data: {
-	          email: this.email.value,
-	          password: this.password.value
-	        }
-	      }).done(function (data) {
-	        console.log("Received User Data", data);
-	        _reactRouter.browserHistory.push('/allprojects');
-	      }).catch(function (error) {
-	        console.log(error);
+	        url: '/api/user/userId/3',
+	        type: "GET"
+	      }).success(function (data) {
+	        console.log('it worked', data);
 	      });
+	      // .catch((error) => {
+	      //   console.log(error)
+	      // })
 	    }
 	  },
 	
@@ -37609,7 +37607,15 @@
 	  },
 	
 	  render: function render() {
-	    return _react2.default.createElement('ul', { className: 'flexContainerAPP' });
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'HEY'
+	      )
+	    );
 	  }
 	});
 	

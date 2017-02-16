@@ -7,28 +7,25 @@ import allProjects from '../front/allProjects.jsx';
 import FooterPage from './footer.jsx';
 
 const LogInPage = React.createClass ({
-  getInitialState() {
-    return {}
-  },
   handleSubmit() {
-    event.preventDefault();
+    event.preventDefault()
+    var email = this.email
+    var password = this.password
+    console.log(email)
+    console.log(password)
     {
       $.ajax({
-        url: '/api/user',
-        type: "GET",
-        data: {
-          email: this.email.value,
-          password: this.password.value
-        }
+        url: '/api/user/userId/3',
+        type: "GET"
       })
-      .done((data) => {
-        console.log("Received User Data", data);
-        browserHistory.push('/allprojects')
+      .success ((data) => {
+        console.log('it worked', data);
       })
-      .catch((error) => {
-        console.log(error)
-      })
+      // .catch((error) => {
+      //   console.log(error)
+      // })
     }
+    
   },
   render: function(){
     return (
