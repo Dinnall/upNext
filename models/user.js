@@ -6,7 +6,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       isAlpha: true
     },
-    lastName: { 
+    lastName: {
       type: DataTypes.STRING,
       allowNull: false,
       isAlpha: true
@@ -16,11 +16,18 @@ module.exports = function(sequelize, DataTypes) {
       isEmail: true,
       allowNull: false
     },
+    imageUrl: {
+      type: DataTypes.STRING,
+      allowNull: true,
+      validate: {
+        isUrl:true
+      }
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
       len: [5, 35]
-      }  
+      }
     }, {
     classMethods: {
       associate: function(models) {
