@@ -27057,7 +27057,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  background-color: #222;\n}\n\np {\n  font-size: 13px;\n}\n\n/*.master {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}*/\n\n.thecard {\n  width: 300px;\n  margin: 10% 0%;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n\n\n/*.card-iframe iframe {\n  width: 100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}*/\n\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n/*.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 600px;\n}*/\n\n/*.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}*/\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex-wrapper {\ndisplay: flex;\njustify-content: center;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 78%;\n\n\n}\n\n\n\n\n\n\n\n\n/*********************** PROFILE CARD 2 ********************************************************/\n\n {\n    background: #e2e2e2;\n    width: 98%;\n    /*height: 100vh;*/\n}\n\n .card {\n    width: 1500px;\n    height: 300px;\n    background: transparent;\n    position: relative;\n    left: 0;\n    right: 0;\n    margin: 0 0 30px 15px;\n    top: 0;\n    bottom: 0;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);\n}\n\n .card_left {\n    width: 40%;\n    height: 400px;\n    float: left;\n    overflow: hidden;\n    background: transparent;\n}\n\n .card_left img {\n    width: 100%;\n    height: auto;\n    border-radius: 10px 0 0 10px;\n    -webkit-border-radius: 10px 0 0 10px;\n    -moz-border-radius: 10px 0 0 10px;\n    position: relative;\n}\n\n .card_right {\n    width: 60%;\n    float: left;\n    background: #000000;\n    height: 400px;\n    border-radius: 0 10px 10px 0;\n    -webkit-border-radius: 0 10px 10px 0;\n    -moz-border-radius: 0 10px 10px 0;\n}\n\n .card_right h1 {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    text-align: left;\n    font-size: 40px;\n    margin: 30px 0 0 0;\n    padding: 0 0 0 40px;\n    letter-spacing: 1px;\n}\n\n .card_right__details ul {\n    list-style-type: none;\n    padding: 0 0 0 40px;\n    margin: 10px 0 0 0;\n}\n\n .card_right__details ul li {\n    display: inline;\n    color: #e3e3e3;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    padding: 0 40px 0 0;\n}\n\n .card_right__rating__stars {\n    position: relative;\n    right: 160px;\n    margin: 10px 0 10px 0;\n\n}\n\n .card_right__rating__stars fieldset,  .card_right__rating__stars label {\n    margin: 0;\n    padding: 0;\n}\n\n .card_right__rating__stars .rating {\n    border: none;\n}\n\n .card_right__rating__stars .rating>input {\n    display: none;\n}\n\n .card_right__rating__stars .rating>label:before {\n    margin: 5px;\n    font-size: 1.25em;\n    display: inline-block;\n    content: \"\\F005\";\n    font-family: FontAwesome;\n}\n\n .card_right__rating__stars .rating>.half:before {\n    content: \"\\F089\";\n    position: absolute;\n}\n\n .card_right__rating__stars .rating>label {\n    color: #ddd;\n    float: right;\n}\n\n .card_right__rating__stars .rating>input:checked~label,  .card_right__rating__stars .rating:not(:checked)>label:hover,  .card_right__rating__stars .rating:not(:checked)>label:hover~label {\n    color: #FFD700;\n}\n\n .card_right__rating__stars .rating>input:checked+label:hover,  .card_right__rating__stars .rating>input:checked~label:hover,  .card_right__rating__stars .rating>label:hover~input:checked~label,  .card_right__rating__stars .rating>input:checked~label:hover~label {\n    color: #FFED85;\n}\n\n .card_right__review p {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 12px;\n    padding: 0 40px 0 40px;\n    letter-spacing: 1px;\n    margin: 10px 0 10px 0;\n    line-height: 20px;\n}\n\n .card_right__review a {\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 14px;\n    padding: 0 0 0 40px;\n    color: #ffda00;\n    margin: 0;\n}\n\n .card_right__button {\n    padding: 0 0 0 40px;\n    margin: 30px 0 0 0;\n}\n\n .card_right__button a {\n    color: #ffda00;\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    border: 2px solid #ffda00;\n    padding: 10px 10px 10px 40px;\n    font-size: 12px;\n    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 7% 50%;\n    border-radius: 5px;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n .card_right__button a:hover {\n    color: #000000;\n    background-color: #ffda00;\n    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 10% 50%;\n    cursor: pointer;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n.flax {\n  display: flex;\n  justify-content: center;\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  /*background-color: #222;*/\n}\n\np {\n  font-size: 13px;\n}\n\n/*.master {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}*/\n\n.thecard {\n  width: 300px;\n  margin: 10% 0%;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n\n\n/*.card-iframe iframe {\n  width: 100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}*/\n\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n/*.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 600px;\n}*/\n\n/*.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}*/\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex-wrapper {\ndisplay: flex;\njustify-content: center;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 78%;\n\n\n}\n\n\n\n\n\n\n\n\n/*********************** PROFILE CARD 2 ********************************************************/\n\n {\n    background: #e2e2e2;\n    width: 98%;\n    /*height: 100vh;*/\n}\n\n .card {\n    width: 1500px;\n    height: 300px;\n    background: transparent;\n    position: relative;\n    left: 0;\n    right: 0;\n    margin: 5% 0 30px 15px;\n    top: 0;\n    bottom: 0;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);\n}\n\n .card_left {\n    width: 40%;\n    height: 400px;\n    float: left;\n    overflow: hidden;\n    background: transparent;\n}\n\n .card_left img {\n    width: 100%;\n    height: auto;\n    border-radius: 10px 0 0 10px;\n    -webkit-border-radius: 10px 0 0 10px;\n    -moz-border-radius: 10px 0 0 10px;\n    position: relative;\n}\n\n .card_right {\n    width: 60%;\n    float: left;\n    background: #000000;\n    height: 400px;\n    border-radius: 0 10px 10px 0;\n    -webkit-border-radius: 0 10px 10px 0;\n    -moz-border-radius: 0 10px 10px 0;\n}\n\n .card_right h1 {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    text-align: left;\n    font-size: 40px;\n    margin: 30px 0 0 0;\n    padding: 0 0 0 40px;\n    letter-spacing: 1px;\n}\n\n .card_right__details ul {\n    list-style-type: none;\n    padding: 0 0 0 40px;\n    margin: 10px 0 0 0;\n}\n\n .card_right__details ul li {\n    display: inline;\n    color: #e3e3e3;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    padding: 0 40px 0 0;\n}\n\n .card_right__rating__stars {\n    position: relative;\n    right: 160px;\n    margin: 10px 0 10px 0;\n\n}\n\n .card_right__rating__stars fieldset,  .card_right__rating__stars label {\n    margin: 0;\n    padding: 0;\n}\n\n .card_right__rating__stars .rating {\n    border: none;\n}\n\n .card_right__rating__stars .rating>input {\n    display: none;\n}\n\n .card_right__rating__stars .rating>label:before {\n    margin: 5px;\n    font-size: 1.25em;\n    display: inline-block;\n    content: \"\\F005\";\n    font-family: FontAwesome;\n}\n\n .card_right__rating__stars .rating>.half:before {\n    content: \"\\F089\";\n    position: absolute;\n}\n\n .card_right__rating__stars .rating>label {\n    color: #ddd;\n    float: right;\n}\n\n .card_right__rating__stars .rating>input:checked~label,  .card_right__rating__stars .rating:not(:checked)>label:hover,  .card_right__rating__stars .rating:not(:checked)>label:hover~label {\n    color: #FFD700;\n}\n\n .card_right__rating__stars .rating>input:checked+label:hover,  .card_right__rating__stars .rating>input:checked~label:hover,  .card_right__rating__stars .rating>label:hover~input:checked~label,  .card_right__rating__stars .rating>input:checked~label:hover~label {\n    color: #FFED85;\n}\n\n .card_right__review p {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 12px;\n    padding: 0 40px 0 40px;\n    letter-spacing: 1px;\n    margin: 10px 0 10px 0;\n    line-height: 20px;\n}\n\n .card_right__review a {\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 14px;\n    padding: 0 0 0 40px;\n    color: #ffda00;\n    margin: 0;\n}\n\n .card_right__button {\n    padding: 0 0 0 40px;\n    margin: 30px 0 0 0;\n}\n\n .card_right__button a {\n    color: #ffda00;\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    border: 2px solid #ffda00;\n    padding: 10px 10px 10px 40px;\n    font-size: 12px;\n    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 7% 50%;\n    border-radius: 5px;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n .card_right__button a:hover {\n    color: #000000;\n    background-color: #ffda00;\n    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 10% 50%;\n    cursor: pointer;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n.flax {\n  display: flex;\n  justify-content: center;\n}\n\n\n\n\n\n\n/*********************************** Nav Bar *******************************************/\n\n#logo {\n  width: 10%;\n}\n\nnav.topnav {\n    list-style-type: none;\n    margin: 0;\n    padding: 15px;\n    overflow: hidden;\n    background-color: #04030F;\n}\n\n/* Float the list items side by side */\nnav.topnav li {float: right;}\n\n/* Style the links inside the list items */\nnav.topnav li a {\n    display: inline-block;\n    color: #73C2BE;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n    transition: 0.3s;\n    font-size: 20px;\n    font-family: 'Bree Serif', serif;\n\n}\n\n/* Change background color of links on hover */\nnav.topnav li a:hover {background-color: #555;}\n\n/* Hide the list item that contains the link that shonavd open and close the topnav on small screens */\nnav.topnav li.icon {display: none;}\n\n\n/* When the screen is less than 680 pixels wide, hide all list items, except for the first one (\"Home\"). Show the list item that contains the link to open and close the topnav (li.icon) */\n@media screen and (max-width:680px) {\n  nav.topnav li:not(:first-child) {display: none;}\n  nav.topnav li.icon {\n    float: right;\n    display: inline-block;\n  }\n}\n\n/* The \"responsive\" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */\n@media screen and (max-width:680px) {\n  nav.topnav.responsive {position: relative;}\n  nav.topnav.responsive li.icon {\n    position: absolute;\n    right: 0;\n    top: 0;\n  }\n  nav.topnav.responsive li {\n    float: none;\n    display: inline;\n  }\n  nav.topnav.responsive li a {\n    display: block;\n    text-align: left;\n  }\n}\n", ""]);
 	
 	// exports
 
@@ -37981,6 +37981,10 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
+	var _navBar = __webpack_require__(253);
+	
+	var _navBar2 = _interopRequireDefault(_navBar);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Profile = _react2.default.createClass({
@@ -37996,25 +38000,21 @@
 	                email: response.email,
 	                id: response.id,
 	                projects: response.Projects,
-	                imageUrl: response.imageUrl
+	                imageUrl: response.imageUrl,
+	                bio: response.bio
 	
 	            });
 	        });
 	    },
 	    getInitialState: function getInitialState() {
-	        return {
-	            firstName: "",
-	            lastName: "",
-	            email: "",
-	            imageUrl: "",
-	            projects: []
-	        };
+	        return { firstName: "", lastName: "", email: "", imageUrl: "", projects: [] };
 	    },
 	    render: function render() {
 	        console.log("projects", this.state.projects);
 	        return _react2.default.createElement(
 	            'div',
 	            { className: 'master' },
+	            _react2.default.createElement(_navBar2.default, null),
 	            _react2.default.createElement(
 	                'div',
 	                { className: 'flax' },
@@ -38064,17 +38064,7 @@
 	                                _react2.default.createElement(
 	                                    'p',
 	                                    null,
-	                                    'The lead character, called \'The Bride,\' was a member',
-	                                    _react2.default.createElement('br', null),
-	                                    'of the Deadly Viper Assassination Squad, led by her',
-	                                    _react2.default.createElement('br', null),
-	                                    'lover \'Bill.\' Upon realizing she was pregnant with Bill\'s',
-	                                    _react2.default.createElement('br', null),
-	                                    'child, \'The Bride\' decided to escape her life as a killer.',
-	                                    _react2.default.createElement('br', null),
-	                                    'She fled to Texas, met a young man, who, on the day',
-	                                    _react2.default.createElement('br', null),
-	                                    'of their wedding rehearsal was gunned down by....'
+	                                    this.state.bio
 	                                )
 	                            )
 	                        )
@@ -38238,6 +38228,93 @@
 	});
 	
 	exports.default = UploadProject;
+
+/***/ },
+/* 253 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Nav = _react2.default.createClass({
+	    displayName: "Nav",
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	                "nav",
+	                { className: "topnav", id: "myTopnav" },
+	                _react2.default.createElement("img", { id: "logo", src: "http://tour.treyratcliff.com/wp-content/uploads/2015/06/viewbug_transparent.png", height: "50px", width: "20px" }),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#home" },
+	                        "Home"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#news" },
+	                        "News"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#contact" },
+	                        "Contact"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#about" },
+	                        "About"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    { className: "icon" },
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);", onClick: this.onChange },
+	                        "\u2630"
+	                    )
+	                )
+	            )
+	        );
+	    },
+	
+	    onChange: function onChange() {
+	        var x = document.getElementById("myTopnav");
+	        if (x.className === "topnav") {
+	            x.className += " responsive";
+	        } else {
+	            x.className = "topnav";
+	        }
+	    }
+	});
+	
+	exports.default = Nav;
 
 /***/ }
 /******/ ]);
