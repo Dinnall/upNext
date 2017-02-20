@@ -1,11 +1,18 @@
 body{
-	
 	font-size: 16px;
     font-family: 'Source Code Pro', monospace;
+    width: 720px;
+    height: 935px;
+    background-color: #f0f1f1;
    }
+.rectangle_4{
+    width: 720px;
+    height: 240px;
+    object-fit: contain;
+    background-color: rgba(34, 31, 31, 0.7);
+}
 
-
-.ulLink{
+/*.ulLink{
     background-color: #0f081c;
 	width: 1024px;
     height: 672px;
@@ -48,9 +55,9 @@ color:#e78062;
 .li2 a{
   text-decoration: none;
   font-size: 22px;
-}
+}*/
 
-.h1{
+/*.h1{
 	display: flex;
 	justify-content: flex-end;
     align-self: flex-end;
@@ -67,10 +74,10 @@ color:#e78062;
     background-color: white;
     color:black;
     text-align: end;
-}
+}*/
 
 	
-.secondBorder{
+/*.secondBorder{
     background-color: #e6f3ff;
     width: 1300px;
     height: 272px;
@@ -87,7 +94,7 @@ color:#e78062;
     padding-left: 80px
 
 }
-
+*/
 /*.thirdBorder{
     background-color: #ffffff;
     width: 1300px;
@@ -105,7 +112,7 @@ color:#e78062;
     padding-left: 80px;
 }*/
 
-.spaceBetween{
+/*.spaceBetween{
      background-color: #0f081c;
     width: 300px;
     height: 672px;
@@ -127,5 +134,5 @@ color:#e78062;
     padding-right: 30px;
     padding-bottom: 600px;
     padding-left: 80px;
-}
+}*/
 

@@ -7,23 +7,48 @@ import SignUpPage from './signUp.jsx';
 import LogInPage from './logIn.jsx';
 import FooterPage from './footer.jsx';
 
+
 const MainPage = React.createClass({
   render: function() {
     return (
       <div>
-        <nav>
-          <ul className='ulLink'>
-            <li className='li1'><Link to='/signup'>Sign Up</Link></li>
-            <li className='li2'><Link to='/login'>Log In</Link></li>
-          </ul>
-        </nav>
-        <h1 className='smarter'>A smarter way to learn</h1>
-        <div className='secondBorder'></div>
-        <div className='thirdBorder'></div>
-        <FooterPage />
+       <img className='rectangle_4' src={require('../images/rectangle_four.png')} />
+        
       </div>
     )
   }
 })
 
 export default MainPage
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //  <nav>
+        //   <ul className='ulLink'>
+        //     <li className='li1'><Link to='/signup'>Sign Up</Link></li>
+        //     <li className='li2'><Link to='/login'>Log In</Link></li>
+        //   </ul>
+        // </nav>
+        // <h1 className='smarter'>A smarter way to learn</h1>
+        // <div className='secondBorder'></div>
+        // <div className='thirdBorder'></div>
+
+
+
+
+
+
