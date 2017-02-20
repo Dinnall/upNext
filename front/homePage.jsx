@@ -12,7 +12,7 @@ const MainPage = React.createClass({
   render: function() {
     return (
       <div>
-       <img className='rectangle_4' src={require('../images/rectangle_four.png')} />
+       <img className='rectangle_4' src='../images/rectangle_four.png' />
         
       </div>
     )
