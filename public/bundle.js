@@ -26978,7 +26978,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\talign-items: flex-end;\n}", ""]);
+	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* All Projects Page */}\n\n.projectsTable {\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding-top: 40px;\n}\n.tableItem {\n\tpadding: 7px 7px 7px 7px;\n\theight: 125px;\n\twidth: auto;\n}\n.rowOne {\n\t\n}\n\n.rowTwo {\n\n}\n\n.rowThree {\n\n}\n\n.rowFour {\n\n}\n\n.colOne {\n\n}\n\n.colTwo {\n\n}\n\n.colThree {\n\n}\n\n.colFour {\n\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\talign-items: flex-end;\n}", ""]);
 	
 	// exports
 
@@ -27058,7 +27058,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  /*background-color: #222;*/\n}\n\np {\n  font-size: 13px;\n}\n\n/*.master {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}*/\n\n.thecard {\n  width: 300px;\n  margin: 10% 0%;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n\n\n/*.card-iframe iframe {\n  width: 100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}*/\n\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n/*.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 600px;\n}*/\n\n/*.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}*/\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex-wrapper {\ndisplay: flex;\njustify-content: center;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 78%;\n\n\n}\n\n\n\n\n\n\n\n\n/*********************** PROFILE CARD 2 ********************************************************/\n\n {\n    background: #e2e2e2;\n    width: 98%;\n    /*height: 100vh;*/\n}\n\n .card {\n    width: 1500px;\n    height: 300px;\n    background: transparent;\n    position: relative;\n    left: 0;\n    right: 0;\n    margin: 5% 0 30px 15px;\n    top: 0;\n    bottom: 0;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);\n}\n\n .card_left {\n    width: 40%;\n    height: 400px;\n    float: left;\n    overflow: hidden;\n    background: transparent;\n}\n\n .card_left img {\n    width: 100%;\n    height: auto;\n    border-radius: 10px 0 0 10px;\n    -webkit-border-radius: 10px 0 0 10px;\n    -moz-border-radius: 10px 0 0 10px;\n    position: relative;\n}\n\n .card_right {\n    width: 60%;\n    float: left;\n    background: #000000;\n    height: 400px;\n    border-radius: 0 10px 10px 0;\n    -webkit-border-radius: 0 10px 10px 0;\n    -moz-border-radius: 0 10px 10px 0;\n}\n\n .card_right h1 {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    text-align: left;\n    font-size: 40px;\n    margin: 30px 0 0 0;\n    padding: 0 0 0 40px;\n    letter-spacing: 1px;\n}\n\n .card_right__details ul {\n    list-style-type: none;\n    padding: 0 0 0 40px;\n    margin: 10px 0 0 0;\n}\n\n .card_right__details ul li {\n    display: inline;\n    color: #e3e3e3;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    padding: 0 40px 0 0;\n}\n\n .card_right__rating__stars {\n    position: relative;\n    right: 160px;\n    margin: 10px 0 10px 0;\n\n}\n\n .card_right__rating__stars fieldset,  .card_right__rating__stars label {\n    margin: 0;\n    padding: 0;\n}\n\n .card_right__rating__stars .rating {\n    border: none;\n}\n\n .card_right__rating__stars .rating>input {\n    display: none;\n}\n\n .card_right__rating__stars .rating>label:before {\n    margin: 5px;\n    font-size: 1.25em;\n    display: inline-block;\n    content: \"\\F005\";\n    font-family: FontAwesome;\n}\n\n .card_right__rating__stars .rating>.half:before {\n    content: \"\\F089\";\n    position: absolute;\n}\n\n .card_right__rating__stars .rating>label {\n    color: #ddd;\n    float: right;\n}\n\n .card_right__rating__stars .rating>input:checked~label,  .card_right__rating__stars .rating:not(:checked)>label:hover,  .card_right__rating__stars .rating:not(:checked)>label:hover~label {\n    color: #FFD700;\n}\n\n .card_right__rating__stars .rating>input:checked+label:hover,  .card_right__rating__stars .rating>input:checked~label:hover,  .card_right__rating__stars .rating>label:hover~input:checked~label,  .card_right__rating__stars .rating>input:checked~label:hover~label {\n    color: #FFED85;\n}\n\n .card_right__review p {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 12px;\n    padding: 0 40px 0 40px;\n    letter-spacing: 1px;\n    margin: 10px 0 10px 0;\n    line-height: 20px;\n}\n\n .card_right__review a {\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 14px;\n    padding: 0 0 0 40px;\n    color: #ffda00;\n    margin: 0;\n}\n\n .card_right__button {\n    padding: 0 0 0 40px;\n    margin: 30px 0 0 0;\n}\n\n .card_right__button a {\n    color: #ffda00;\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    border: 2px solid #ffda00;\n    padding: 10px 10px 10px 40px;\n    font-size: 12px;\n    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 7% 50%;\n    border-radius: 5px;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n .card_right__button a:hover {\n    color: #000000;\n    background-color: #ffda00;\n    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 10% 50%;\n    cursor: pointer;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n.flax {\n  display: flex;\n  justify-content: center;\n}\n\n\n\n\n\n\n/*********************************** Nav Bar *******************************************/\n\n#logo {\n  width: 10%;\n}\n\nnav.topnav {\n    list-style-type: none;\n    margin: 0;\n    padding: 15px;\n    overflow: hidden;\n    background-color: #04030F;\n}\n\n/* Float the list items side by side */\nnav.topnav li {float: right;}\n\n/* Style the links inside the list items */\nnav.topnav li a {\n    display: inline-block;\n    color: #73C2BE;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n    transition: 0.3s;\n    font-size: 20px;\n    font-family: 'Bree Serif', serif;\n\n}\n\n/* Change background color of links on hover */\nnav.topnav li a:hover {background-color: #555;}\n\n/* Hide the list item that contains the link that shonavd open and close the topnav on small screens */\nnav.topnav li.icon {display: none;}\n\n\n/* When the screen is less than 680 pixels wide, hide all list items, except for the first one (\"Home\"). Show the list item that contains the link to open and close the topnav (li.icon) */\n@media screen and (max-width:680px) {\n  nav.topnav li:not(:first-child) {display: none;}\n  nav.topnav li.icon {\n    float: right;\n    display: inline-block;\n  }\n}\n\n/* The \"responsive\" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */\n@media screen and (max-width:680px) {\n  nav.topnav.responsive {position: relative;}\n  nav.topnav.responsive li.icon {\n    position: absolute;\n    right: 0;\n    top: 0;\n  }\n  nav.topnav.responsive li {\n    float: none;\n    display: inline;\n  }\n  nav.topnav.responsive li a {\n    display: block;\n    text-align: left;\n  }\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  /*background-color: #222;*/\n}\n\np {\n  font-size: 13px;\n}\n\n/*.master {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}*/\n\n.thecard {\n  /*width: 300px;*/\n  margin: 10% 0%;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n\n\n/*.card-iframe iframe {\n  width: 100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}*/\n\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n/*.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 600px;\n}*/\n\n/*.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}*/\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex-wrapper {\ndisplay: flex;\njustify-content: center;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 78%;\n\n\n}\n\n\n\n\n\n\n\n\n/*********************** PROFILE CARD 2 ********************************************************/\n\n {\n    background: #e2e2e2;\n    width: 98%;\n    /*height: 100vh;*/\n}\n\n .card {\n    width: 1500px;\n    height: 300px;\n    background: transparent;\n    position: relative;\n    left: 0;\n    right: 0;\n    margin: 5% 0 30px 15px;\n    top: 0;\n    bottom: 0;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);\n}\n\n .card_left {\n    width: 40%;\n    height: 400px;\n    float: left;\n    overflow: hidden;\n    background: transparent;\n}\n\n .card_left img {\n    width: 100%;\n    height: auto;\n    border-radius: 10px 0 0 10px;\n    -webkit-border-radius: 10px 0 0 10px;\n    -moz-border-radius: 10px 0 0 10px;\n    position: relative;\n}\n\n .card_right {\n    width: 60%;\n    float: left;\n    background: #000000;\n    height: 400px;\n    border-radius: 0 10px 10px 0;\n    -webkit-border-radius: 0 10px 10px 0;\n    -moz-border-radius: 0 10px 10px 0;\n}\n\n .card_right h1 {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    text-align: left;\n    font-size: 40px;\n    margin: 30px 0 0 0;\n    padding: 0 0 0 40px;\n    letter-spacing: 1px;\n}\n\n .card_right__details ul {\n    list-style-type: none;\n    padding: 0 0 0 40px;\n    margin: 10px 0 0 0;\n}\n\n .card_right__details ul li {\n    display: inline;\n    color: #e3e3e3;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    padding: 0 40px 0 0;\n}\n\n .card_right__rating__stars {\n    position: relative;\n    right: 160px;\n    margin: 10px 0 10px 0;\n\n}\n\n .card_right__rating__stars fieldset,  .card_right__rating__stars label {\n    margin: 0;\n    padding: 0;\n}\n\n .card_right__rating__stars .rating {\n    border: none;\n}\n\n .card_right__rating__stars .rating>input {\n    display: none;\n}\n\n .card_right__rating__stars .rating>label:before {\n    margin: 5px;\n    font-size: 1.25em;\n    display: inline-block;\n    content: \"\\F005\";\n    font-family: FontAwesome;\n}\n\n .card_right__rating__stars .rating>.half:before {\n    content: \"\\F089\";\n    position: absolute;\n}\n\n .card_right__rating__stars .rating>label {\n    color: #ddd;\n    float: right;\n}\n\n .card_right__rating__stars .rating>input:checked~label,  .card_right__rating__stars .rating:not(:checked)>label:hover,  .card_right__rating__stars .rating:not(:checked)>label:hover~label {\n    color: #FFD700;\n}\n\n .card_right__rating__stars .rating>input:checked+label:hover,  .card_right__rating__stars .rating>input:checked~label:hover,  .card_right__rating__stars .rating>label:hover~input:checked~label,  .card_right__rating__stars .rating>input:checked~label:hover~label {\n    color: #FFED85;\n}\n\n .card_right__review p {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 12px;\n    padding: 0 40px 0 40px;\n    letter-spacing: 1px;\n    margin: 10px 0 10px 0;\n    line-height: 20px;\n}\n\n .card_right__review a {\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 14px;\n    padding: 0 0 0 40px;\n    color: #ffda00;\n    margin: 0;\n}\n\n .card_right__button {\n    padding: 0 0 0 40px;\n    margin: 30px 0 0 0;\n}\n\n .card_right__button a {\n    color: #ffda00;\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    border: 2px solid #ffda00;\n    padding: 10px 10px 10px 40px;\n    font-size: 12px;\n    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 7% 50%;\n    border-radius: 5px;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n .card_right__button a:hover {\n    color: #000000;\n    background-color: #ffda00;\n    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 10% 50%;\n    cursor: pointer;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n.flax {\n  display: flex;\n  justify-content: center;\n}\n\n/*********************************** Nav Bar *******************************************/\n\n#logo {\n  \n}\n.navBar {\n  width: 100%;\n}\nnav.topnav {\n  list-style-type: none;\n  margin: 0;\n  padding: 15px;\n  overflow: hidden;\n  background-color: #04030F;\n}\n\n/* Float the list items side by side */\nnav.topnav li {float: right;}\n\n/* Style the links inside the list items */\nnav.topnav li a {\n  display: inline-block;\n  color: #73C2BE;\n  text-align: center;\n  padding: 14px 16px;\n  text-decoration: none;\n  transition: 0.3s;\n  font-size: 20px;\n  font-family: 'Bree Serif', serif;\n}\n\n/* Change background color of links on hover */\n  nav.topnav li a:hover {background-color: #555;}\n\n/* Hide the list item that contains the link that shonavd open and close the topnav on small screens */\n  /*nav.topnav li.icon {display: none;}*/\n\n\n/* When the screen is less than 680 pixels wide, hide all list items, except for the first one (\"Home\"). Show the list item that contains the link to open and close the topnav (li.icon) */\n/*@media screen and (max-width:680px) {\n  nav.topnav li:not(:first-child) {display: none;}\n  nav.topnav li.icon {\n    float: right;\n    display: inline-block;\n  }\n}*/\n\n/* The \"responsive\" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */\n/*@media screen and (max-width:680px) {\n  nav.topnav.responsive {position: relative;}\n  nav.topnav.responsive li.icon {\n    position: absolute;\n    right: 0;\n    top: 0;\n  }\n  nav.topnav.responsive li {\n    float: none;\n    display: inline;\n  }\n  nav.topnav.responsive li a {\n    display: block;\n    text-align: left;\n  }\n}*/\n", ""]);
 	
 	// exports
 
@@ -37588,6 +37588,10 @@
 	  value: true
 	});
 	
+	var _omg = __webpack_require__(257);
+	
+	var _image = _interopRequireWildcard(_omg);
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -37596,25 +37600,137 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
+	var _navBar = __webpack_require__(255);
+	
+	var _navBar2 = _interopRequireDefault(_navBar);
+	
+	var _footer = __webpack_require__(245);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
 	__webpack_require__(237);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	var AllProjectsPage = _react2.default.createClass({
 	  displayName: 'AllProjectsPage',
-	  getInitialState: function getInitialState() {
-	    return {};
-	  },
 	
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
 	      null,
 	      _react2.default.createElement(
-	        'h1',
+	        'table',
+	        { className: 'projectsTable' },
+	        _react2.default.createElement(
+	          'tbody',
+	          null,
+	          _react2.default.createElement(
+	            'tr',
+	            { className: 'rowOne tableItem' },
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colOne tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colTwo tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colThree tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colFour tableItem', src: _image.default })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            { className: 'rowTwo tableItem', src: '../images/omg.jpg' },
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colOne tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colTwo tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colThree tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colFour tableItem', src: _image.default })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            { className: 'rowThree tableItem', src: '../images/omg.jpg' },
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colOne tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colTwo tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colThree tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colFour tableItem', src: _image.default })
+	            )
+	          ),
+	          _react2.default.createElement(
+	            'tr',
+	            { className: 'rowFour tableItem', src: '../images/omg.jpg' },
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colOne tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colTwo tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colThree tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'colFour tableItem', src: _image.default })
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'button',
 	        null,
-	        'HEY'
-	      )
+	        'Load More'
+	      ),
+	      _react2.default.createElement(_footer2.default, null)
 	    );
 	  }
 	});
@@ -37827,16 +37943,6 @@
 	});
 	
 	exports.default = MainPage;
-	
-	//  <nav>
-	//   <ul className='ulLink'>
-	//     <li className='li1'><Link to='/signup'>Sign Up</Link></li>
-	//     <li className='li2'><Link to='/login'>Log In</Link></li>
-	//   </ul>
-	// </nav>
-	// <h1 className='smarter'>A smarter way to learn</h1>
-	// <div className='secondBorder'></div>
-	// <div className='thirdBorder'></div>
 
 /***/ },
 /* 250 */
@@ -38240,84 +38346,87 @@
 /* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	"use strict";
+	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
 	
+	var _page_one = __webpack_require__(250);
+	
+	var _image = _interopRequireWildcard(_page_one);
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
+	var _reactRouter = __webpack_require__(178);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	var Nav = _react2.default.createClass({
-	    displayName: "Nav",
+	    displayName: 'Nav',
+	
+	    // onChange: function() {
+	    //   var x = document.getElementById("myTopnav");
+	    //   if (x.className === "topnav") {
+	    //       x.className += " responsive";
+	    //   } else {
+	    //       x.className = "topnav";
+	    //   }
+	    //   },
 	    render: function render() {
 	        return _react2.default.createElement(
-	            "div",
-	            null,
+	            'div',
+	            { className: 'navBar' },
 	            _react2.default.createElement(
-	                "nav",
-	                { className: "topnav", id: "myTopnav" },
-	                _react2.default.createElement("img", { id: "logo", src: "http://tour.treyratcliff.com/wp-content/uploads/2015/06/viewbug_transparent.png", height: "50px", width: "20px" }),
+	                'nav',
+	                { className: 'topnav', id: 'myTopnav' },
 	                _react2.default.createElement(
-	                    "li",
+	                    _reactRouter.Link,
+	                    { to: '/allProjects' },
+	                    _react2.default.createElement('img', { id: 'logo', src: _image.default })
+	                ),
+	                _react2.default.createElement(
+	                    'li',
 	                    null,
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#home" },
-	                        "Home"
+	                        _reactRouter.Link,
+	                        { to: '/upload' },
+	                        'Upload'
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    "li",
+	                    'li',
 	                    null,
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#news" },
-	                        "News"
+	                        _reactRouter.Link,
+	                        { to: '/allProjects' },
+	                        'All Projects'
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    "li",
+	                    'li',
 	                    null,
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#contact" },
-	                        "Contact"
+	                        _reactRouter.Link,
+	                        { to: '/profile/1' },
+	                        'Profile'
 	                    )
 	                ),
 	                _react2.default.createElement(
-	                    "li",
-	                    null,
+	                    'li',
+	                    { className: 'icon' },
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#about" },
-	                        "About"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    { className: "icon" },
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "javascript:void(0);", onClick: this.onChange },
-	                        "\u2630"
+	                        _reactRouter.Link,
+	                        { to: 'javascript:void(0);', onClick: this.onChange },
+	                        '\u2630'
 	                    )
 	                )
 	            )
 	        );
-	    },
-	
-	    onChange: function onChange() {
-	        var x = document.getElementById("myTopnav");
-	        if (x.className === "topnav") {
-	            x.className += " responsive";
-	        } else {
-	            x.className = "topnav";
-	        }
 	    }
 	});
 	
@@ -38440,6 +38549,12 @@
 	});
 	
 	exports.default = UploadProject;
+
+/***/ },
+/* 257 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "b143cd9e66e547a0de0bc674d535d595.jpg";
 
 /***/ }
 /******/ ]);
