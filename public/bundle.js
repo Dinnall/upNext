@@ -60,43 +60,39 @@
 	
 	__webpack_require__(237);
 	
-	__webpack_require__(239);
-	
-	__webpack_require__(241);
-	
-	var _signUp = __webpack_require__(243);
+	var _signUp = __webpack_require__(239);
 	
 	var _signUp2 = _interopRequireDefault(_signUp);
 	
-	var _logIn = __webpack_require__(246);
+	var _logIn = __webpack_require__(244);
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
 	
-	var _allVideos = __webpack_require__(248);
+	var _allVideos = __webpack_require__(246);
 	
 	var _allVideos2 = _interopRequireDefault(_allVideos);
 	
-	var _allProjects = __webpack_require__(247);
+	var _allProjects = __webpack_require__(245);
 	
 	var _allProjects2 = _interopRequireDefault(_allProjects);
 	
-	var _footer = __webpack_require__(245);
+	var _footer = __webpack_require__(243);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	var _homePage = __webpack_require__(249);
+	var _homePage = __webpack_require__(247);
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
 	
-	var _becomeMentor = __webpack_require__(250);
+	var _becomeMentor = __webpack_require__(248);
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
-	var _profilePage = __webpack_require__(251);
+	var _profilePage = __webpack_require__(249);
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
-	var _uploadProject = __webpack_require__(252);
+	var _uploadProject = __webpack_require__(251);
 	
 	var _uploadProject2 = _interopRequireDefault(_uploadProject);
 	
@@ -113,6 +109,9 @@
 	    );
 	  }
 	});
+	// import '../src/style/nya.css';
+	// import '../src/style/dee.css';
+	
 	
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
@@ -26629,7 +26628,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body{\n\t\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n   }\n\n\n.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}\n\n.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}\n\n\t\n.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}\n\n", ""]);
+	exports.push([module.id, "body {\n    font-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n}\n\n.ulLink {\n    background-color: #0f081c;\n    width: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position: fixed;\n    padding: 0;\n    margin: 0;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1 {\n    margin-right: 15px;\n    font-size: 24px;\n    color: #e78062;\n}\n\n.li2 {\n    margin-right: 15px;\n    font-size: 22px;\n    color: #e78062;\n}\n\n.li1 a {\n    text-decoration: none;\n}\n\n.li2 a {\n    text-decoration: none;\n    font-size: 22px;\n}\n\n.h1 {\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color: black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter {\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color: black;\n    text-align: end;\n}\n\n.secondBorder {\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position: fixed;\n    padding: 0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n}\n\n\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n.spaceBetween {\n    background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position: fixed;\n    margin: 0;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}\n", ""]);
 	
 	// exports
 
@@ -26958,8 +26957,8 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./nya.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./nya.css");
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./craig.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./craig.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 				update(newContent);
 			});
@@ -26977,93 +26976,13 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\talign-items: flex-end;\n}", ""]);
+	exports.push([module.id, "body {\n  /*font-family: 'Open Sans', sans-serif;*/\n  font-family: SourceSansPro;\n  background-color: #f0f1f1;\n  /*padding-left: 200px;\n  padding-right: 200px;*/\n}\n\n.master-wrapper {\n  /*width: 100%;*/\n  height: auto;\n  padding-left: 200px;\n  padding-right: 200px;\n}\n\n\n\n/*********************************** Nav Bar *******************************************/\n\nnav.topnav {\n    list-style-type: none;\n    margin: 0;\n    padding: 15px;\n    overflow: hidden;\n    background-color: transparent;\n}\n\nnav.topnav li {\n    float: right;\n}\n\nnav.topnav li a {\n    display: inline-block;\n    color: black;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n    border-radius: 20px;\n    transition: 0.3s;\n    font-size: 17px;\n    font-family: 'Source Sans Pro', sans-serif;\n}\n\nnav.topnav li a#add-projects {\n    margin-top: -5px;\n    display: inline-block;\n    color: #fff;\n    white-space: nowrap;\n    padding: 14px 16px;\n    text-decoration: none;\n    transition: 0.3s;\n    font-size: 17px;\n    font-family: 'Source Sans Pro', sans-serif;\n}\n\nli.rectangle-5 {\n    border-radius: 29px;\n    /*width: 11%;*/\n    height: 40px;\n    margin-top: 5px;\n    background-color: #027bc3;\n    text-align: center;\n    /*min-width: 136px;*/\n    padding: 0 3px;\n}\n\nnav.topnav li.icon {\n    display: none;\n}\n\n@media screen and (max-width:680px) {\n    nav.topnav li:not(:first-child) {\n        display: none;\n    }\n    nav.topnav li.icon {\n        float: right;\n        display: inline-block;\n    }\n}\n\n@media screen and (max-width:680px) {\n    nav.topnav.responsive {\n        position: relative;\n    }\n    nav.topnav.responsive li.icon {\n        position: absolute;\n        right: 0;\n        top: 0;\n    }\n    nav.topnav.responsive li {\n        float: none;\n        display: inline;\n    }\n    nav.topnav.responsive li a {\n        display: block;\n        text-align: left;\n    }\n}\n\n/*************************************************************************************/\n\n\n.rectangle-2 {\n    width: 100%;\n    height: 10%;\n    border-radius: 5px;\n    background-color: #ffffff;\n    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n}\n\n.rectangle-2 nav img {\n    height: 100%;\n    width: 10%;\n    margin-left: 2%;\n    margin-top: 11px;\n}\n\nnav.topnav {\n    list-style-type: none;\n    margin: 0;\n    padding: 15px;\n    overflow: hidden;\n    background-color: transparent;\n}\n\nnav.topnav li {\n    float: right;\n}\n\nnav.topnav li a {\n    display: inline-block;\n    color: black;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n    border-radius: 20px;\n    transition: 0.3s;\n    font-size: 17px;\n    font-family: 'Source Sans Pro', sans-serif;\n}\n\nnav.topnav li a#add-projects {\n    margin-top: -5px;\n    display: inline-block;\n    color: #fff;\n    white-space: nowrap;\n    padding: 14px 16px;\n    text-decoration: none;\n    transition: 0.3s;\n    font-size: 17px;\n    font-family: 'Source Sans Pro', sans-serif;\n}\n\nli.rectangle-5 {\n    border-radius: 29px;\n    /*width: 11%;*/\n    height: 40px;\n    margin-top: 5px;\n    background-color: #027bc3;\n    text-align: center;\n    /*min-width: 136px;*/\n    padding: 0 3px;\n}\n\nnav.topnav li.icon {\n    display: none;\n}\n\n@media screen and (max-width:680px) {\n    nav.topnav li:not(:first-child) {\n        display: none;\n    }\n    nav.topnav li.icon {\n        float: right;\n        display: inline-block;\n    }\n}\n\n@media screen and (max-width:680px) {\n    nav.topnav.responsive {\n        position: relative;\n    }\n    nav.topnav.responsive li.icon {\n        position: absolute;\n        right: 0;\n        top: 0;\n    }\n    nav.topnav.responsive li {\n        float: none;\n        display: inline;\n    }\n    nav.topnav.responsive li a {\n        display: block;\n        text-align: left;\n    }\n}\n/***************** End of Navigation Bar **************/\n\n\n/***************** Profile info section ***************/\n\ndiv.profile-info {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n  height: 70%;\n  width: 100%;\n  background-color: transparent;\n  margin-top: 15%;\n  margin: 10% auto;\n  /*padding: 0 0 0 0;*/\n}\n\n.name, .location, .position{\n  color: #404042;\n  text-align: center;\n  display: inherit;\n}\n\n.oval {\n  display: flex;\n  width: 200px;\n  height: 200px;\n  border-radius: 100px;\n  overflow: hidden;\n  text-align: center;\n}\n\n.oval img {\n  width: 100%;\n  height: 100%;\n}\n\nul.links {\n  list-style-type: none;\n  padding: 15px;\n}\n\nul.links li {\n  display: inline-block;\n  margin: 0 20px;\n}\n\n\nul.interact-buttons li {\n  /*margin-left: -36px;*/\n  text-align: center;\n  display: inline-block;\n  list-style-type: none;\n  margin: 0 35px;\n}\n\nul.interact-buttons li a#buttons {\n  /*list-style-type: none;*/\n  /*display: inline-block;*/\n  /*margin: 0 35px;*/\n  border: 2px solid #027bc3;\n  border-radius: 29px;\n  /*width: 12%;\n  height: 40px;\n  margin-top: 5px;*/\n  /*background-color: #027bc3;*/\n  padding: 0 15px;\n}\n\n#buttons {\n  margin-top: 1px;\n  text-align: center;\n  text-decoration: none;\n  font-size: 20px;\n  font-weight: 100;\n}\n\n\n.line {\n  width: 71%;\n\theight: 0.5px;\n\tbackground-color: #e6e7e7;\n  margin-top: 4%;\n}\n\n\n/**************************** project cards *************************/\n/*\n.project-wrapper {\n  width: 100%;\n  height: 100%;\n  border: 1px solid black;\n  padding: 0;\n}*/\n\n.projects-section {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  flex-direction: column;\n}\n\n.rectangle {\n  height: 25vh;\n  width: 71%;\n  background-color: transparent;\n  /*padding: 0;\n  margin: 0;*/\n  /*text-align: center;*/\n  display: flex;\n  justify-content: space-between;\n  /*align-items: center;*/\n  flex-direction: row;\n  flex-wrap: wrap;\n  margin-top: 5%;\n}\n\n/*.descript {\n\twidth: 71px;\n\theight: 6px;\n\tfont-family: SourceSansPro;\n\tfont-size: 40px;\n\tfont-weight: 600;\n\tfont-style: normal;\n\tfont-stretch: normal;\n\tline-height: 1.0;\n\tletter-spacing: 0.1px;\n\ttext-align: left;\n\tcolor: #404042;\n}*/\n\n.image-area {\n  display: flex;\n  width: 275px;\n  height: 200px;\n  /*border-radius: 100px;*/\n  overflow: hidden;\n  text-align: center;\n  /*background-color: white;*/\n}\n\n.image-area img {\n  height: 100%;\n  width: 100%;\n  overflow: hidden;\n}\n\n.map-wrapper {\n  background-color: white;\n  padding: 0 10px 10px 10px;\n  margin-bottom: 40px;\n  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n\n\n}\n\np {\n  margin-top: 5px;\n  margin-bottom: 5px;\n  font-family: 'Open Sans', sans-serif;\n}\n", ""]);
 	
 	// exports
 
 
 /***/ },
 /* 239 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(240);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(236)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./dee.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./dee.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(235)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(242);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(236)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./craig.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./craig.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 242 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(235)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  /*background-color: #222;*/\n}\n\np {\n  font-size: 13px;\n}\n\n/*.master {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}*/\n\n.thecard {\n  width: 300px;\n  margin: 10% 0%;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n\n\n/*.card-iframe iframe {\n  width: 100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}*/\n\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n/*.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 600px;\n}*/\n\n/*.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}*/\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex-wrapper {\ndisplay: flex;\njustify-content: center;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 78%;\n\n\n}\n\n\n\n\n\n\n\n\n/*********************** PROFILE CARD 2 ********************************************************/\n\n {\n    background: #e2e2e2;\n    width: 98%;\n    /*height: 100vh;*/\n}\n\n .card {\n    width: 1500px;\n    height: 300px;\n    background: transparent;\n    position: relative;\n    left: 0;\n    right: 0;\n    margin: 5% 0 30px 15px;\n    top: 0;\n    bottom: 0;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);\n}\n\n .card_left {\n    width: 40%;\n    height: 400px;\n    float: left;\n    overflow: hidden;\n    background: transparent;\n}\n\n .card_left img {\n    width: 100%;\n    height: auto;\n    border-radius: 10px 0 0 10px;\n    -webkit-border-radius: 10px 0 0 10px;\n    -moz-border-radius: 10px 0 0 10px;\n    position: relative;\n}\n\n .card_right {\n    width: 60%;\n    float: left;\n    background: #000000;\n    height: 400px;\n    border-radius: 0 10px 10px 0;\n    -webkit-border-radius: 0 10px 10px 0;\n    -moz-border-radius: 0 10px 10px 0;\n}\n\n .card_right h1 {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    text-align: left;\n    font-size: 40px;\n    margin: 30px 0 0 0;\n    padding: 0 0 0 40px;\n    letter-spacing: 1px;\n}\n\n .card_right__details ul {\n    list-style-type: none;\n    padding: 0 0 0 40px;\n    margin: 10px 0 0 0;\n}\n\n .card_right__details ul li {\n    display: inline;\n    color: #e3e3e3;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    padding: 0 40px 0 0;\n}\n\n .card_right__rating__stars {\n    position: relative;\n    right: 160px;\n    margin: 10px 0 10px 0;\n\n}\n\n .card_right__rating__stars fieldset,  .card_right__rating__stars label {\n    margin: 0;\n    padding: 0;\n}\n\n .card_right__rating__stars .rating {\n    border: none;\n}\n\n .card_right__rating__stars .rating>input {\n    display: none;\n}\n\n .card_right__rating__stars .rating>label:before {\n    margin: 5px;\n    font-size: 1.25em;\n    display: inline-block;\n    content: \"\\F005\";\n    font-family: FontAwesome;\n}\n\n .card_right__rating__stars .rating>.half:before {\n    content: \"\\F089\";\n    position: absolute;\n}\n\n .card_right__rating__stars .rating>label {\n    color: #ddd;\n    float: right;\n}\n\n .card_right__rating__stars .rating>input:checked~label,  .card_right__rating__stars .rating:not(:checked)>label:hover,  .card_right__rating__stars .rating:not(:checked)>label:hover~label {\n    color: #FFD700;\n}\n\n .card_right__rating__stars .rating>input:checked+label:hover,  .card_right__rating__stars .rating>input:checked~label:hover,  .card_right__rating__stars .rating>label:hover~input:checked~label,  .card_right__rating__stars .rating>input:checked~label:hover~label {\n    color: #FFED85;\n}\n\n .card_right__review p {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 12px;\n    padding: 0 40px 0 40px;\n    letter-spacing: 1px;\n    margin: 10px 0 10px 0;\n    line-height: 20px;\n}\n\n .card_right__review a {\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 14px;\n    padding: 0 0 0 40px;\n    color: #ffda00;\n    margin: 0;\n}\n\n .card_right__button {\n    padding: 0 0 0 40px;\n    margin: 30px 0 0 0;\n}\n\n .card_right__button a {\n    color: #ffda00;\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    border: 2px solid #ffda00;\n    padding: 10px 10px 10px 40px;\n    font-size: 12px;\n    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 7% 50%;\n    border-radius: 5px;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n .card_right__button a:hover {\n    color: #000000;\n    background-color: #ffda00;\n    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 10% 50%;\n    cursor: pointer;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n.flax {\n  display: flex;\n  justify-content: center;\n}\n\n\n\n\n\n\n/*********************************** Nav Bar *******************************************/\n\n#logo {\n  width: 10%;\n}\n\nnav.topnav {\n    list-style-type: none;\n    margin: 0;\n    padding: 15px;\n    overflow: hidden;\n    background-color: #04030F;\n}\n\n/* Float the list items side by side */\nnav.topnav li {float: right;}\n\n/* Style the links inside the list items */\nnav.topnav li a {\n    display: inline-block;\n    color: #73C2BE;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n    transition: 0.3s;\n    font-size: 20px;\n    font-family: 'Bree Serif', serif;\n\n}\n\n/* Change background color of links on hover */\nnav.topnav li a:hover {background-color: #555;}\n\n/* Hide the list item that contains the link that shonavd open and close the topnav on small screens */\nnav.topnav li.icon {display: none;}\n\n\n/* When the screen is less than 680 pixels wide, hide all list items, except for the first one (\"Home\"). Show the list item that contains the link to open and close the topnav (li.icon) */\n@media screen and (max-width:680px) {\n  nav.topnav li:not(:first-child) {display: none;}\n  nav.topnav li.icon {\n    float: right;\n    display: inline-block;\n  }\n}\n\n/* The \"responsive\" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */\n@media screen and (max-width:680px) {\n  nav.topnav.responsive {position: relative;}\n  nav.topnav.responsive li.icon {\n    position: absolute;\n    right: 0;\n    top: 0;\n  }\n  nav.topnav.responsive li {\n    float: none;\n    display: inline;\n  }\n  nav.topnav.responsive li a {\n    display: block;\n    text-align: left;\n  }\n}\n", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -27080,13 +26999,13 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _jquery = __webpack_require__(244);
+	var _jquery = __webpack_require__(240);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
-	__webpack_require__(237);
+	__webpack_require__(241);
 	
-	var _footer = __webpack_require__(245);
+	var _footer = __webpack_require__(243);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
@@ -27163,7 +27082,7 @@
 	exports.default = SignUpPage;
 
 /***/ },
-/* 244 */
+/* 240 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -37389,7 +37308,47 @@
 
 
 /***/ },
-/* 245 */
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(242);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(236)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./nya.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./nya.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 242 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(235)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px;\n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50;\n\twidth: 350px;\n\tpadding-right: 50px;\n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px;\n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\talign-items: flex-end;\n}\n\n\n\n/****************************************/\n\n#hero{\n  background-image:url(http://cdn.wallpapersafari.com/73/55/cHLiqU.jpg);\n  background-size:cover;\n  position:relative;\n  height:100vh;\n  /*background-color: #0f081c;*/\n}\n\n.header{\n  position:absolute;\n  top:50%;\n  text-align:center;\n  width:100%;\n  color:#fff;\n  font-size:36px;\n  -ms-transform: translate(0,-50%); /* IE 9 */\n    -webkit-transform: translate(0,-50%); /* Safari */\n    transform: translate(0,-50%);\n\n}\n\n#content{\n  padding:100px 50px;\n  text-align:center;\n  width:80%;\n  margin:0px auto;\n}\n\n#content h2{\n  margin:0px 0px 30px 0px;\n}\n\n#footer{\n  padding:30px 0px;\n  text-align:center;\n  background:#ddd;\n}\n\n\nh2 {\n  font-size: 50px;\n  font-family: 'Ubuntu', sans-serif;\n}\n\nspan {\n  font-size: 50px;\n  font-family: 'Ubuntu', sans-serif;\n}\n", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 243 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37406,7 +37365,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(237);
+	__webpack_require__(241);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -37436,7 +37395,7 @@
 	exports.default = FooterPage;
 
 /***/ },
-/* 246 */
+/* 244 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37453,13 +37412,13 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(237);
+	__webpack_require__(241);
 	
-	var _allProjects = __webpack_require__(247);
+	var _allProjects = __webpack_require__(245);
 	
 	var _allProjects2 = _interopRequireDefault(_allProjects);
 	
-	var _footer = __webpack_require__(245);
+	var _footer = __webpack_require__(243);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
@@ -37534,7 +37493,7 @@
 	exports.default = LogInPage;
 
 /***/ },
-/* 247 */
+/* 245 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37551,7 +37510,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(237);
+	__webpack_require__(241);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -37569,7 +37528,7 @@
 	exports.default = AllProjectsPage;
 
 /***/ },
-/* 248 */
+/* 246 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37586,7 +37545,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _jquery = __webpack_require__(244);
+	var _jquery = __webpack_require__(240);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -37651,13 +37610,13 @@
 	exports.default = Projects;
 
 /***/ },
-/* 249 */
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	  value: true
+	    value: true
 	});
 	
 	var _react = __webpack_require__(1);
@@ -37668,71 +37627,71 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(237);
+	__webpack_require__(241);
 	
-	var _signUp = __webpack_require__(243);
+	var _signUp = __webpack_require__(239);
 	
 	var _signUp2 = _interopRequireDefault(_signUp);
 	
-	var _logIn = __webpack_require__(246);
+	var _logIn = __webpack_require__(244);
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
 	
-	var _footer = __webpack_require__(245);
+	var _footer = __webpack_require__(243);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var MainPage = _react2.default.createClass({
-	  displayName: 'MainPage',
+	    displayName: 'MainPage',
 	
-	  render: function render() {
-	    return _react2.default.createElement(
-	      'div',
-	      null,
-	      _react2.default.createElement(
-	        'nav',
-	        null,
-	        _react2.default.createElement(
-	          'ul',
-	          { className: 'ulLink' },
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'li1' },
+	    render: function render() {
+	        return _react2.default.createElement(
+	            'div',
+	            null,
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/signup' },
-	              'Sign Up'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            { className: 'li2' },
+	                'nav',
+	                null,
+	                _react2.default.createElement(
+	                    'ul',
+	                    { className: 'ulLink' },
+	                    _react2.default.createElement(
+	                        'li',
+	                        { className: 'li1' },
+	                        _react2.default.createElement(
+	                            _reactRouter.Link,
+	                            { to: '/signup' },
+	                            'Sign Up'
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'li',
+	                        { className: 'li2' },
+	                        _react2.default.createElement(
+	                            _reactRouter.Link,
+	                            { to: '/login' },
+	                            'Log In'
+	                        )
+	                    )
+	                )
+	            ),
 	            _react2.default.createElement(
-	              _reactRouter.Link,
-	              { to: '/login' },
-	              'Log In'
-	            )
-	          )
-	        )
-	      ),
-	      _react2.default.createElement(
-	        'h1',
-	        { className: 'smarter' },
-	        'A smarter way to learn'
-	      ),
-	      _react2.default.createElement('div', { className: 'secondBorder' }),
-	      _react2.default.createElement('div', { className: 'thirdBorder' }),
-	      _react2.default.createElement(_footer2.default, null)
-	    );
-	  }
+	                'h1',
+	                { className: 'smarter' },
+	                'A smarter way to learn'
+	            ),
+	            _react2.default.createElement('div', { className: 'secondBorder' }),
+	            _react2.default.createElement('div', { className: 'thirdBorder' }),
+	            _react2.default.createElement(_footer2.default, null)
+	        );
+	    }
 	});
 	
 	exports.default = MainPage;
 
 /***/ },
-/* 250 */
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37749,7 +37708,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	__webpack_require__(237);
+	__webpack_require__(241);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -37962,7 +37921,7 @@
 	exports.default = MentorPage;
 
 /***/ },
-/* 251 */
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37975,13 +37934,13 @@
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _jquery = __webpack_require__(244);
+	var _jquery = __webpack_require__(240);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _navBar = __webpack_require__(253);
+	var _navBar = __webpack_require__(250);
 	
 	var _navBar2 = _interopRequireDefault(_navBar);
 	
@@ -38001,7 +37960,8 @@
 	                id: response.id,
 	                projects: response.Projects,
 	                imageUrl: response.imageUrl,
-	                bio: response.bio
+	                bio: response.bio,
+	                linkedin: response.linkedin
 	
 	            });
 	        });
@@ -38013,96 +37973,135 @@
 	        console.log("projects", this.state.projects);
 	        return _react2.default.createElement(
 	            'div',
-	            { className: 'master' },
-	            _react2.default.createElement(_navBar2.default, null),
+	            null,
 	            _react2.default.createElement(
 	                'div',
-	                { className: 'flax' },
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'card' },
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'card_left' },
-	                        _react2.default.createElement('img', { src: this.state.imageUrl })
-	                    ),
-	                    _react2.default.createElement(
-	                        'div',
-	                        { className: 'card_right' },
-	                        _react2.default.createElement(
-	                            'h1',
-	                            null,
-	                            this.state.firstName,
-	                            ' ',
-	                            this.state.lastName
-	                        ),
-	                        _react2.default.createElement(
-	                            'div',
-	                            { className: 'card_right__details' },
-	                            _react2.default.createElement(
-	                                'ul',
-	                                null,
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    'GITHUB'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    'LINKED IN'
-	                                ),
-	                                _react2.default.createElement(
-	                                    'li',
-	                                    null,
-	                                    'WEB APP URL'
-	                                )
-	                            ),
-	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'card_right__review' },
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    null,
-	                                    this.state.bio
-	                                )
-	                            )
-	                        )
-	                    )
-	                )
+	                { className: 'rectangle-2' },
+	                _react2.default.createElement(_navBar2.default, null)
 	            ),
 	            _react2.default.createElement(
 	                'div',
-	                { className: 'flex-wrapper' },
+	                { className: 'My-Profile' },
 	                _react2.default.createElement(
 	                    'div',
-	                    { className: 'flex' },
-	                    this.state.projects.map(function (val, idx) {
-	                        return _react2.default.createElement(
+	                    { className: 'master-wrapper' },
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'profile-info' },
+	                        _react2.default.createElement(
 	                            'div',
-	                            { key: idx, className: 'thecard' },
+	                            { className: 'oval' },
+	                            _react2.default.createElement('img', { src: this.state.imageUrl })
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            null,
 	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'card-img' },
-	                                _react2.default.createElement('img', { src: val.pictureUrl })
+	                                'h1',
+	                                { className: 'name' },
+	                                this.state.firstName,
+	                                ' ',
+	                                this.state.lastName
 	                            ),
 	                            _react2.default.createElement(
-	                                'div',
-	                                { className: 'card-caption' },
+	                                'p',
+	                                { className: 'location' },
+	                                'New York, NY'
+	                            ),
+	                            _react2.default.createElement(
+	                                'p',
+	                                { className: 'position' },
+	                                'Full Stack Web Engineer, C4Q'
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'links' },
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                _react2.default.createElement('img', { src: 'img/icn-twitter.png', srcSet: 'img/icn-twitter@2x.png 2x, img/icn-twitter@3x.png 3x', className: 'icn-twitter', height: '35px', width: '35px' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                _react2.default.createElement('img', { src: 'img/icn-github.png', srcSet: 'img/icn-github@2x.png 2x, img/icn-github@3x.png 3x', className: 'icn-github', height: '35px', width: '35px' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                _react2.default.createElement('img', { src: 'img/icn-linkedin.png', srcSet: 'img/icn-linkedin@2x.png 2x, img/icn-linkedin@3x.png 3x', className: 'icn-linkedin', height: '35px', width: '35px' })
+	                            ),
+	                            _react2.default.createElement(
+	                                'li',
+	                                null,
+	                                _react2.default.createElement('img', { src: 'img/icn-website.png', srcSet: 'img/icn-website@2x.png 2x, img/icn-website@3x.png 3x', className: 'icn-website', height: '35px', width: '35px' })
+	                            )
+	                        ),
+	                        _react2.default.createElement(
+	                            'ul',
+	                            { className: 'interact-buttons' },
+	                            _react2.default.createElement(
+	                                'li',
+	                                { className: 'interact' },
 	                                _react2.default.createElement(
-	                                    'h1',
-	                                    null,
-	                                    val.title
-	                                ),
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    null,
-	                                    val.description
+	                                    'a',
+	                                    { id: 'buttons', href: '' },
+	                                    _react2.default.createElement(
+	                                        'b',
+	                                        null,
+	                                        'Mentor Me'
+	                                    )
 	                                )
 	                            ),
-	                            _react2.default.createElement('div', { className: 'card-outmore' })
-	                        );
-	                    })
+	                            _react2.default.createElement(
+	                                'li',
+	                                { className: 'interact' },
+	                                _react2.default.createElement(
+	                                    'a',
+	                                    { id: 'buttons', href: '' },
+	                                    _react2.default.createElement(
+	                                        'b',
+	                                        null,
+	                                        'Hire Me!'
+	                                    )
+	                                )
+	                            )
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'project-wrapper' },
+	                        _react2.default.createElement('hr', { className: 'line' }),
+	                        _react2.default.createElement(
+	                            'section',
+	                            { className: 'projects-section' },
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'rectangle' },
+	                                this.state.projects.map(function (val, idx) {
+	                                    return _react2.default.createElement(
+	                                        'div',
+	                                        { key: idx, className: 'map-wrapper' },
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'descript' },
+	                                            _react2.default.createElement(
+	                                                'p',
+	                                                null,
+	                                                val.title
+	                                            )
+	                                        ),
+	                                        _react2.default.createElement(
+	                                            'div',
+	                                            { className: 'image-area' },
+	                                            _react2.default.createElement('img', { src: val.pictureUrl })
+	                                        )
+	                                    );
+	                                })
+	                            )
+	                        )
+	                    )
 	                )
 	            )
 	        );
@@ -38112,7 +38111,98 @@
 	exports.default = (0, _reactRouter.withRouter)(Profile);
 
 /***/ },
-/* 252 */
+/* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Nav = _react2.default.createClass({
+	    displayName: "Nav",
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	                "div",
+	                { className: "rectangle-2" },
+	                _react2.default.createElement(
+	                    "nav",
+	                    { className: "topnav", id: "myTopnav" },
+	                    _react2.default.createElement("img", { src: "./images/page-1.png", className: "page-1" }),
+	                    _react2.default.createElement(
+	                        "li",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#home" },
+	                            "Sign Out"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "li",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#news" },
+	                            "My Profile"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "li",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#contact" },
+	                            "All Projects"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "li",
+	                        { className: "rectangle-5" },
+	                        _react2.default.createElement(
+	                            "a",
+	                            { id: "add-projects", href: "#about" },
+	                            "+ Add Project"
+	                        )
+	                    ),
+	                    _react2.default.createElement(
+	                        "li",
+	                        { className: "icon" },
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "javascript:void(0);", onClick: this.onChange },
+	                            "\u2630"
+	                        )
+	                    )
+	                )
+	            )
+	        );
+	    },
+	
+	    onChange: function onChange() {
+	        var x = document.getElementById("myTopnav");
+	        if (x.className === "topnav") {
+	            x.className += " responsive";
+	        } else {
+	            x.className = "topnav";
+	        }
+	    }
+	});
+	
+	exports.default = Nav;
+
+/***/ },
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38129,7 +38219,7 @@
 	
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 	
-	var _jquery = __webpack_require__(244);
+	var _jquery = __webpack_require__(240);
 	
 	var _jquery2 = _interopRequireDefault(_jquery);
 	
@@ -38228,93 +38318,6 @@
 	});
 	
 	exports.default = UploadProject;
-
-/***/ },
-/* 253 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Nav = _react2.default.createClass({
-	    displayName: "Nav",
-	    render: function render() {
-	        return _react2.default.createElement(
-	            "div",
-	            null,
-	            _react2.default.createElement(
-	                "nav",
-	                { className: "topnav", id: "myTopnav" },
-	                _react2.default.createElement("img", { id: "logo", src: "http://tour.treyratcliff.com/wp-content/uploads/2015/06/viewbug_transparent.png", height: "50px", width: "20px" }),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#home" },
-	                        "Home"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#news" },
-	                        "News"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#contact" },
-	                        "Contact"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#about" },
-	                        "About"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    { className: "icon" },
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "javascript:void(0);", onClick: this.onChange },
-	                        "\u2630"
-	                    )
-	                )
-	            )
-	        );
-	    },
-	
-	    onChange: function onChange() {
-	        var x = document.getElementById("myTopnav");
-	        if (x.className === "topnav") {
-	            x.className += " responsive";
-	        } else {
-	            x.className = "topnav";
-	        }
-	    }
-	});
-	
-	exports.default = Nav;
 
 /***/ }
 /******/ ]);

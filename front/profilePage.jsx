@@ -14,7 +14,8 @@ const Profile = React.createClass({
                 id: response.id,
                 projects: response.Projects,
                 imageUrl: response.imageUrl,
-                bio: response.bio
+                bio: response.bio,
+                linkedin: response.linkedin
 
             })
         })
@@ -25,70 +26,103 @@ const Profile = React.createClass({
     render() {
         console.log("projects", this.state.projects)
         return (
+            <div>
+                <div className="rectangle-2">
+                    <Nav/>
+                </div>
 
-            <div className="master">
-              <Nav />
-                <div className="flax">
-                    <div className='card'>
-                        <div className='card_left'>
-                            <img src={this.state.imageUrl}></img>
-                        </div>
-                        <div className='card_right'>
-                            <h1>{this.state.firstName} {this.state.lastName}</h1>
-                            <div className='card_right__details'>
-                                <ul>
-                                    <li>GITHUB</li>
-                                    <li>LINKED IN</li>
-                                    <li>WEB APP URL</li>
-                                </ul>
-                                <div className='card_right__review'>
-                                    <p>{this.state.bio}</p>
+                <div className="My-Profile">
 
-                                </div>
+                    <div className="master-wrapper">
+                        <div className="profile-info">
+
+                            <div className="oval">
+                                <img src={this.state.imageUrl}/>
+                            </div>
+
+                            <div>
+
+                                <h1 className="name">{this.state.firstName} {this.state.lastName}</h1>
+
+                                <p className="location">
+                                    New York, NY
+                                </p>
+
+                                <p className="position">
+                                    Full Stack Web Engineer, C4Q
+                                </p>
 
                             </div>
+                            <ul className="links">
+                                <li>
+                                    <img src="img/icn-twitter.png" srcSet="img/icn-twitter@2x.png 2x,
+  img/icn-twitter@3x.png 3x" className="icn-twitter" height="35px" width="35px"></img>
+                                </li>
+
+                                <li>
+                                    <img src="img/icn-github.png" srcSet="img/icn-github@2x.png 2x,
+  img/icn-github@3x.png 3x" className="icn-github" height="35px" width="35px"></img>
+                                </li>
+
+                                <li>
+                                    <img src="img/icn-linkedin.png" srcSet="img/icn-linkedin@2x.png 2x,
+  img/icn-linkedin@3x.png 3x" className="icn-linkedin" height="35px" width="35px"></img>
+                                </li>
+                                <li>
+                                    <img src="img/icn-website.png" srcSet="img/icn-website@2x.png 2x,
+  img/icn-website@3x.png 3x" className="icn-website" height="35px" width="35px"></img>
+                                </li>
+
+                            </ul>
+
+                            <ul className="interact-buttons">
+
+                                <li className="interact">
+
+                                    <a id="buttons" href="">
+                                        <b>Mentor Me</b>
+                                    </a>
+
+                                </li>
+                                <li className="interact">
+
+                                    <a id="buttons" href="">
+                                        <b>Hire Me!</b>
+                                    </a>
+
+                                </li>
+
+                            </ul>
+
                         </div>
-                    </div>
-                </div>
 
-                {/* <div className="card">
+                        <div className="project-wrapper">
 
-                    <img className="card-img" src={this.state.imageUrl}></img>
+                            <hr className="line"></hr>
 
-                    <div className="container">
-                        <h4>
-                            <b>{this.state.firstName} {this.state.lastName}</b>
-                        </h4>
-                        <p>{this.state.email}</p>
-                    </div>
-
-                </div> */}
-
-                <div className="flex-wrapper">
-                    <div className="flex">{this.state.projects.map(function(val, idx) {
-                            return (
-
-                                <div key={idx} className="thecard">
-                                    <div className="card-img">
-                                        <img src={val.pictureUrl}></img>
-                                        {/* <iframe width="560" height="315" src={val.videoUrl} frameBorder="0" allowFullScreen></iframe> */}
+                            <section className="projects-section">
+                                <div className="rectangle">{this.state.projects.map(function(val, idx) {
+                                  return (
+                                    <div key={idx} className="map-wrapper">
+                                        <div className="descript">
+                                            <p>{val.title}</p>
+                                        </div>
+                                        <div className="image-area">
+                                          <img src={val.pictureUrl}></img>
+                                        </div>
                                     </div>
-                                    <div className="card-caption">
 
-                                        <h1>{val.title}</h1>
-                                        <p>{val.description}</p>
-                                        {/* <a href={val.url}><img src="http://www.freeiconspng.com/uploads/github-logo-icon-30.png" height="10px" width="10px"></img></a> */}
+                                  )
+                                })}
 
-                                    </div>
-                                    <div className="card-outmore"></div>
+
                                 </div>
+                            </section>
 
-                            )
+                        </div>
 
-                        })}</div>
-
+                    </div>
                 </div>
-
             </div>
         )
     }
