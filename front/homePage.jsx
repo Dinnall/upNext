@@ -15,14 +15,11 @@ const MainPage = React.createClass({
   componentDidMount(){
      {
       $.ajax({
-        url: '/api/project',
+        url: '/api/projects', 
         type: "GET"
       })
       .done( (data) => {
         this.setState({project: data})
-      })
-      .catch((error) => {
-        console.log(error);
       })
     }
   },
@@ -41,11 +38,11 @@ const MainPage = React.createClass({
                 {this.state.project.length=== 0 ? "Loading..." : this.state.project.map((projects, idx)=> {
                 return (
 
-                <Link to={"/project/" + projects.id} key={idx}>
+                <Link to={"/projects/" + projects.id} key={idx}>
                 <div className="oneList">
                   <p className="projectTitle">{projects.title}</p>
-                    <img  className="Img" src={projects.videoUrl} />
-                    <p className="descriptionClass"><strong>{projects.gitUsername}</strong>/PLACE WHAT HERE</p>
+                    <img className="Img" src={projects.videoUrl} />
+                    <p className="descriptionClass"><strong>{projects.gitUsername}</strong></p>
                     
                   </div>
                 </Link>

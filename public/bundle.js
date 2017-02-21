@@ -37761,12 +37761,10 @@
 	
 	    {
 	      $.ajax({
-	        url: '/api/project',
+	        url: '/api/projects',
 	        type: "GET"
 	      }).done(function (data) {
 	        _this.setState({ project: data });
-	      }).catch(function (error) {
-	        console.log(error);
 	      });
 	    }
 	  },
@@ -37798,7 +37796,7 @@
 	            this.state.project.length === 0 ? "Loading..." : this.state.project.map(function (projects, idx) {
 	              return _react2.default.createElement(
 	                _reactRouter.Link,
-	                { to: "/project/" + projects.id, key: idx },
+	                { to: "/projects/" + projects.id, key: idx },
 	                _react2.default.createElement(
 	                  'div',
 	                  { className: 'oneList' },
@@ -37815,8 +37813,7 @@
 	                      'strong',
 	                      null,
 	                      projects.gitUsername
-	                    ),
-	                    '/PLACE WHAT HERE'
+	                    )
 	                  )
 	                )
 	              );
