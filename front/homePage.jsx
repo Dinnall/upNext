@@ -37,6 +37,7 @@ const MainPage = React.createClass({
                <div>
                 {this.state.project.length=== 0 ? "Loading..." : this.state.project.map((projects, idx)=> {
                 return (
+
                 <Link to={"/projects/" + projects.id} key={idx}>
                 <div className="oneList">
                   <p className="projectTitle">{projects.title}</p>

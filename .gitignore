@@ -13,3 +13,5 @@ npm-debug.log
 public/bundle.js
 public/bundle.js.map
 config/config.json
+public/*.png
+public/*.svg
