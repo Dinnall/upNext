@@ -1,3 +1,6 @@
+body {
+	height: 100%;
+}
 * {
 	font-family: "Times New Roman";
 }
@@ -13,37 +16,6 @@
 	padding: 7px 7px 7px 7px;
 	height: 125px;
 	width: auto;
-}
-.rowOne {
-	
-}
-
-.rowTwo {
-
-}
-
-.rowThree {
-
-}
-
-.rowFour {
-
-}
-
-.colOne {
-
-}
-
-.colTwo {
-
-}
-
-.colThree {
-
-}
-
-.colFour {
-
 }
 
 {/* Mentor Page CSS */}
@@ -133,5 +105,8 @@
 
 .flexContainerFooter {
 	display: flex;
+	justify-content: center;
 	align-items: flex-end;
+	background-color: green;
+	
 }
