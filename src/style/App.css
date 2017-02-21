@@ -40,6 +40,50 @@ body{
   text-align: right; 
   color: #ffffff; }
 
+.topStyle{
+ position: relative;
+}
+
+.topStyle p{
+ position: absolute;
+ width: 314.5px; 
+ height: 56px; 
+ color: #FFF;
+ font-size: 24px; 
+ font-weight: bold;
+ font-stretch: normal; 
+ line-height: 1.17; 
+ letter-spacing: 0.1px; 
+ text-align: right; 
+}
+
+
+
+.gridImg {
+  height: 250px;
+  width: 350px;
+}
+
+.oneList {
+  margin-left: 25px;
+  float: left;
+}
+
+
+
+
+    /*left: 0;
+    top: 0;
+    padding: 10px;
+    width: 218px;
+    color: #FFF;
+    margin: 5px;
+    font-size: 24px;*/
+
+
+
+
+
 
 /*.ulLink{
     background-color: #0f081c;
