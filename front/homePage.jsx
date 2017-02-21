@@ -12,9 +12,19 @@ const MainPage = React.createClass({
   render: function() {
     return (
       <div>
-          <div>
-           <Link to='/'> <img className='page_1' src='../images/page_one.png' /></Link>
-           <img className='rectangle_4' src='../images/rectangle_four.png' />
+
+          <div className='rectangle_2'>
+             <div>
+               <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
+               <img className='rectangle_4' src='../images/rectangle_four.png' />
+
+
+               <p className='share_and_connect'>Share and connect.Upnext is a space for creators</p>
+
+               <img className='mentor' src='../images/mentor.png' />
+
+
+             </div>
           </div>
 
       </div>
