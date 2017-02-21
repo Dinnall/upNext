@@ -1,5 +1,21 @@
+body {
+	height: 100%;
+}
 * {
 	font-family: "Times New Roman";
+}
+
+{/* All Projects Page */}
+
+.projectsTable {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+}
+.tableItem {
+	padding: 7px 7px 7px 7px;
+	height: 125px;
+	width: auto;
 }
 
 {/* Mentor Page CSS */}
@@ -89,5 +105,8 @@
 
 .flexContainerFooter {
 	display: flex;
+	justify-content: center;
 	align-items: flex-end;
+	background-color: green;
+	
 }
