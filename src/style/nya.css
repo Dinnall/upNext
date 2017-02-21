@@ -1,5 +1,21 @@
+body {
+	height: 100%;
+}
 * {
 	font-family: "Times New Roman";
+}
+
+{/* All Projects Page */}
+
+.projectsTable {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+}
+.tableItem {
+	padding: 7px 7px 7px 7px;
+	height: 125px;
+	width: auto;
 }
 
 {/* Mentor Page CSS */}
@@ -89,58 +105,8 @@
 
 .flexContainerFooter {
 	display: flex;
+	justify-content: center;
 	align-items: flex-end;
-}
+	background-color: green;
 
-
-
-/****************************************/
-
-#hero{
-  background-image:url(http://cdn.wallpapersafari.com/73/55/cHLiqU.jpg);
-  background-size:cover;
-  position:relative;
-  height:100vh;
-  /*background-color: #0f081c;*/
-}
-
-.header{
-  position:absolute;
-  top:50%;
-  text-align:center;
-  width:100%;
-  color:#fff;
-  font-size:36px;
-  -ms-transform: translate(0,-50%); /* IE 9 */
-    -webkit-transform: translate(0,-50%); /* Safari */
-    transform: translate(0,-50%);
-
-}
-
-#content{
-  padding:100px 50px;
-  text-align:center;
-  width:80%;
-  margin:0px auto;
-}
-
-#content h2{
-  margin:0px 0px 30px 0px;
-}
-
-#footer{
-  padding:30px 0px;
-  text-align:center;
-  background:#ddd;
-}
-
-
-h2 {
-  font-size: 50px;
-  font-family: 'Ubuntu', sans-serif;
-}
-
-span {
-  font-size: 50px;
-  font-family: 'Ubuntu', sans-serif;
 }

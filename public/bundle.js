@@ -68,7 +68,11 @@
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
 	
+<<<<<<< HEAD
 	var _allVideos = __webpack_require__(246);
+=======
+	var _allVideos = __webpack_require__(250);
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 	
 	var _allVideos2 = _interopRequireDefault(_allVideos);
 	
@@ -80,6 +84,7 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
+<<<<<<< HEAD
 	var _homePage = __webpack_require__(247);
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
@@ -96,15 +101,26 @@
 	var _uploadProject = __webpack_require__(251);
 =======
 	var _becomeMentor = __webpack_require__(253);
+=======
+	var _homePage = __webpack_require__(251);
+	
+	var _homePage2 = _interopRequireDefault(_homePage);
+	
+	var _becomeMentor = __webpack_require__(255);
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
-	var _profilePage = __webpack_require__(254);
+	var _profilePage = __webpack_require__(256);
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
+<<<<<<< HEAD
 	var _uploadProject = __webpack_require__(256);
 >>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
+=======
+	var _uploadProject = __webpack_require__(257);
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 	
 	var _uploadProject2 = _interopRequireDefault(_uploadProject);
 	
@@ -26974,6 +26990,89 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
+<<<<<<< HEAD
+=======
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./nya.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./nya.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 238 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(235)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "body {\n\theight: 100%;\n}\n* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* All Projects Page */}\n\n.projectsTable {\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding-top: 40px;\n}\n.tableItem {\n\tpadding: 7px 7px 7px 7px;\n\theight: 125px;\n\twidth: auto;\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: flex-end;\n\tbackground-color: green;\n\t\n}", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 239 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(240);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(236)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../node_modules/css-loader/index.js!./dee.css", function() {
+				var newContent = require("!!./../../node_modules/css-loader/index.js!./dee.css");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 240 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(235)();
+	// imports
+	
+	
+	// module
+	exports.push([module.id, "", ""]);
+	
+	// exports
+
+
+/***/ },
+/* 241 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+	
+	// load the styles
+	var content = __webpack_require__(242);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(236)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 			module.hot.accept("!!./../../node_modules/css-loader/index.js!./craig.css", function() {
 				var newContent = require("!!./../../node_modules/css-loader/index.js!./craig.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
@@ -37563,6 +37662,10 @@
 	  value: true
 	});
 	
+	var _page_one = __webpack_require__(252);
+	
+	var _image = _interopRequireWildcard(_page_one);
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -37571,9 +37674,23 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
+<<<<<<< HEAD
 	__webpack_require__(241);
+=======
+	var _navBar = __webpack_require__(249);
+	
+	var _navBar2 = _interopRequireDefault(_navBar);
+	
+	var _footer = __webpack_require__(245);
+	
+	var _footer2 = _interopRequireDefault(_footer);
+	
+	__webpack_require__(237);
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	var AllProjectsPage = _react2.default.createClass({
 	  displayName: 'AllProjectsPage',
@@ -37585,11 +37702,40 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
+	      _react2.default.createElement(_navBar2.default, null),
 	      _react2.default.createElement(
-	        'h1',
-	        null,
-	        'HEY'
-	      )
+	        'table',
+	        { className: 'projcectsTable' },
+	        _react2.default.createElement(
+	          'tbody',
+	          null,
+	          _react2.default.createElement(
+	            'tr',
+	            null,
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'tableItem', src: _image.default })
+	            ),
+	            _react2.default.createElement(
+	              'td',
+	              null,
+	              _react2.default.createElement('img', { className: 'tableItem', src: _image.default })
+	            )
+	          )
+	        )
+	      ),
+	      _react2.default.createElement(_footer2.default, null)
 	    );
 	  }
 	});
@@ -37597,7 +37743,99 @@
 	exports.default = AllProjectsPage;
 
 /***/ },
+<<<<<<< HEAD
 /* 246 */
+=======
+/* 248 */,
+/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Nav = _react2.default.createClass({
+	    displayName: "Nav",
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	                "nav",
+	                { className: "topnav", id: "myTopnav" },
+	                _react2.default.createElement("img", { id: "logo", src: "http://tour.treyratcliff.com/wp-content/uploads/2015/06/viewbug_transparent.png", height: "50px", width: "20px" }),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#home" },
+	                        "Home"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#news" },
+	                        "News"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#contact" },
+	                        "Contact"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#about" },
+	                        "About"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    { className: "icon" },
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);", onClick: this.onChange },
+	                        "\u2630"
+	                    )
+	                )
+	            )
+	        );
+	    },
+	
+	    onChange: function onChange() {
+	        var x = document.getElementById("myTopnav");
+	        if (x.className === "topnav") {
+	            x.className += " responsive";
+	        } else {
+	            x.className = "topnav";
+	        }
+	    }
+	});
+	
+	exports.default = Nav;
+
+/***/ },
+/* 250 */
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37679,7 +37917,11 @@
 	exports.default = Projects;
 
 /***/ },
+<<<<<<< HEAD
 /* 247 */
+=======
+/* 251 */
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37688,15 +37930,15 @@
 	    value: true
 	});
 	
-	var _page_one = __webpack_require__(250);
+	var _page_one = __webpack_require__(252);
 	
 	var _image = _interopRequireWildcard(_page_one);
 	
-	var _rectangle_four = __webpack_require__(251);
+	var _rectangle_four = __webpack_require__(253);
 	
 	var _image2 = _interopRequireWildcard(_rectangle_four);
 	
-	var _mentor = __webpack_require__(252);
+	var _mentor = __webpack_require__(254);
 	
 	var _image3 = _interopRequireWildcard(_mentor);
 	
@@ -37859,25 +38101,29 @@
 	// <div className='thirdBorder'></div>
 
 /***/ },
+<<<<<<< HEAD
 /* 248 */
+=======
+/* 252 */
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
 
 /***/ },
-/* 251 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
 
 /***/ },
-/* 252 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9ac4790e644000c403d80fc0203ea6f9.png";
 
 /***/ },
-/* 253 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38108,10 +38354,14 @@
 
 /***/ },
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* 249 */
 =======
 /* 254 */
 >>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
+=======
+/* 256 */
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38131,10 +38381,14 @@
 	var _reactRouter = __webpack_require__(178);
 	
 <<<<<<< HEAD
+<<<<<<< HEAD
 	var _navBar = __webpack_require__(250);
 =======
 	var _navBar = __webpack_require__(255);
 >>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
+=======
+	var _navBar = __webpack_require__(249);
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 	
 	var _navBar2 = _interopRequireDefault(_navBar);
 	
@@ -38397,6 +38651,7 @@
 
 /***/ },
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* 251 */
 =======
 /* 255 */
@@ -38488,6 +38743,9 @@
 /***/ },
 /* 256 */
 >>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
+=======
+/* 257 */
+>>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
