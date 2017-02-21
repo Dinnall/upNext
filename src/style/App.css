@@ -5,12 +5,85 @@ body{
     height: 935px;
     background-color: #f0f1f1;
    }
+
 .rectangle_4{
-    width: 720px;
-    height: 240px;
-    object-fit: contain;
+    width: 1290px;
+    height: 400px;
     background-color: rgba(34, 31, 31, 0.7);
 }
+
+
+.page_1 {
+  width: 150px;
+  height: 70px;
+  object-fit: contain;
+  position: absolute;
+}
+.rectangle_2{
+  width: 1290px;
+  height: 100px;
+  border-radius: 10px;
+  background-color: blue;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+.share-and-connect{
+ width: 314.5px; 
+ height: 56px; 
+ font-family: SourceSansPro; 
+ font-size: 24px; 
+ font-weight: bold; 
+ font-style: normal;
+  font-stretch: normal; 
+  line-height: 1.17; 
+  letter-spacing: 0.1px; 
+  text-align: right; 
+  color: #ffffff; }
+
+.topStyle{
+ position: relative;
+}
+
+.topStyle p{
+ position: absolute;
+ width: 314.5px; 
+ height: 56px; 
+ color: #FFF;
+ font-size: 24px; 
+ font-weight: bold;
+ font-stretch: normal; 
+ line-height: 1.17; 
+ letter-spacing: 0.1px; 
+ text-align: right; 
+}
+
+
+
+.gridImg {
+  height: 250px;
+  width: 350px;
+}
+
+.oneList {
+  margin-left: 25px;
+  float: left;
+}
+
+
+
+
+    /*left: 0;
+    top: 0;
+    padding: 10px;
+    width: 218px;
+    color: #FFF;
+    margin: 5px;
+    font-size: 24px;*/
+
+
+
+
+
 
 /*.ulLink{
     background-color: #0f081c;

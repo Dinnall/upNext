@@ -9,11 +9,64 @@ import FooterPage from './footer.jsx';
 
 
 const MainPage = React.createClass({
+  getInitialState(){
+    return {project: []}
+  },
+  componentDidMount(){
+     {
+      $.ajax({
+        url: '/api/project',
+        type: "GET"
+      })
+      .done( (data) => {
+        this.setState({project: data})
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    }
+  },
   render: function() {
     return (
       <div>
-       <img className='rectangle_4' src={require('../images/rectangle_four.png')} />
-        
+
+         <div className='topStyle'>
+            <div className='rectangle_2'>
+               <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
+                <p className='share_and_connect'>Share and connect.Upnext is a space for creators</p>
+                  <img className='rectangle_4' src='../images/rectangle_four.png' />
+
+
+               <div>
+                {this.state.project.length=== 0 ? "Loading..." : this.state.project.map((projects, idx)=> {
+                return (
+
+                <Link to={"/project/" + projects.id} key={idx}>
+                <div className="oneList">
+                  <p className="projectTitle">{projects.title}</p>
+                    <img  className="Img" src={projects.videoUrl} />
+                    <p className="descriptionClass"><strong>{projects.gitUsername}</strong>/PLACE WHAT HERE</p>
+                    
+                  </div>
+                </Link>
+              
+            )
+          })}
+               </div>
+               
+
+                    
+                <img className='mentor' src='../images/mentor.png' />
+            </div>
+          </div>
+
+           
+
+
+
+
+
+
       </div>
     )
   }

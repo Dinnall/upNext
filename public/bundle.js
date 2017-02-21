@@ -88,15 +88,15 @@
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
 	
-	var _becomeMentor = __webpack_require__(251);
+	var _becomeMentor = __webpack_require__(253);
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
-	var _profilePage = __webpack_require__(252);
+	var _profilePage = __webpack_require__(254);
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
-	var _uploadProject = __webpack_require__(253);
+	var _uploadProject = __webpack_require__(256);
 	
 	var _uploadProject2 = _interopRequireDefault(_uploadProject);
 	
@@ -124,6 +124,7 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '/signup', component: _signUp2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/login', component: _logIn2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/upload', component: _uploadProject2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/allProjects', component: _allProjects2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/profile/:id', component: _profilePage2.default })
 	  )
 	), document.getElementById('root'));
@@ -26629,7 +26630,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body{\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n    width: 720px;\n    height: 935px;\n    background-color: #f0f1f1;\n   }\n.rectangle_4{\n    width: 720px;\n    height: 240px;\n    object-fit: contain;\n    background-color: rgba(34, 31, 31, 0.7);\n}\n\n/*.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}*/\n\n/*.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}*/\n\n\t\n/*.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n*/\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n/*.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}*/\n\n", ""]);
+	exports.push([module.id, "body{\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n    width: 720px;\n    height: 935px;\n    background-color: #f0f1f1;\n   }\n\n.rectangle_4{\n    width: 1290px;\n    height: 400px;\n    background-color: rgba(34, 31, 31, 0.7);\n}\n\n\n.page_1 {\n  width: 150px;\n  height: 70px;\n  object-fit: contain;\n  position: absolute;\n}\n.rectangle_2{\n  width: 1290px;\n  height: 100px;\n  border-radius: 10px;\n  background-color: blue;\n  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n}\n\n.share-and-connect{\n width: 314.5px; \n height: 56px; \n font-family: SourceSansPro; \n font-size: 24px; \n font-weight: bold; \n font-style: normal;\n  font-stretch: normal; \n  line-height: 1.17; \n  letter-spacing: 0.1px; \n  text-align: right; \n  color: #ffffff; }\n\n.topStyle{\n position: relative;\n}\n\n.topStyle p{\n position: absolute;\n width: 314.5px; \n height: 56px; \n color: #FFF;\n font-size: 24px; \n font-weight: bold;\n font-stretch: normal; \n line-height: 1.17; \n letter-spacing: 0.1px; \n text-align: right; \n}\n\n\n\n.gridImg {\n  height: 250px;\n  width: 350px;\n}\n\n.oneList {\n  margin-left: 25px;\n  float: left;\n}\n\n\n\n\n    /*left: 0;\n    top: 0;\n    padding: 10px;\n    width: 218px;\n    color: #FFF;\n    margin: 5px;\n    font-size: 24px;*/\n\n\n\n\n\n\n/*.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}*/\n\n/*.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}*/\n\n\t\n/*.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n*/\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n/*.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}*/\n\n", ""]);
 	
 	// exports
 
@@ -27057,7 +27058,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  color: #222;\n}\n\np {\n  font-size: 13px;\n}\n\n.thecard {\n  width: 300px;\n  margin: 5% auto;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 500px;\n}\n\n.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-around;\n  flex-wrap: wrap;\n\n}\n", ""]);
+	exports.push([module.id, "body {\n  font-family: 'Open Sans', sans-serif;\n  /*background-color: #222;*/\n}\n\np {\n  font-size: 13px;\n}\n\n/*.master {\n  display: flex;\n  align-items: center;\n  flex-direction: column;\n}*/\n\n.thecard {\n  width: 300px;\n  margin: 10% 0%;\n  box-shadow: 0 1px 30px rgba(0,0,0,.4);\n  display: block;\n  background-color: #fff;\n  border-radius: 10px;\n  transition: 400ms ease;\n}\n.card-img {\n  height: 225px;\n}\n.card-img img {\n  width:100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}\n\n\n/*.card-iframe iframe {\n  width: 100%;\n  border-radius: 0px 0px 0px 0px;\n  height: 100%;\n}*/\n\n.card-caption {\n  position: relative;\n  background: #ffffff;\n  padding: 15px 25px 5px 25px;\n  border-radius: 0px 0px 0px 0px;\n}\n.card-outmore {\n  padding: 10px 25px 10px 25px;\n  border-radius: 0px 0px 4px 4px;\n  border-top: 1px solid #e0e0e0;\n  /*background: #efefef;*/\n  color: #222;\n  display: inline-table;\n  width: 100%;\n  box-sizing: border-box;\n  transition: 400ms ease;\n}\n.card-outmore h5 {\n  float: left;\n}\nspan.date {\n  font-size: 10px;\n}\nh1 {\n  font-size: 22px;\n}\n#outmore-icon {\n  border:1px solid ;\n  padding: 1px 6px;\n  border-radius: 50em;\n}\n\n\n/*.card {\n  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);\n  transition: 0.3s;\n  width: 20%;\n  border-radius: 5px;\n  background-color: white;\n  height: 600px;\n}*/\n\n/*.card:hover {\n  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);\n}\n\n.container {\n  padding: 2px 16px;\n}*/\n\nimg{\n  border-radius: 5px 5px 0 0;\n  width: 100%;\n}\n\n.flex-wrapper {\ndisplay: flex;\njustify-content: center;\n}\n\n.flex {\n  display: flex;\n  justify-content: space-between;\n  flex-wrap: wrap;\n  width: 78%;\n\n\n}\n\n\n\n\n\n\n\n\n/*********************** PROFILE CARD 2 ********************************************************/\n\n {\n    background: #e2e2e2;\n    width: 98%;\n    /*height: 100vh;*/\n}\n\n .card {\n    width: 1500px;\n    height: 300px;\n    background: transparent;\n    position: relative;\n    left: 0;\n    right: 0;\n    margin: 5% 0 30px 15px;\n    top: 0;\n    bottom: 0;\n    border-radius: 10px;\n    -webkit-border-radius: 10px;\n    -moz-border-radius: 10px;\n    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);\n}\n\n .card_left {\n    width: 40%;\n    height: 400px;\n    float: left;\n    overflow: hidden;\n    background: transparent;\n}\n\n .card_left img {\n    width: 100%;\n    height: auto;\n    border-radius: 10px 0 0 10px;\n    -webkit-border-radius: 10px 0 0 10px;\n    -moz-border-radius: 10px 0 0 10px;\n    position: relative;\n}\n\n .card_right {\n    width: 60%;\n    float: left;\n    background: #000000;\n    height: 400px;\n    border-radius: 0 10px 10px 0;\n    -webkit-border-radius: 0 10px 10px 0;\n    -moz-border-radius: 0 10px 10px 0;\n}\n\n .card_right h1 {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    text-align: left;\n    font-size: 40px;\n    margin: 30px 0 0 0;\n    padding: 0 0 0 40px;\n    letter-spacing: 1px;\n}\n\n .card_right__details ul {\n    list-style-type: none;\n    padding: 0 0 0 40px;\n    margin: 10px 0 0 0;\n}\n\n .card_right__details ul li {\n    display: inline;\n    color: #e3e3e3;\n    font-family: 'Montserrat', sans-serif;\n    font-weight: 400;\n    font-size: 14px;\n    padding: 0 40px 0 0;\n}\n\n .card_right__rating__stars {\n    position: relative;\n    right: 160px;\n    margin: 10px 0 10px 0;\n\n}\n\n .card_right__rating__stars fieldset,  .card_right__rating__stars label {\n    margin: 0;\n    padding: 0;\n}\n\n .card_right__rating__stars .rating {\n    border: none;\n}\n\n .card_right__rating__stars .rating>input {\n    display: none;\n}\n\n .card_right__rating__stars .rating>label:before {\n    margin: 5px;\n    font-size: 1.25em;\n    display: inline-block;\n    content: \"\\F005\";\n    font-family: FontAwesome;\n}\n\n .card_right__rating__stars .rating>.half:before {\n    content: \"\\F089\";\n    position: absolute;\n}\n\n .card_right__rating__stars .rating>label {\n    color: #ddd;\n    float: right;\n}\n\n .card_right__rating__stars .rating>input:checked~label,  .card_right__rating__stars .rating:not(:checked)>label:hover,  .card_right__rating__stars .rating:not(:checked)>label:hover~label {\n    color: #FFD700;\n}\n\n .card_right__rating__stars .rating>input:checked+label:hover,  .card_right__rating__stars .rating>input:checked~label:hover,  .card_right__rating__stars .rating>label:hover~input:checked~label,  .card_right__rating__stars .rating>input:checked~label:hover~label {\n    color: #FFED85;\n}\n\n .card_right__review p {\n    color: white;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 12px;\n    padding: 0 40px 0 40px;\n    letter-spacing: 1px;\n    margin: 10px 0 10px 0;\n    line-height: 20px;\n}\n\n .card_right__review a {\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    font-size: 14px;\n    padding: 0 0 0 40px;\n    color: #ffda00;\n    margin: 0;\n}\n\n .card_right__button {\n    padding: 0 0 0 40px;\n    margin: 30px 0 0 0;\n}\n\n .card_right__button a {\n    color: #ffda00;\n    text-decoration: none;\n    font-family: 'Montserrat', sans-serif;\n    border: 2px solid #ffda00;\n    padding: 10px 10px 10px 40px;\n    font-size: 12px;\n    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/COMdoWZ.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 7% 50%;\n    border-radius: 5px;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n .card_right__button a:hover {\n    color: #000000;\n    background-color: #ffda00;\n    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/343086/rFQ5dHA.png);\n    background-size: 12px 12px;\n    background-repeat: no-repeat;\n    background-position: 10% 50%;\n    cursor: pointer;\n    -webkit-transition-property: all;\n    transition-property: all;\n    -webkit-transition-duration: .5s;\n    transition-duration: .5s;\n}\n\n.flax {\n  display: flex;\n  justify-content: center;\n}\n\n\n\n\n\n\n/*********************************** Nav Bar *******************************************/\n\n#logo {\n  width: 10%;\n}\n\nnav.topnav {\n    list-style-type: none;\n    margin: 0;\n    padding: 15px;\n    overflow: hidden;\n    background-color: #04030F;\n}\n\n/* Float the list items side by side */\nnav.topnav li {float: right;}\n\n/* Style the links inside the list items */\nnav.topnav li a {\n    display: inline-block;\n    color: #73C2BE;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n    transition: 0.3s;\n    font-size: 20px;\n    font-family: 'Bree Serif', serif;\n\n}\n\n/* Change background color of links on hover */\nnav.topnav li a:hover {background-color: #555;}\n\n/* Hide the list item that contains the link that shonavd open and close the topnav on small screens */\nnav.topnav li.icon {display: none;}\n\n\n/* When the screen is less than 680 pixels wide, hide all list items, except for the first one (\"Home\"). Show the list item that contains the link to open and close the topnav (li.icon) */\n@media screen and (max-width:680px) {\n  nav.topnav li:not(:first-child) {display: none;}\n  nav.topnav li.icon {\n    float: right;\n    display: inline-block;\n  }\n}\n\n/* The \"responsive\" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens */\n@media screen and (max-width:680px) {\n  nav.topnav.responsive {position: relative;}\n  nav.topnav.responsive li.icon {\n    position: absolute;\n    right: 0;\n    top: 0;\n  }\n  nav.topnav.responsive li {\n    float: none;\n    display: inline;\n  }\n  nav.topnav.responsive li a {\n    display: block;\n    text-align: left;\n  }\n}\n", ""]);
 	
 	// exports
 
@@ -27095,13 +27096,32 @@
 	var SignUpPage = _react2.default.createClass({
 	  displayName: 'SignUpPage',
 	  getInitialState: function getInitialState() {
-	    return {};
+	    return { user: [null] };
 	  },
 	  handleSubmit: function handleSubmit(event) {
 	    event.preventDefault();
+	    {
+	      _jquery2.default.ajax({
+	        url: '/api/user',
+	        type: "POST",
+	        data: {
+	          firstName: this.firstName.value,
+	          lastName: this.lastName.value,
+	          email: this.email.value,
+	          password: this.password.value
+	        }
+	      }).done(function (data) {
+	        console.log("Received User Data", data);
+	        _reactRouter.browserHistory.push('/allprojects');
+	      }).catch(function (error) {
+	        console.log(error);
+	      });
+	    }
 	  },
 	
 	  render: function render() {
+	    var _this = this;
+	
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'flexContainerSUP' },
@@ -27141,12 +27161,20 @@
 	          ),
 	          _react2.default.createElement(
 	            'form',
-	            null,
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'First Name', required: true }),
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', required: true }),
+	            { onSubmit: this.handleSubmit },
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'First Name', ref: function ref(input) {
+	                _this.firstName = input;
+	              }, required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Last Name', ref: function ref(input) {
+	                _this.lastName = input;
+	              }, required: true }),
 	            _react2.default.createElement('br', null),
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'Email', required: true }),
-	            _react2.default.createElement('input', { type: 'text', placeholder: 'Password', required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Email', ref: function ref(input) {
+	                _this.email = input;
+	              }, required: true }),
+	            _react2.default.createElement('input', { type: 'text', placeholder: 'Password', required: true, ref: function ref(input) {
+	                _this.password = input;
+	              } }),
 	            _react2.default.createElement('br', null),
 	            _react2.default.createElement(
 	              'button',
@@ -37467,11 +37495,28 @@
 	
 	var LogInPage = _react2.default.createClass({
 	  displayName: 'LogInPage',
-	  getInitialState: function getInitialState() {
-	    return {};
+	  handleSubmit: function handleSubmit() {
+	    event.preventDefault();
+	    var email = this.email;
+	    var password = this.password;
+	    console.log(email);
+	    console.log(password);
+	    {
+	      $.ajax({
+	        url: '/api/user/userId/3',
+	        type: "GET"
+	      }).success(function (data) {
+	        console.log('it worked', data);
+	      });
+	      // .catch((error) => {
+	      //   console.log(error)
+	      // })
+	    }
 	  },
 	
 	  render: function render() {
+	    var _this = this;
+	
 	    return _react2.default.createElement(
 	      'div',
 	      { className: 'flexContainerLIP' },
@@ -37495,7 +37540,9 @@
 	              _react2.default.createElement(
 	                'td',
 	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email' })
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Email', ref: function ref(input) {
+	                    _this.email = input;
+	                  }, required: true })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -37504,7 +37551,9 @@
 	              _react2.default.createElement(
 	                'td',
 	                null,
-	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password' })
+	                _react2.default.createElement('input', { type: 'text', size: '30', placeholder: 'Password', ref: function ref(input) {
+	                    _this.password = input;
+	                  }, required: true })
 	              )
 	            ),
 	            _react2.default.createElement(
@@ -37515,12 +37564,8 @@
 	                null,
 	                _react2.default.createElement(
 	                  'button',
-	                  null,
-	                  _react2.default.createElement(
-	                    _reactRouter.Link,
-	                    { to: '/allProjects' },
-	                    'Log In'
-	                  )
+	                  { type: 'submit' },
+	                  'Log In'
 	                )
 	              )
 	            )
@@ -37562,7 +37607,15 @@
 	  },
 	
 	  render: function render() {
-	    return _react2.default.createElement('ul', { className: 'flexContainerAPP' });
+	    return _react2.default.createElement(
+	      'div',
+	      null,
+	      _react2.default.createElement(
+	        'h1',
+	        null,
+	        'HEY'
+	      )
+	    );
 	  }
 	});
 	
@@ -37660,6 +37713,18 @@
 	  value: true
 	});
 	
+	var _page_one = __webpack_require__(250);
+	
+	var _image = _interopRequireWildcard(_page_one);
+	
+	var _rectangle_four = __webpack_require__(251);
+	
+	var _image2 = _interopRequireWildcard(_rectangle_four);
+	
+	var _mentor = __webpack_require__(252);
+	
+	var _image3 = _interopRequireWildcard(_mentor);
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
@@ -37684,14 +37749,82 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+	
 	var MainPage = _react2.default.createClass({
 	  displayName: 'MainPage',
+	  getInitialState: function getInitialState() {
+	    return { project: [] };
+	  },
+	  componentDidMount: function componentDidMount() {
+	    var _this = this;
+	
+	    {
+	      $.ajax({
+	        url: '/api/project',
+	        type: "GET"
+	      }).done(function (data) {
+	        _this.setState({ project: data });
+	      }).catch(function (error) {
+	        console.log(error);
+	      });
+	    }
+	  },
 	
 	  render: function render() {
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement('img', { className: 'rectangle_4', src: __webpack_require__(250) })
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'topStyle' },
+	        _react2.default.createElement(
+	          'div',
+	          { className: 'rectangle_2' },
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/' },
+	            _react2.default.createElement('img', { className: 'page_1', src: _image.default })
+	          ),
+	          _react2.default.createElement(
+	            'p',
+	            { className: 'share_and_connect' },
+	            'Share and connect.Upnext is a space for creators'
+	          ),
+	          _react2.default.createElement('img', { className: 'rectangle_4', src: _image2.default }),
+	          _react2.default.createElement(
+	            'div',
+	            null,
+	            this.state.project.length === 0 ? "Loading..." : this.state.project.map(function (projects, idx) {
+	              return _react2.default.createElement(
+	                _reactRouter.Link,
+	                { to: "/project/" + projects.id, key: idx },
+	                _react2.default.createElement(
+	                  'div',
+	                  { className: 'oneList' },
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'projectTitle' },
+	                    projects.title
+	                  ),
+	                  _react2.default.createElement('img', { className: 'Img', src: projects.videoUrl }),
+	                  _react2.default.createElement(
+	                    'p',
+	                    { className: 'descriptionClass' },
+	                    _react2.default.createElement(
+	                      'strong',
+	                      null,
+	                      projects.gitUsername
+	                    ),
+	                    '/PLACE WHAT HERE'
+	                  )
+	                )
+	              );
+	            })
+	          ),
+	          _react2.default.createElement('img', { className: 'mentor', src: _image3.default })
+	        )
+	      )
 	    );
 	  }
 	});
@@ -37712,10 +37845,22 @@
 /* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
+	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
 
 /***/ },
 /* 251 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
+
+/***/ },
+/* 252 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "9ac4790e644000c403d80fc0203ea6f9.png";
+
+/***/ },
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37945,7 +38090,7 @@
 	exports.default = MentorPage;
 
 /***/ },
-/* 252 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37964,6 +38109,10 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
+	var _navBar = __webpack_require__(255);
+	
+	var _navBar2 = _interopRequireDefault(_navBar);
+	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Profile = _react2.default.createClass({
@@ -37979,57 +38128,80 @@
 	                email: response.email,
 	                id: response.id,
 	                projects: response.Projects,
-	                imageUrl: response.imageUrl
+	                imageUrl: response.imageUrl,
+	                bio: response.bio
 	
 	            });
 	        });
 	    },
 	    getInitialState: function getInitialState() {
-	        return {
-	            firstName: "",
-	            lastName: "",
-	            email: "",
-	            imageUrl: "",
-	            projects: []
-	        };
+	        return { firstName: "", lastName: "", email: "", imageUrl: "", projects: [] };
 	    },
 	    render: function render() {
 	        console.log("projects", this.state.projects);
 	        return _react2.default.createElement(
 	            'div',
-	            null,
+	            { className: 'master' },
+	            _react2.default.createElement(_navBar2.default, null),
 	            _react2.default.createElement(
 	                'div',
-	                { className: 'card' },
+	                { className: 'flax' },
 	                _react2.default.createElement(
 	                    'div',
-	                    null,
-	                    _react2.default.createElement('img', { src: this.state.imageUrl })
-	                ),
-	                _react2.default.createElement(
-	                    'div',
-	                    { className: 'container' },
+	                    { className: 'card' },
 	                    _react2.default.createElement(
-	                        'h4',
-	                        null,
+	                        'div',
+	                        { className: 'card_left' },
+	                        _react2.default.createElement('img', { src: this.state.imageUrl })
+	                    ),
+	                    _react2.default.createElement(
+	                        'div',
+	                        { className: 'card_right' },
 	                        _react2.default.createElement(
-	                            'b',
+	                            'h1',
 	                            null,
 	                            this.state.firstName,
 	                            ' ',
 	                            this.state.lastName
+	                        ),
+	                        _react2.default.createElement(
+	                            'div',
+	                            { className: 'card_right__details' },
+	                            _react2.default.createElement(
+	                                'ul',
+	                                null,
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'GITHUB'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'LINKED IN'
+	                                ),
+	                                _react2.default.createElement(
+	                                    'li',
+	                                    null,
+	                                    'WEB APP URL'
+	                                )
+	                            ),
+	                            _react2.default.createElement(
+	                                'div',
+	                                { className: 'card_right__review' },
+	                                _react2.default.createElement(
+	                                    'p',
+	                                    null,
+	                                    this.state.bio
+	                                )
+	                            )
 	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'p',
-	                        null,
-	                        this.state.email
 	                    )
 	                )
 	            ),
 	            _react2.default.createElement(
 	                'div',
-	                null,
+	                { className: 'flex-wrapper' },
 	                _react2.default.createElement(
 	                    'div',
 	                    { className: 'flex' },
@@ -38054,11 +38226,6 @@
 	                                    'p',
 	                                    null,
 	                                    val.description
-	                                ),
-	                                _react2.default.createElement(
-	                                    'p',
-	                                    null,
-	                                    val.url
 	                                )
 	                            ),
 	                            _react2.default.createElement('div', { className: 'card-outmore' })
@@ -38073,7 +38240,94 @@
 	exports.default = (0, _reactRouter.withRouter)(Profile);
 
 /***/ },
-/* 253 */
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	
+	Object.defineProperty(exports, "__esModule", {
+	    value: true
+	});
+	
+	var _react = __webpack_require__(1);
+	
+	var _react2 = _interopRequireDefault(_react);
+	
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	var Nav = _react2.default.createClass({
+	    displayName: "Nav",
+	    render: function render() {
+	        return _react2.default.createElement(
+	            "div",
+	            null,
+	            _react2.default.createElement(
+	                "nav",
+	                { className: "topnav", id: "myTopnav" },
+	                _react2.default.createElement("img", { id: "logo", src: "http://tour.treyratcliff.com/wp-content/uploads/2015/06/viewbug_transparent.png", height: "50px", width: "20px" }),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#home" },
+	                        "Home"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#news" },
+	                        "News"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#contact" },
+	                        "Contact"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    null,
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "#about" },
+	                        "About"
+	                    )
+	                ),
+	                _react2.default.createElement(
+	                    "li",
+	                    { className: "icon" },
+	                    _react2.default.createElement(
+	                        "a",
+	                        { href: "javascript:void(0);", onClick: this.onChange },
+	                        "\u2630"
+	                    )
+	                )
+	            )
+	        );
+	    },
+	
+	    onChange: function onChange() {
+	        var x = document.getElementById("myTopnav");
+	        if (x.className === "topnav") {
+	            x.className += " responsive";
+	        } else {
+	            x.className = "topnav";
+	        }
+	    }
+	});
+	
+	exports.default = Nav;
+
+/***/ },
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
