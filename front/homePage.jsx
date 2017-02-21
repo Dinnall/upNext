@@ -41,7 +41,7 @@ const MainPage = React.createClass({
                 <Link to={"/projects/" + projects.id} key={idx}>
                 <div className="oneList">
                   <p className="projectTitle">{projects.title}</p>
-                    <img className="Img" src={projects.videoUrl} />
+                    <img className="videoBox" src={projects.videoUrl} />
                     <p className="descriptionClass"><strong>{projects.gitUsername}</strong></p>
                     
                   </div>

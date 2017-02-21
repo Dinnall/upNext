@@ -88,15 +88,15 @@
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
 	
-	var _becomeMentor = __webpack_require__(255);
+	var _becomeMentor = __webpack_require__(254);
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
-	var _profilePage = __webpack_require__(256);
+	var _profilePage = __webpack_require__(255);
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
-	var _uploadProject = __webpack_require__(257);
+	var _uploadProject = __webpack_require__(256);
 	
 	var _uploadProject2 = _interopRequireDefault(_uploadProject);
 	
@@ -37588,7 +37588,7 @@
 	  value: true
 	});
 	
-	var _page_one = __webpack_require__(252);
+	var _page_one = __webpack_require__(248);
 	
 	var _image = _interopRequireWildcard(_page_one);
 	
@@ -37665,7 +37665,12 @@
 	exports.default = AllProjectsPage;
 
 /***/ },
-/* 248 */,
+/* 248 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
+
+/***/ },
 /* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -37844,15 +37849,15 @@
 	  value: true
 	});
 	
-	var _page_one = __webpack_require__(252);
+	var _page_one = __webpack_require__(248);
 	
 	var _image = _interopRequireWildcard(_page_one);
 	
-	var _rectangle_four = __webpack_require__(253);
+	var _rectangle_four = __webpack_require__(252);
 	
 	var _image2 = _interopRequireWildcard(_rectangle_four);
 	
-	var _mentor = __webpack_require__(254);
+	var _mentor = __webpack_require__(253);
 	
 	var _image3 = _interopRequireWildcard(_mentor);
 	
@@ -37936,7 +37941,7 @@
 	                    { className: 'projectTitle' },
 	                    projects.title
 	                  ),
-	                  _react2.default.createElement('img', { className: 'Img', src: projects.videoUrl }),
+	                  _react2.default.createElement('img', { className: 'videoBox', src: projects.videoUrl }),
 	                  _react2.default.createElement(
 	                    'p',
 	                    { className: 'descriptionClass' },
@@ -37973,22 +37978,16 @@
 /* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
+	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
 
 /***/ },
 /* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
-
-/***/ },
-/* 254 */
-/***/ function(module, exports, __webpack_require__) {
-
 	module.exports = __webpack_require__.p + "9ac4790e644000c403d80fc0203ea6f9.png";
 
 /***/ },
-/* 255 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38218,7 +38217,7 @@
 	exports.default = MentorPage;
 
 /***/ },
-/* 256 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38368,7 +38367,7 @@
 	exports.default = (0, _reactRouter.withRouter)(Profile);
 
 /***/ },
-/* 257 */
+/* 256 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
