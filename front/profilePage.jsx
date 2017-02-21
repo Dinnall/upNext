@@ -55,22 +55,18 @@ const Profile = React.createClass({
                             </div>
                             <ul className="links">
                                 <li>
-                                    <img src="img/icn-twitter.png" srcSet="img/icn-twitter@2x.png 2x,
-  img/icn-twitter@3x.png 3x" className="icn-twitter" height="35px" width="35px"></img>
+                                    <img src="../images/icn-twitter.png" className="icn-twitter" height="35px" width="35px"></img>
                                 </li>
 
                                 <li>
-                                    <img src="img/icn-github.png" srcSet="img/icn-github@2x.png 2x,
-  img/icn-github@3x.png 3x" className="icn-github" height="35px" width="35px"></img>
+                                    <img src="../images/icn-github.png" className="icn-github" height="35px" width="35px"></img>
                                 </li>
 
                                 <li>
-                                    <img src="img/icn-linkedin.png" srcSet="img/icn-linkedin@2x.png 2x,
-  img/icn-linkedin@3x.png 3x" className="icn-linkedin" height="35px" width="35px"></img>
+                                    <img src="../images/icn-linkedin.png" className="icn-linkedin" height="35px" width="35px"></img>
                                 </li>
                                 <li>
-                                    <img src="img/icn-website.png" srcSet="img/icn-website@2x.png 2x,
-  img/icn-website@3x.png 3x" className="icn-website" height="35px" width="35px"></img>
+                                    <img src="../images/icn-website.png" className="icn-website" height="35px" width="35px"></img>
                                 </li>
 
                             </ul>
@@ -102,19 +98,18 @@ const Profile = React.createClass({
 
                             <section className="projects-section">
                                 <div className="rectangle">{this.state.projects.map(function(val, idx) {
-                                  return (
-                                    <div key={idx} className="map-wrapper">
-                                        <div className="descript">
-                                            <p>{val.title}</p>
-                                        </div>
-                                        <div className="image-area">
-                                          <img src={val.pictureUrl}></img>
-                                        </div>
-                                    </div>
+                                        return (
+                                            <div key={idx} className="map-wrapper">
+                                                <div className="descript">
+                                                    <p>{val.title}</p>
+                                                </div>
+                                                <div className="image-area">
+                                                    <img src={val.pictureUrl}></img>
+                                                </div>
+                                            </div>
 
-                                  )
-                                })}
-
+                                        )
+                                    })}
 
                                 </div>
                             </section>

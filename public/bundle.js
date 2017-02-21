@@ -68,11 +68,7 @@
 	
 	var _logIn2 = _interopRequireDefault(_logIn);
 	
-<<<<<<< HEAD
-	var _allVideos = __webpack_require__(246);
-=======
-	var _allVideos = __webpack_require__(250);
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+	var _allVideos = __webpack_require__(248);
 	
 	var _allVideos2 = _interopRequireDefault(_allVideos);
 	
@@ -84,43 +80,19 @@
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-<<<<<<< HEAD
-	var _homePage = __webpack_require__(247);
+	var _homePage = __webpack_require__(249);
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
 	
-<<<<<<< HEAD
-	var _becomeMentor = __webpack_require__(248);
+	var _becomeMentor = __webpack_require__(252);
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
-	var _profilePage = __webpack_require__(249);
+	var _profilePage = __webpack_require__(253);
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
-	var _uploadProject = __webpack_require__(251);
-=======
-	var _becomeMentor = __webpack_require__(253);
-=======
-	var _homePage = __webpack_require__(251);
-	
-	var _homePage2 = _interopRequireDefault(_homePage);
-	
-	var _becomeMentor = __webpack_require__(255);
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
-	
-	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
-	
-	var _profilePage = __webpack_require__(256);
-	
-	var _profilePage2 = _interopRequireDefault(_profilePage);
-	
-<<<<<<< HEAD
-	var _uploadProject = __webpack_require__(256);
->>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
-=======
-	var _uploadProject = __webpack_require__(257);
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+	var _uploadProject = __webpack_require__(254);
 	
 	var _uploadProject2 = _interopRequireDefault(_uploadProject);
 	
@@ -24877,9 +24849,9 @@
 		switch (opts.arrayFormat) {
 			case 'index':
 				return function (key, value, accumulator) {
-					result = /\[(\d*)\]$/.exec(key);
+					result = /\[(\d*)]$/.exec(key);
 	
-					key = key.replace(/\[\d*\]$/, '');
+					key = key.replace(/\[\d*]$/, '');
 	
 					if (!result) {
 						accumulator[key] = value;
@@ -24895,9 +24867,9 @@
 	
 			case 'bracket':
 				return function (key, value, accumulator) {
-					result = /(\[\])$/.exec(key);
+					result = /(\[])$/.exec(key);
 	
-					key = key.replace(/\[\]$/, '');
+					key = key.replace(/\[]$/, '');
 	
 					if (!result || accumulator[key] === undefined) {
 						accumulator[key] = value;
@@ -26657,11 +26629,7 @@
 	
 	
 	// module
-<<<<<<< HEAD
-	exports.push([module.id, "body {\n    font-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n}\n\n.ulLink {\n    background-color: #0f081c;\n    width: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position: fixed;\n    padding: 0;\n    margin: 0;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1 {\n    margin-right: 15px;\n    font-size: 24px;\n    color: #e78062;\n}\n\n.li2 {\n    margin-right: 15px;\n    font-size: 22px;\n    color: #e78062;\n}\n\n.li1 a {\n    text-decoration: none;\n}\n\n.li2 a {\n    text-decoration: none;\n    font-size: 22px;\n}\n\n.h1 {\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color: black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter {\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color: black;\n    text-align: end;\n}\n\n.secondBorder {\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position: fixed;\n    padding: 0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n}\n\n\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n.spaceBetween {\n    background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position: fixed;\n    margin: 0;\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}\n", ""]);
-=======
-	exports.push([module.id, "body{\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n    width: 720px;\n    height: 935px;\n    background-color: #f0f1f1;\n   }\n\n.rectangle_4{\n    width: 1290px;\n    height: 400px;\n    background-color: rgba(34, 31, 31, 0.7);\n}\n\n\n.page_1 {\n  width: 150px;\n  height: 70px;\n  object-fit: contain;\n  position: absolute;\n}\n.rectangle_2{\n  width: 1290px;\n  height: 100px;\n  border-radius: 10px;\n  background-color: blue;\n  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n}\n\n.share-and-connect{\n width: 314.5px; \n height: 56px; \n font-family: SourceSansPro; \n font-size: 24px; \n font-weight: bold; \n font-style: normal;\n  font-stretch: normal; \n  line-height: 1.17; \n  letter-spacing: 0.1px; \n  text-align: right; \n  color: #ffffff; }\n\n.topStyle{\n position: relative;\n}\n\n.topStyle p{\n position: absolute;\n width: 314.5px; \n height: 56px; \n color: #FFF;\n font-size: 24px; \n font-weight: bold;\n font-stretch: normal; \n line-height: 1.17; \n letter-spacing: 0.1px; \n text-align: right; \n}\n\n\n\n.gridImg {\n  height: 250px;\n  width: 350px;\n}\n\n.oneList {\n  margin-left: 25px;\n  float: left;\n}\n\n\n\n\n    /*left: 0;\n    top: 0;\n    padding: 10px;\n    width: 218px;\n    color: #FFF;\n    margin: 5px;\n    font-size: 24px;*/\n\n\n\n\n\n\n/*.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}*/\n\n/*.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}*/\n\n\t\n/*.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n*/\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n/*.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}*/\n\n", ""]);
->>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
+	exports.push([module.id, "body{\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n    width: 720px;\n    height: 935px;\n    background-color: #f0f1f1;\n   }\n\n.rectangle_4{\n    width: 1290px;\n    height: 400px;\n    background-color: rgba(34, 31, 31, 0.7);\n}\n\n\n.page_1 {\n  width: 150px;\n  height: 70px;\n  object-fit: contain;\n  position: absolute;\n}\n.rectangle_2{\n  width: 1290px;\n  height: 100px;\n  border-radius: 10px;\n  background-color: blue;\n  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);\n}\n\n.share-and-connect{\n width: 314.5px;\n height: 56px;\n font-family: SourceSansPro;\n font-size: 24px;\n font-weight: bold;\n font-style: normal;\n  font-stretch: normal;\n  line-height: 1.17;\n  letter-spacing: 0.1px;\n  text-align: right;\n  color: #ffffff; }\n\n.topStyle{\n position: relative;\n}\n\n.topStyle p{\n position: absolute;\n width: 314.5px;\n height: 56px;\n color: #FFF;\n font-size: 24px;\n font-weight: bold;\n font-stretch: normal;\n line-height: 1.17;\n letter-spacing: 0.1px;\n text-align: right;\n}\n\n\n\n.gridImg {\n  height: 250px;\n  width: 350px;\n}\n\n.oneList {\n  margin-left: 25px;\n  float: left;\n}\n\n\n\n\n    /*left: 0;\n    top: 0;\n    padding: 10px;\n    width: 218px;\n    color: #FFF;\n    margin: 5px;\n    font-size: 24px;*/\n\n\n\n\n\n\n/*.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}*/\n\n/*.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}*/\n\n\n/*.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n*/\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n/*.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}*/\n", ""]);
 	
 	// exports
 
@@ -26990,89 +26958,6 @@
 	if(false) {
 		// When the styles change, update the <style> tags
 		if(!content.locals) {
-<<<<<<< HEAD
-=======
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./nya.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./nya.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 238 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(235)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "body {\n\theight: 100%;\n}\n* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* All Projects Page */}\n\n.projectsTable {\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding-top: 40px;\n}\n.tableItem {\n\tpadding: 7px 7px 7px 7px;\n\theight: 125px;\n\twidth: auto;\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px; \n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50; \n\twidth: 350px;\n\tpadding-right: 50px; \n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px; \n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: flex-end;\n\tbackground-color: green;\n\t\n}", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 239 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(240);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(236)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
-			module.hot.accept("!!./../../node_modules/css-loader/index.js!./dee.css", function() {
-				var newContent = require("!!./../../node_modules/css-loader/index.js!./dee.css");
-				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
-				update(newContent);
-			});
-		}
-		// When the module is disposed, remove the <style> tags
-		module.hot.dispose(function() { update(); });
-	}
-
-/***/ },
-/* 240 */
-/***/ function(module, exports, __webpack_require__) {
-
-	exports = module.exports = __webpack_require__(235)();
-	// imports
-	
-	
-	// module
-	exports.push([module.id, "", ""]);
-	
-	// exports
-
-
-/***/ },
-/* 241 */
-/***/ function(module, exports, __webpack_require__) {
-
-	// style-loader: Adds some css to the DOM by adding a <style> tag
-	
-	// load the styles
-	var content = __webpack_require__(242);
-	if(typeof content === 'string') content = [[module.id, content, '']];
-	// add the styles to the DOM
-	var update = __webpack_require__(236)(content, {});
-	if(content.locals) module.exports = content.locals;
-	// Hot Module Replacement
-	if(false) {
-		// When the styles change, update the <style> tags
-		if(!content.locals) {
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
 			module.hot.accept("!!./../../node_modules/css-loader/index.js!./craig.css", function() {
 				var newContent = require("!!./../../node_modules/css-loader/index.js!./craig.css");
 				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
@@ -37485,7 +37370,7 @@
 	
 	
 	// module
-	exports.push([module.id, "* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px;\n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50;\n\twidth: 350px;\n\tpadding-right: 50px;\n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px;\n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\talign-items: flex-end;\n}\n\n\n\n/****************************************/\n\n#hero{\n  background-image:url(http://cdn.wallpapersafari.com/73/55/cHLiqU.jpg);\n  background-size:cover;\n  position:relative;\n  height:100vh;\n  /*background-color: #0f081c;*/\n}\n\n.header{\n  position:absolute;\n  top:50%;\n  text-align:center;\n  width:100%;\n  color:#fff;\n  font-size:36px;\n  -ms-transform: translate(0,-50%); /* IE 9 */\n    -webkit-transform: translate(0,-50%); /* Safari */\n    transform: translate(0,-50%);\n\n}\n\n#content{\n  padding:100px 50px;\n  text-align:center;\n  width:80%;\n  margin:0px auto;\n}\n\n#content h2{\n  margin:0px 0px 30px 0px;\n}\n\n#footer{\n  padding:30px 0px;\n  text-align:center;\n  background:#ddd;\n}\n\n\nh2 {\n  font-size: 50px;\n  font-family: 'Ubuntu', sans-serif;\n}\n\nspan {\n  font-size: 50px;\n  font-family: 'Ubuntu', sans-serif;\n}\n", ""]);
+	exports.push([module.id, "body {\n\theight: 100%;\n}\n* {\n\tfont-family: \"Times New Roman\";\n}\n\n{/* All Projects Page */}\n\n.projectsTable {\n\tdisplay: flex;\n\tjustify-content: center;\n\tpadding-top: 40px;\n}\n.tableItem {\n\tpadding: 7px 7px 7px 7px;\n\theight: 125px;\n\twidth: auto;\n}\n\n{/* Mentor Page CSS */}\n\n.submitForm {\n\tpadding-right: 150px;\n}\n.pageTitle {\n\ttext-align: center;\n}\n.flexContainerMP {\n  display: flex;\n  flex-direction: row;\n  justify-content: center;\n}\n.column1 {\n\tmargin: 50 50 50 50;\n\twidth: 350px;\n\tpadding-right: 50px;\n}\n.column2 {\n\tmargin: 20 20 20 20;\n\twidth: 400px;\n}\n.formInfo {\n\twidth: 250px;\n}\n.formMessage {\n\twidth: 250px;\n\theight: 150px;\n}\n\n{/* All Project Page CSS */}\n\n.flexContainerAPP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tflex-wrap: wrap;\n}\n\n{/*Log In Page CSS*/}\n\n.flexContainerLIP {\n\tdisplay: flex;\n\tflex-direction: column;\n\tjustify-content: center;\n\talign-items: center;\n}\n.titleLIP {\n\torder: 1;\n}\n.formLIP {\n\torder: 2;\n}\n\n{/* Sign Up Page CSS */}\n\n.flexContainerSUP {\n\tdisplay: flex;\n\tflex-direction: row;\n\tjustify-content: space-around;\n\tpadding: 150px 0px 150px 0px;\n}\n\n.titleSUP {\n\ttext-align: center;\n}\n\n.leftSUP {\n\tbackground-color: green;\n\ttext-align: center;\n}\n\n.rightSUP {\n\tbackground-color: yellow;\n}\n\n.SUPbutton {\n\talign-items: flex-end;\n}\n\n{/**/}\n\n{/**/}\n\n{/* Footer Page CSS */}\n\n.flexContainerFooter {\n\tdisplay: flex;\n\tjustify-content: center;\n\talign-items: flex-end;\n\tbackground-color: green;\n\n}\n", ""]);
 	
 	// exports
 
@@ -37662,7 +37547,7 @@
 	  value: true
 	});
 	
-	var _page_one = __webpack_require__(252);
+	var _page_one = __webpack_require__(246);
 	
 	var _image = _interopRequireWildcard(_page_one);
 	
@@ -37674,19 +37559,15 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-<<<<<<< HEAD
-	__webpack_require__(241);
-=======
-	var _navBar = __webpack_require__(249);
+	var _navBar = __webpack_require__(247);
 	
 	var _navBar2 = _interopRequireDefault(_navBar);
 	
-	var _footer = __webpack_require__(245);
+	var _footer = __webpack_require__(243);
 	
 	var _footer2 = _interopRequireDefault(_footer);
 	
-	__webpack_require__(237);
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+	__webpack_require__(241);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -37743,11 +37624,13 @@
 	exports.default = AllProjectsPage;
 
 /***/ },
-<<<<<<< HEAD
 /* 246 */
-=======
-/* 248 */,
-/* 249 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
+
+/***/ },
+/* 247 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -37756,11 +37639,17 @@
 	    value: true
 	});
 	
+	var _page = __webpack_require__(255);
+	
+	var _image = _interopRequireWildcard(_page);
+	
 	var _react = __webpack_require__(1);
 	
 	var _react2 = _interopRequireDefault(_react);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	var Nav = _react2.default.createClass({
 	    displayName: "Nav",
@@ -37769,52 +37658,56 @@
 	            "div",
 	            null,
 	            _react2.default.createElement(
-	                "nav",
-	                { className: "topnav", id: "myTopnav" },
-	                _react2.default.createElement("img", { id: "logo", src: "http://tour.treyratcliff.com/wp-content/uploads/2015/06/viewbug_transparent.png", height: "50px", width: "20px" }),
+	                "div",
+	                { className: "rectangle-2" },
 	                _react2.default.createElement(
-	                    "li",
-	                    null,
+	                    "nav",
+	                    { className: "topnav", id: "myTopnav" },
+	                    _react2.default.createElement("img", { src: _image.default, className: "page-1" }),
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#home" },
-	                        "Home"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
+	                        "li",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#home" },
+	                            "Sign Out"
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#news" },
-	                        "News"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
+	                        "li",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#news" },
+	                            "My Profile"
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#contact" },
-	                        "Contact"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
+	                        "li",
+	                        null,
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "#contact" },
+	                            "All Projects"
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#about" },
-	                        "About"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    { className: "icon" },
+	                        "li",
+	                        { className: "rectangle-5" },
+	                        _react2.default.createElement(
+	                            "a",
+	                            { id: "add-projects", href: "#about" },
+	                            "+ Add Project"
+	                        )
+	                    ),
 	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "javascript:void(0);", onClick: this.onChange },
-	                        "\u2630"
+	                        "li",
+	                        { className: "icon" },
+	                        _react2.default.createElement(
+	                            "a",
+	                            { href: "javascript:void(0);", onClick: this.onChange },
+	                            "\u2630"
+	                        )
 	                    )
 	                )
 	            )
@@ -37834,8 +37727,7 @@
 	exports.default = Nav;
 
 /***/ },
-/* 250 */
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+/* 248 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37917,28 +37809,24 @@
 	exports.default = Projects;
 
 /***/ },
-<<<<<<< HEAD
-/* 247 */
-=======
-/* 251 */
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+/* 249 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	Object.defineProperty(exports, "__esModule", {
-	    value: true
+	  value: true
 	});
 	
-	var _page_one = __webpack_require__(252);
+	var _page_one = __webpack_require__(246);
 	
 	var _image = _interopRequireWildcard(_page_one);
 	
-	var _rectangle_four = __webpack_require__(253);
+	var _rectangle_four = __webpack_require__(250);
 	
 	var _image2 = _interopRequireWildcard(_rectangle_four);
 	
-	var _mentor = __webpack_require__(254);
+	var _mentor = __webpack_require__(251);
 	
 	var _image3 = _interopRequireWildcard(_mentor);
 	
@@ -37969,50 +37857,6 @@
 	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	var MainPage = _react2.default.createClass({
-<<<<<<< HEAD
-	    displayName: 'MainPage',
-	
-	    render: function render() {
-	        return _react2.default.createElement(
-	            'div',
-	            null,
-	            _react2.default.createElement(
-	                'nav',
-	                null,
-	                _react2.default.createElement(
-	                    'ul',
-	                    { className: 'ulLink' },
-	                    _react2.default.createElement(
-	                        'li',
-	                        { className: 'li1' },
-	                        _react2.default.createElement(
-	                            _reactRouter.Link,
-	                            { to: '/signup' },
-	                            'Sign Up'
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        'li',
-	                        { className: 'li2' },
-	                        _react2.default.createElement(
-	                            _reactRouter.Link,
-	                            { to: '/login' },
-	                            'Log In'
-	                        )
-	                    )
-	                )
-	            ),
-	            _react2.default.createElement(
-	                'h1',
-	                { className: 'smarter' },
-	                'A smarter way to learn'
-	            ),
-	            _react2.default.createElement('div', { className: 'secondBorder' }),
-	            _react2.default.createElement('div', { className: 'thirdBorder' }),
-	            _react2.default.createElement(_footer2.default, null)
-	        );
-	    }
-=======
 	  displayName: 'MainPage',
 	  getInitialState: function getInitialState() {
 	    return { project: [] };
@@ -38085,7 +37929,6 @@
 	      )
 	    );
 	  }
->>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
 	});
 	
 	exports.default = MainPage;
@@ -38101,29 +37944,19 @@
 	// <div className='thirdBorder'></div>
 
 /***/ },
-<<<<<<< HEAD
-/* 248 */
-=======
-/* 252 */
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
-/***/ function(module, exports, __webpack_require__) {
-
-	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
-
-/***/ },
-/* 253 */
+/* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
 
 /***/ },
-/* 254 */
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports = __webpack_require__.p + "9ac4790e644000c403d80fc0203ea6f9.png";
 
 /***/ },
-/* 255 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38353,15 +38186,7 @@
 	exports.default = MentorPage;
 
 /***/ },
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 249 */
-=======
-/* 254 */
->>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
-=======
-/* 256 */
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38369,6 +38194,22 @@
 	Object.defineProperty(exports, "__esModule", {
 	    value: true
 	});
+	
+	var _icnTwitter = __webpack_require__(256);
+	
+	var _image = _interopRequireWildcard(_icnTwitter);
+	
+	var _icnGithub = __webpack_require__(259);
+	
+	var _image2 = _interopRequireWildcard(_icnGithub);
+	
+	var _icnLinkedin = __webpack_require__(265);
+	
+	var _image3 = _interopRequireWildcard(_icnLinkedin);
+	
+	var _icnWebsite = __webpack_require__(262);
+	
+	var _image4 = _interopRequireWildcard(_icnWebsite);
 	
 	var _react = __webpack_require__(1);
 	
@@ -38380,19 +38221,13 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-<<<<<<< HEAD
-<<<<<<< HEAD
-	var _navBar = __webpack_require__(250);
-=======
-	var _navBar = __webpack_require__(255);
->>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
-=======
-	var _navBar = __webpack_require__(249);
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+	var _navBar = __webpack_require__(247);
 	
 	var _navBar2 = _interopRequireDefault(_navBar);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 	
 	var Profile = _react2.default.createClass({
 	    displayName: 'Profile',
@@ -38468,22 +38303,22 @@
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                _react2.default.createElement('img', { src: 'img/icn-twitter.png', srcSet: 'img/icn-twitter@2x.png 2x, img/icn-twitter@3x.png 3x', className: 'icn-twitter', height: '35px', width: '35px' })
+	                                _react2.default.createElement('img', { src: _image.default, className: 'icn-twitter', height: '35px', width: '35px' })
 	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                _react2.default.createElement('img', { src: 'img/icn-github.png', srcSet: 'img/icn-github@2x.png 2x, img/icn-github@3x.png 3x', className: 'icn-github', height: '35px', width: '35px' })
+	                                _react2.default.createElement('img', { src: _image2.default, className: 'icn-github', height: '35px', width: '35px' })
 	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                _react2.default.createElement('img', { src: 'img/icn-linkedin.png', srcSet: 'img/icn-linkedin@2x.png 2x, img/icn-linkedin@3x.png 3x', className: 'icn-linkedin', height: '35px', width: '35px' })
+	                                _react2.default.createElement('img', { src: _image3.default, className: 'icn-linkedin', height: '35px', width: '35px' })
 	                            ),
 	                            _react2.default.createElement(
 	                                'li',
 	                                null,
-	                                _react2.default.createElement('img', { src: 'img/icn-website.png', srcSet: 'img/icn-website@2x.png 2x, img/icn-website@3x.png 3x', className: 'icn-website', height: '35px', width: '35px' })
+	                                _react2.default.createElement('img', { src: _image4.default, className: 'icn-website', height: '35px', width: '35px' })
 	                            )
 	                        ),
 	                        _react2.default.createElement(
@@ -38559,193 +38394,7 @@
 	exports.default = (0, _reactRouter.withRouter)(Profile);
 
 /***/ },
-/* 250 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Nav = _react2.default.createClass({
-	    displayName: "Nav",
-	    render: function render() {
-	        return _react2.default.createElement(
-	            "div",
-	            null,
-	            _react2.default.createElement(
-	                "div",
-	                { className: "rectangle-2" },
-	                _react2.default.createElement(
-	                    "nav",
-	                    { className: "topnav", id: "myTopnav" },
-	                    _react2.default.createElement("img", { src: "./images/page-1.png", className: "page-1" }),
-	                    _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                            "a",
-	                            { href: "#home" },
-	                            "Sign Out"
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                            "a",
-	                            { href: "#news" },
-	                            "My Profile"
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        "li",
-	                        null,
-	                        _react2.default.createElement(
-	                            "a",
-	                            { href: "#contact" },
-	                            "All Projects"
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        "li",
-	                        { className: "rectangle-5" },
-	                        _react2.default.createElement(
-	                            "a",
-	                            { id: "add-projects", href: "#about" },
-	                            "+ Add Project"
-	                        )
-	                    ),
-	                    _react2.default.createElement(
-	                        "li",
-	                        { className: "icon" },
-	                        _react2.default.createElement(
-	                            "a",
-	                            { href: "javascript:void(0);", onClick: this.onChange },
-	                            "\u2630"
-	                        )
-	                    )
-	                )
-	            )
-	        );
-	    },
-	
-	    onChange: function onChange() {
-	        var x = document.getElementById("myTopnav");
-	        if (x.className === "topnav") {
-	            x.className += " responsive";
-	        } else {
-	            x.className = "topnav";
-	        }
-	    }
-	});
-	
-	exports.default = Nav;
-
-/***/ },
-<<<<<<< HEAD
-<<<<<<< HEAD
-/* 251 */
-=======
-/* 255 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-	
-	Object.defineProperty(exports, "__esModule", {
-	    value: true
-	});
-	
-	var _react = __webpack_require__(1);
-	
-	var _react2 = _interopRequireDefault(_react);
-	
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-	
-	var Nav = _react2.default.createClass({
-	    displayName: "Nav",
-	    render: function render() {
-	        return _react2.default.createElement(
-	            "div",
-	            null,
-	            _react2.default.createElement(
-	                "nav",
-	                { className: "topnav", id: "myTopnav" },
-	                _react2.default.createElement("img", { id: "logo", src: "http://tour.treyratcliff.com/wp-content/uploads/2015/06/viewbug_transparent.png", height: "50px", width: "20px" }),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#home" },
-	                        "Home"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#news" },
-	                        "News"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#contact" },
-	                        "Contact"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    null,
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "#about" },
-	                        "About"
-	                    )
-	                ),
-	                _react2.default.createElement(
-	                    "li",
-	                    { className: "icon" },
-	                    _react2.default.createElement(
-	                        "a",
-	                        { href: "javascript:void(0);", onClick: this.onChange },
-	                        "\u2630"
-	                    )
-	                )
-	            )
-	        );
-	    },
-	
-	    onChange: function onChange() {
-	        var x = document.getElementById("myTopnav");
-	        if (x.className === "topnav") {
-	            x.className += " responsive";
-	        } else {
-	            x.className = "topnav";
-	        }
-	    }
-	});
-	
-	exports.default = Nav;
-
-/***/ },
-/* 256 */
->>>>>>> 9efa31e1c33a47b8d6fbed5a76bab7997dee27b6
-=======
-/* 257 */
->>>>>>> be57b37b141411d1202d0a44e275e9b45d91ad6c
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38861,6 +38510,42 @@
 	});
 	
 	exports.default = UploadProject;
+
+/***/ },
+/* 255 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
+
+/***/ },
+/* 256 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "85b6a5a14c62a201c34280cd9c9676fb.png";
+
+/***/ },
+/* 257 */,
+/* 258 */,
+/* 259 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "2785de7d138928e3d4c833fc3574824c.png";
+
+/***/ },
+/* 260 */,
+/* 261 */,
+/* 262 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "349ee6147421fb073e5989bfda56c22b.png";
+
+/***/ },
+/* 263 */,
+/* 264 */,
+/* 265 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "d5294a1a6caa6f8744348750c2ffff30.png";
 
 /***/ }
 /******/ ]);

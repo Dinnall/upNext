@@ -7,7 +7,7 @@ const Nav = React.createClass({
 
                 <div className="rectangle-2">
                     <nav className="topnav" id="myTopnav">
-                        <img src="./images/page-1.png" className="page-1"></img>
+                        <img src="../images/page-1.png" className="page-1"></img>
                         <li>
                             <a href="#home">Sign Out</a>
                         </li>
