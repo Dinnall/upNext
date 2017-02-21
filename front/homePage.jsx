@@ -34,7 +34,7 @@ const MainPage = React.createClass({
             <div className='rectangle_2'>
                <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
                 <p className='share_and_connect'>Share and connect.Upnext is a space for creators</p>
-                 <img className='rectangle_4' src='../images/rectangle_four.png' />
+                  <img className='rectangle_4' src='../images/rectangle_four.png' />
 
 
                <div>
