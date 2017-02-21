@@ -88,15 +88,15 @@
 	
 	var _homePage2 = _interopRequireDefault(_homePage);
 	
-	var _becomeMentor = __webpack_require__(250);
+	var _becomeMentor = __webpack_require__(251);
 	
 	var _becomeMentor2 = _interopRequireDefault(_becomeMentor);
 	
-	var _profilePage = __webpack_require__(251);
+	var _profilePage = __webpack_require__(252);
 	
 	var _profilePage2 = _interopRequireDefault(_profilePage);
 	
-	var _uploadProject = __webpack_require__(253);
+	var _uploadProject = __webpack_require__(254);
 	
 	var _uploadProject2 = _interopRequireDefault(_uploadProject);
 	
@@ -26630,7 +26630,7 @@
 	
 	
 	// module
-	exports.push([module.id, "body{\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n    width: 720px;\n    height: 935px;\n    background-color: #f0f1f1;\n   }\n.rectangle_4{\n    width: 720px;\n    height: 240px;\n    object-fit: contain;\n    background-color: rgba(34, 31, 31, 0.7);\n}\n\n/*.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}*/\n\n/*.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}*/\n\n\t\n/*.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n*/\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n/*.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}*/\n\n", ""]);
+	exports.push([module.id, "body{\n\tfont-size: 16px;\n    font-family: 'Source Code Pro', monospace;\n    width: 720px;\n    height: 935px;\n    background-color: #f0f1f1;\n   }\n.rectangle_4{\n    width: 1290px;\n    height: 400px;\n    background-color: rgba(34, 31, 31, 0.7);\n}\n    /*object-fit: contain;*/\n\n\n.page_1 {\n  width: 150px;\n  height: 60px;\n  object-fit: contain;\n  position: absolute;\n}\n\n\n\n\n\n/*.ulLink{\n    background-color: #0f081c;\n\twidth: 1024px;\n    height: 672px;\n    top: 27px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n\ttext-decoration: none;\n\tjustify-content: flex-end;\n\tlist-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    padding:0;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n}\n\n.li1{\nmargin-right: 15px;\nfont-size: 24px;\ncolor:#e78062;\n}\n\n\n.li2{\nmargin-right: 15px;\nfont-size: 22px;\ncolor:#e78062;\n}\n\n\n\n.li1 a{\n  text-decoration: none;\n}\n\n.li2 a{\n  text-decoration: none;\n  font-size: 22px;\n}*/\n\n/*.h1{\n\tdisplay: flex;\n\tjustify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n    align-self: end;\n}\n\n.smarter{\n    display: flex;\n    justify-content: flex-end;\n    align-self: flex-end;\n    background-color: white;\n    color:black;\n    text-align: end;\n}*/\n\n\t\n/*.secondBorder{\n    background-color: #e6f3ff;\n    width: 1300px;\n    height: 272px;\n    top: 400px;\n    left: 0px;\n    position:fixed;\n    padding:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self: flex-end;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px\n\n}\n*/\n/*.thirdBorder{\n    background-color: #ffffff;\n    width: 1300px;\n    height: 100px;\n    top: 150px;\n    left: 0px;\n    position:fixed;\n    margin:0;\n    order: 0;\n    flex: 1 1 auto;\n    align-self:center;\n    padding-top: 100px;\n    padding-right: 30px;\n    padding-bottom: 100px;\n    padding-left: 80px;\n}*/\n\n/*.spaceBetween{\n     background-color: #0f081c;\n    width: 300px;\n    height: 672px;\n    top: 10px;\n    left: 0px;\n    display: flex;\n    padding-left: 1;\n    text-decoration: none;\n    justify-content: flex-end;\n    list-style-type: none;\n    align-self: flex-end;\n    position:fixed;\n    margin:0;\n    top:0;\n    left:0;\n    width: 100%;\n    height: 100%;\n    padding-top: 400px;\n    padding-right: 30px;\n    padding-bottom: 600px;\n    padding-left: 80px;\n}*/\n\n", ""]);
 	
 	// exports
 
@@ -37713,9 +37713,13 @@
 	  value: true
 	});
 	
-	var _rectangle_four = __webpack_require__(254);
+	var _page_one = __webpack_require__(255);
 	
-	var _image = _interopRequireWildcard(_rectangle_four);
+	var _image = _interopRequireWildcard(_page_one);
+	
+	var _rectangle_four = __webpack_require__(250);
+	
+	var _image2 = _interopRequireWildcard(_rectangle_four);
 	
 	var _react = __webpack_require__(1);
 	
@@ -37750,7 +37754,17 @@
 	    return _react2.default.createElement(
 	      'div',
 	      null,
-	      _react2.default.createElement('img', { className: 'rectangle_4', src: _image.default })
+	      _react2.default.createElement(
+	        'div',
+	        null,
+	        _react2.default.createElement(
+	          _reactRouter.Link,
+	          { to: '/' },
+	          ' ',
+	          _react2.default.createElement('img', { className: 'page_1', src: _image.default })
+	        ),
+	        _react2.default.createElement('img', { className: 'rectangle_4', src: _image2.default })
+	      )
 	    );
 	  }
 	});
@@ -37769,6 +37783,12 @@
 
 /***/ },
 /* 250 */
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
+
+/***/ },
+/* 251 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -37998,7 +38018,7 @@
 	exports.default = MentorPage;
 
 /***/ },
-/* 251 */
+/* 252 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38017,7 +38037,7 @@
 	
 	var _reactRouter = __webpack_require__(178);
 	
-	var _navBar = __webpack_require__(252);
+	var _navBar = __webpack_require__(253);
 	
 	var _navBar2 = _interopRequireDefault(_navBar);
 	
@@ -38148,7 +38168,7 @@
 	exports.default = (0, _reactRouter.withRouter)(Profile);
 
 /***/ },
-/* 252 */
+/* 253 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38235,7 +38255,7 @@
 	exports.default = Nav;
 
 /***/ },
-/* 253 */
+/* 254 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -38353,10 +38373,10 @@
 	exports.default = UploadProject;
 
 /***/ },
-/* 254 */
+/* 255 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "a968e2c57b8a2549198dea8d29074026.png";
+	module.exports = __webpack_require__.p + "cb6bae8ac0913ac7529f703ed62f1850.png";
 
 /***/ }
 /******/ ]);

@@ -12,12 +12,16 @@ const MainPage = React.createClass({
   render: function() {
     return (
       <div>
-       <img className='rectangle_4' src='../images/rectangle_four.png' />
-        
+          <div>
+           <Link to='/'> <img className='page_1' src='../images/page_one.png' /></Link>
+           <img className='rectangle_4' src='../images/rectangle_four.png' />
+          </div>
+
       </div>
     )
   }
 })
+
 
 export default MainPage
 

@@ -6,11 +6,23 @@ body{
     background-color: #f0f1f1;
    }
 .rectangle_4{
-    width: 720px;
-    height: 240px;
-    object-fit: contain;
+    width: 1290px;
+    height: 400px;
     background-color: rgba(34, 31, 31, 0.7);
 }
+    /*object-fit: contain;*/
+
+
+.page_1 {
+  width: 150px;
+  height: 60px;
+  object-fit: contain;
+  position: absolute;
+}
+
+
+
+
 
 /*.ulLink{
     background-color: #0f081c;
