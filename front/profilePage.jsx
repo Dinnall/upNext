@@ -2,6 +2,7 @@ import React from 'react';
 import $ from 'jquery';
 import {withRouter} from "react-router";
 import Nav from './navBar.jsx';
+// import '../src/style/reset.css';
 
 const Profile = React.createClass({
     componentDidMount() {
@@ -71,24 +72,24 @@ const Profile = React.createClass({
 
                             </ul>
 
-                            <ul className="interact-buttons">
+                            <div className="interact-buttons">
 
-                                <li className="interact">
+                                <div className="interact button">
 
-                                    <a id="buttons" href="">
-                                        <b>Mentor Me</b>
-                                    </a>
 
-                                </li>
-                                <li className="interact">
+                                        Mentor Me
 
-                                    <a id="buttons" href="">
-                                        <b>Hire Me!</b>
-                                    </a>
 
-                                </li>
+                                </div>
+                                <div className="interact button">
 
-                            </ul>
+
+                                        Hire Me!
+
+
+                                </div>
+
+                            </div>
 
                         </div>
 
