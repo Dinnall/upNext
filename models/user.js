@@ -21,6 +21,14 @@ module.exports = function(sequelize, DataTypes) {
       isEmail: true,
       allowNull: false
     },
+    linkedin: {
+      type: DataTypes.STRING,
+      isEmail: true,
+      allowNull: true,
+      validate: {
+        isUrl:true
+      }
+    },
     imageUrl: {
       type: DataTypes.STRING,
       allowNull: true,

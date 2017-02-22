@@ -7,7 +7,7 @@ Projects.sync({force: true})
 //add the following four Projects to the database:
 .then(() => Projects.bulkCreate([
 	{
-	  title: 'Tinder Using React',
+	  title: 'Youtube',
 	  description: 'Tinder Swag',
 	  gitUsername: 'VctrySam',
 	  gitRepo: 'Tinder',
@@ -18,7 +18,7 @@ Projects.sync({force: true})
 		UserId: 1
 	},
 	{
-	  title: "SoundCloud Redux",
+	  title: "Facebook",
 	  description: 'A basic SoundCloud API client built with React, Redux, and Redux Saga.',
 	  gitUsername: 'r-park',
 	  gitRepo: 'soundcloud-redux',
@@ -29,7 +29,7 @@ Projects.sync({force: true})
 		UserId: 1
 	},
 	{
-	  title: 'SnapChat Using React',
+	  title: 'Linkedin',
 	  description: 'SnapChat Swag',
 	  gitUsername: 'VctrySam',
 	  gitRepo: 'SnapChat',
@@ -41,7 +41,7 @@ Projects.sync({force: true})
 	},
 
 	{
-	  title: 'Tetris Using React, Redux, Immutable',
+	  title: 'Instagram',
 	  description: 'There are many versions of Javascript, and using React to do Tetris has become my goal.',
 	  gitUsername: 'chvin',
 	  gitRepo: 'react-tetris',
@@ -52,7 +52,7 @@ Projects.sync({force: true})
 		UserId: 1
 	},
 	{
-	  title: "Let Loopy with nested Loops!",
+	  title: "Twitter",
 	  description: 'This project looks at loops nested in loops',
 	  gitUsername: 'shiffman',
 	  gitRepo: '',
@@ -63,7 +63,7 @@ Projects.sync({force: true})
 		UserId: 1
 	},
 	{
-	  title: "Let Loopy with nested Loops!",
+	  title: "Dribble",
 	  description: 'This project looks at loops nested in loops',
 	  gitUsername: 'shiffman',
 	  gitRepo: '',
@@ -74,7 +74,7 @@ Projects.sync({force: true})
 		UserId: 1
 	},
 	{
-	  title: "Let Loopy with nested Loops!",
+	  title: "Behance",
 	  description: 'This project looks at loops nested in loops',
 	  gitUsername: 'shiffman',
 	  gitRepo: '',
@@ -85,13 +85,24 @@ Projects.sync({force: true})
 		UserId: 1
 	},
 	{
-	  title: "Let Loopy with nested Loops!",
+	  title: "Myspace",
 	  description: 'This project looks at loops nested in loops',
 	  gitUsername: 'shiffman',
 	  gitRepo: '',
 	  url: [''],
 	  videoUrl: 'https://vimeo.com/139013372',
 		pictureUrl: 'http://www.hugpug.com/photos/sheba_layout5/myspace.jpg',
+	  projectId: 5,
+		UserId: 1
+	},
+	{
+	  title: "Quora",
+	  description: 'This project looks at loops nested in loops',
+	  gitUsername: 'shiffman',
+	  gitRepo: '',
+	  url: [''],
+	  videoUrl: 'https://vimeo.com/139013372',
+		pictureUrl: 'https://blog.kissmetrics.com/wp-content/uploads/2012/07/quora-related-questions.png',
 	  projectId: 5,
 		UserId: 1
 	},
