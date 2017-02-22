@@ -50,7 +50,7 @@ const MainPage = React.createClass({
               <p className='thirdShare'>Share your work.Connect with the community</p>
               <p className='thirdUp'>UpNext believes in the democratization of technical education.Technology is constantly evolving.Stay updated with UpNext</p>
           </div>
-           
+            
             <img className='rectangle_4' src='../images/mentor.png' />
            <div className='fourthComp'>
               
