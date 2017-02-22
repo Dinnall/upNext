@@ -15,7 +15,7 @@ const MainPage = React.createClass({
   componentDidMount(){
      {
       $.ajax({
-        url: '/api/projects', 
+        url: '/api/projects',
         type: "GET"
       })
       .done( (data) => {
@@ -43,21 +43,21 @@ const MainPage = React.createClass({
                   <p className="projectTitle">{projects.title}</p>
                     <img className="videoBox" src={projects.videoUrl} />
                     <p className="descriptionClass"><strong>{projects.gitUsername}</strong></p>
-                    
+
                   </div>
                 </Link>
-              
+
             )
           })}
                </div>
-               
 
-                    
+
+
                 <img className='mentor' src='../images/mentor.png' />
             </div>
           </div>
 
-           
+
 
 
 
@@ -97,9 +97,3 @@ export default MainPage
         // <h1 className='smarter'>A smarter way to learn</h1>
         // <div className='secondBorder'></div>
         // <div className='thirdBorder'></div>
-
-
-
-
-
-

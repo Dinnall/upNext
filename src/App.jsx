@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
 
 import '../src/style/App.css';
-import '../src/style/nya.css';
-import '../src/style/dee.css';
+// import '../src/style/nya.css';
+// import '../src/style/dee.css';
 import '../src/style/craig.css';
 
 // Place All Componets here
@@ -18,6 +18,7 @@ import MentorPage from '../front/becomeMentor.jsx';
 import Projects from '../front/allVideos.jsx';
 import ProfilePage from '../front/profilePage.jsx';
 import UploadProject from '../front/uploadProject.jsx';
+
 
 
 var App = React.createClass({

@@ -21,7 +21,7 @@ body {
 {/* Mentor Page CSS */}
 
 .submitForm {
-	padding-right: 150px; 
+	padding-right: 150px;
 }
 .pageTitle {
 	text-align: center;
@@ -32,13 +32,13 @@ body {
   justify-content: center;
 }
 .column1 {
-	margin: 50 50 50 50; 
+	margin: 50 50 50 50;
 	width: 350px;
-	padding-right: 50px; 
+	padding-right: 50px;
 }
 .column2 {
 	margin: 20 20 20 20;
-	width: 400px; 
+	width: 400px;
 }
 .formInfo {
 	width: 250px;
@@ -108,5 +108,5 @@ body {
 	justify-content: center;
 	align-items: flex-end;
 	background-color: green;
-	
+
 }
