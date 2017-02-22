@@ -355,3 +355,73 @@ p {
   margin-bottom: 5px;
   font-family: 'Open Sans', sans-serif;
 }
+
+
+
+/**************************** Upload **********************************/
+div.add-project-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+div.add-project-form {
+  margin-top: 10%;
+  height: 600px;
+  width: 500px;
+  border-radius: 3px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  display: flex;
+  /*justify-content: center;*/
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#title, #usrName, #usrRepo, #usrUrl, #vidUrl {
+  height: 31px;
+  width: 100%;
+  border: 1px solid #d1d2d4;
+  border-radius: 2px;
+  margin-top: 5%;
+}
+
+#desc {
+  height: 150px;
+  width: 100%;
+  border: 1px solid #d1d2d4;
+  border-radius: 2px;
+  margin-top: 6%;
+}
+
+/*p.form-title {
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+  margin-bottom: -5%;
+}*/
+
+#A {
+
+}
+
+#B {
+
+}
+
+#C {
+
+}
+
+#D {
+
+}
+
+#E {
+
+}
+
+#F {
+
+}
