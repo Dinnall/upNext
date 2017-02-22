@@ -10,12 +10,10 @@ import '../src/style/craig.css';
 // Place All Componets here
 import SignUpPage from '../front/signUp.jsx';
 import LogInPage from '../front/logIn.jsx';
-import allListings from '../front/allVideos.jsx';
-import allProjects from '../front/allProjects.jsx';
 import FooterPage from '../front/footer.jsx';
 import MainPage from '../front/homePage.jsx';
 import MentorPage from '../front/becomeMentor.jsx';
-import Projects from '../front/allVideos.jsx';
+import allProjects from '../front/allProjects.jsx';
 import ProfilePage from '../front/profilePage.jsx';
 import UploadProject from '../front/uploadProject.jsx';
 
