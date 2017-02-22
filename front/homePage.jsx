@@ -26,44 +26,36 @@ const MainPage = React.createClass({
   render: function() {
     return (
       <div>
+          
+        <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
+        <img className='rectangle_4' src='../images/rectangle_four.png' />
+         <Link className ="signUp" to='/signup'>Sign Up</Link>
+        <p className='share'>Share and connect.Upnext is a space for creators</p>
 
-         <div className='topStyle'>
-            <div className='rectangle_2'>
-               <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
-                <p className='share_and_connect'>Share and connect.Upnext is a space for creators</p>
-                  <img className='rectangle_4' src='../images/rectangle_four.png' />
-
-
-               <div>
-                {this.state.project.length=== 0 ? "Loading..." : this.state.project.map((projects, idx)=> {
-                return (
-
-                <Link to={"/projects/" + projects.id} key={idx}>
-                <div className="oneList">
+        <div className='secondComp'>
+            {this.state.project.length=== 0 ? "Loading..." : this.state.project.map((projects, idx)=> {
+            return (
+                   <Link to={"/projects/" + projects.id} key={idx}>
+                <div className="projectGrid">
                   <p className="projectTitle">{projects.title}</p>
-                    <img className="videoBox" src={projects.videoUrl} />
-                    <p className="descriptionClass"><strong>{projects.gitUsername}</strong></p>
+                  <img className="videoBox" src={projects.pictureUrl} />
+                  <p className="gitUsername"><strong>{'By: '+ projects.gitUsername}</strong></p>
+                </div>
+                     </Link>
+                    )
+                     })}
+                </div>
 
-                  </div>
-                </Link>
-
-            )
-          })}
-               </div>
-
-
-
-                <img className='mentor' src='../images/mentor.png' />
-            </div>
+          <div className='thirdComp'>
+              <p className='thirdShare'>Share your work.Connect with the community</p>
+              <p className='thirdUp'>UpNext believes in the democratization of technical education.Technology is constantly evolving.Stay updated with UpNext</p>
           </div>
+           
+            <img className='rectangle_4' src='../images/mentor.png' />
+           <div className='fourthComp'>
+              
 
-
-
-
-
-
-
-
+           </div>
       </div>
     )
   }
@@ -71,29 +63,3 @@ const MainPage = React.createClass({
 
 
 export default MainPage
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //  <nav>
-        //   <ul className='ulLink'>
-        //     <li className='li1'><Link to='/signup'>Sign Up</Link></li>
-        //     <li className='li2'><Link to='/login'>Log In</Link></li>
-        //   </ul>
-        // </nav>
-        // <h1 className='smarter'>A smarter way to learn</h1>
-        // <div className='secondBorder'></div>
-        // <div className='thirdBorder'></div>
