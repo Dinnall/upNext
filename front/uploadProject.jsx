@@ -49,37 +49,37 @@ const UploadProject = React.createClass({
                     <form onSubmit={this.handleSubmit}>
 
 
-                          <span > Title</span>
+                          <span>Insert Title of your Project here</span>
                         <input  type="text" placeholder="Title" ref={(input) => {
                             this.title = input;
                         }} required/>
                         <br/>
-												 <span> Title</span>
+												 <span> Tell us about your project</span>
                         <textarea  type="textarea" placeholder="Description" ref={(input) => {
                             this.desc = input;
                         }}  required/>
                         <br/>
-                        <span > Title</span>
+                        <span> Add your github username</span>
                         <input  type="text" placeholder="gitUsername" ref={(input) => {
                             this.gitUsername = input;
                         }} required/>
                         <br/>
-												<span > Title</span>
+												<span>Name of your github repo</span>
                         <input  type="text" placeholder="gitRepo" ref={(input) => {
                             this.gitRepo = input;
                         }} required/>
                         <br/>
-												 <span > Title</span>
+												 <span>Your app URL</span>
                         <input  type="url" placeholder="siteURL" ref={(input) => {
                             this.siteURL = input;
                         }} required/>
                         <br/>
-												 <span > Title</span>
+												 <span>Your demo video URL</span>
                         <input  type="url" placeholder="videoURL" ref={(input) => {
                             this.videoURL = input;
                         }} required/>
                         <br/>
-                         {/* <button type="submit">Submit</button> */}
+                         <button type="submit">Post Project</button>
                     </form>
                 </div>
 							</div>
