@@ -49,33 +49,33 @@ const UploadProject = React.createClass({
                     <form onSubmit={this.handleSubmit}>
 
 
-                          <span id="A"> Title</span>
-                        <input id="title" type="text" placeholder="Title" ref={(input) => {
+                          <span > Title</span>
+                        <input  type="text" placeholder="Title" ref={(input) => {
                             this.title = input;
                         }} required/>
                         <br/>
-												 <span id="B"> Title</span>
-                        <input id="desc"type="text" placeholder="Description" ref={(input) => {
+												 <span> Title</span>
+                        <textarea  type="textarea" placeholder="Description" ref={(input) => {
                             this.desc = input;
-                        }} id="desc" required/>
+                        }}  required/>
                         <br/>
-                        <span id="C"> Title</span>
-                        <input id="usrName" type="text" placeholder="gitUsername" ref={(input) => {
+                        <span > Title</span>
+                        <input  type="text" placeholder="gitUsername" ref={(input) => {
                             this.gitUsername = input;
                         }} required/>
                         <br/>
-												<span id="D"> Title</span>
-                        <input id="usrRepo" type="text" placeholder="gitRepo" ref={(input) => {
+												<span > Title</span>
+                        <input  type="text" placeholder="gitRepo" ref={(input) => {
                             this.gitRepo = input;
                         }} required/>
                         <br/>
-												 <span id="E"> Title</span>
-                        <input id="usrUrl" type="url" placeholder="siteURL" ref={(input) => {
+												 <span > Title</span>
+                        <input  type="url" placeholder="siteURL" ref={(input) => {
                             this.siteURL = input;
                         }} required/>
                         <br/>
-												 <span id="F"> Title</span>
-                        <input id="vidUrl" type="url" placeholder="videoURL" ref={(input) => {
+												 <span > Title</span>
+                        <input  type="url" placeholder="videoURL" ref={(input) => {
                             this.videoURL = input;
                         }} required/>
                         <br/>
