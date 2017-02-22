@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router';
 
 const Nav = React.createClass({
     render() {
@@ -7,20 +8,17 @@ const Nav = React.createClass({
 
                 <div className="rectangle-2">
                     <nav className="topnav" id="myTopnav">
-                        <img src="../images/page-1.png" className="page-1"></img>
+                    <Link to="/"><img src="../images/page-1.png" className="page-1"></img></Link>
                         <li>
-                            <a href="#home">Sign Out</a>
+                            <Link to="/profile:id">My Profile</Link>
                         </li>
                         <li>
-                            <a href="#news">My Profile</a>
-                        </li>
-                        <li>
-                            <a href="#contact">All Projects</a>
+                            <Link to="/allProjects">All Projects</Link>
                         </li>
 
                         <li className="rectangle-5">
 
-                            <a id="add-projects" href="#about">+ Add Project</a>
+                            <Link id="add-projects" to="/upload">+ Add Project</Link>
 
                         </li>
 
@@ -43,3 +41,10 @@ const Nav = React.createClass({
 })
 
 export default Nav;
+
+
+{/* <Route path='/signup' component={SignUpPage} />
+<Route path='/login' component={LogInPage} />
+<Route path='/upload' component={UploadProject} />
+<Route path='/allProjects' component={allProjects} />
+<Route path='/profile/:id' component={ProfilePage} /> */}

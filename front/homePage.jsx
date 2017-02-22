@@ -26,7 +26,7 @@ const MainPage = React.createClass({
   render: function() {
     return (
       <div>
-          
+
         <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
         <img className='rectangle_4' src='../images/rectangle_four.png' />
          <Link className ="signUp" to='/signup'>Sign Up</Link>
@@ -50,10 +50,10 @@ const MainPage = React.createClass({
               <p className='thirdShare'>Share your work.Connect with the community</p>
               <p className='thirdUp'>UpNext believes in the democratization of technical education.Technology is constantly evolving.Stay updated with UpNext</p>
           </div>
-           
+
             <img className='rectangle_4' src='../images/mentor.png' />
            <div className='fourthComp'>
-              
+
 
            </div>
       </div>
