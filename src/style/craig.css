@@ -405,7 +405,7 @@ div.add-project-wrapper {
 
 div.add-project-form {
   margin-top: 10%;
-  height: 600px;
+  height: 650px;
   width: 500px;
   border-radius: 3px;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
@@ -432,11 +432,23 @@ height: 200px;
 form span {
 display: block;
 margin-top: 3%;
+font-family: 'Open Sans', sans-serif;
+font-weight: lighter;;
+font-style: normal;
+font-stretch: normal;
+line-height: 1.0;
+letter-spacing: 0.1px;
 }
 
-/*p.form-title {
-  padding: 0;
-  margin: 0;
-  font-weight: lighter;
-  margin-bottom: -5%;
-}*/
+button {
+    margin-top: 5%;
+    float: right;
+    width: 25%;
+    height: 35px;
+    border-radius: 25px;
+    border: solid 0.5px #027bc3;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+    color: #027bc3;
+    min-width: 25%;
+}
