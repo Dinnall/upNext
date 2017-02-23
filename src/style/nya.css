@@ -77,7 +77,15 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
-	padding: 150px 0px 150px 0px;
+	padding: 45px 0px 10px 0px;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 4px 0;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
 
 .titleSUP {
@@ -86,15 +94,17 @@ body {
 
 .leftSUP {
 	text-align: center;
-	margin-right: -225px
+	padding-top: 50px; 
+	margin-right: -225px;
 }
 
 .rightSUP {
 	text-align: center;
+	border-radius: 5px;
 }
 
 .SUPbutton {
-	align-items: flex-end;
+	border-radius: 5px;
 }
 
 {/**/}
