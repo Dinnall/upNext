@@ -9,7 +9,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: false,
       len: [200, 2000]
     },
-    gitUsername: {
+    firstName: {
       type: DataTypes.STRING,
       allowNull: false},
     gitRepo: {

@@ -9,7 +9,7 @@ Projects.sync({force: true})
 	{
 	  title: 'Youtube',
 	  description: 'Tinder Swag',
-	  gitUsername: 'VctrySam',
+	  firstName: 'Michael',
 	  gitRepo: 'Tinder',
 	  url: 'https://github.com/VctrySam/Tinder',
 	  videoUrl: 'https://www.youtube.com/watch?v=FTGa8Tjwfi8',
@@ -20,7 +20,7 @@ Projects.sync({force: true})
 	{
 	  title: "Facebook",
 	  description: 'A basic SoundCloud API client built with React, Redux, and Redux Saga.',
-	  gitUsername: 'r-park',
+	  firstName: 'Michael',
 	  gitRepo: 'soundcloud-redux',
 	  url: 'https://github.com/r-park/soundcloud-redux',
 	  videoUrl: 'https://soundcloud-redux.herokuapp.com/',
@@ -31,7 +31,7 @@ Projects.sync({force: true})
 	{
 	  title: 'Linkedin',
 	  description: 'SnapChat Swag',
-	  gitUsername: 'VctrySam',
+	  firstName: 'Craig',
 	  gitRepo: 'SnapChat',
 	  url: 'https://github.com/VctrySam/Tinder',
 	  videoUrl: 'https://www.youtube.com/watch?v=sStf_ZbTXss',
@@ -43,7 +43,7 @@ Projects.sync({force: true})
 	{
 	  title: 'Instagram',
 	  description: 'There are many versions of Javascript, and using React to do Tetris has become my goal.',
-	  gitUsername: 'chvin',
+	firstName: 'drake',
 	  gitRepo: 'react-tetris',
 	  url: 'https://github.com/chvin/react-tetris',
 	  videoUrl: 'https://camo.githubusercontent.com/589fa964de9bab21690a2c5ad036553de296c866/68747470733a2f2f696d672e616c6963646e2e636f6d2f7470732f5442316b764a794f565858585862686146585858585858585858582d3332302d3535352e676966',
@@ -54,7 +54,7 @@ Projects.sync({force: true})
 	{
 	  title: "Twitter",
 	  description: 'This project looks at loops nested in loops',
-	  gitUsername: 'shiffman',
+	  firstName: 'nya',
 	  gitRepo: '',
 	  url: [''],
 	  videoUrl: 'https://vimeo.com/139013372',
@@ -65,7 +65,7 @@ Projects.sync({force: true})
 	{
 	  title: "Dribble",
 	  description: 'This project looks at loops nested in loops',
-	  gitUsername: 'shiffman',
+	firstName: 'pikachu',
 	  gitRepo: '',
 	  url: [''],
 	  videoUrl: 'https://vimeo.com/139013372',
@@ -76,7 +76,7 @@ Projects.sync({force: true})
 	{
 	  title: "Behance",
 	  description: 'This project looks at loops nested in loops',
-	  gitUsername: 'shiffman',
+	firstName: 'THOTS',
 	  gitRepo: '',
 	  url: [''],
 	  videoUrl: 'https://vimeo.com/139013372',
@@ -87,7 +87,7 @@ Projects.sync({force: true})
 	{
 	  title: "Myspace",
 	  description: 'This project looks at loops nested in loops',
-	  gitUsername: 'shiffman',
+	  firstName: 'HOES',
 	  gitRepo: '',
 	  url: [''],
 	  videoUrl: 'https://vimeo.com/139013372',
@@ -98,7 +98,7 @@ Projects.sync({force: true})
 	{
 	  title: "Quora",
 	  description: 'This project looks at loops nested in loops',
-	  gitUsername: 'shiffman',
+	  firstName: 'Ele',
 	  gitRepo: '',
 	  url: [''],
 	  videoUrl: 'https://vimeo.com/139013372',

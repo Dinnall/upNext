@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
 import Modal from 'react-modal';
-import Login from './login.jsx'
+import Login from './logIn.jsx'
 
 
 const modalStyles = {
@@ -46,7 +46,7 @@ const Nav = React.createClass({
                                     <a href="javascript:void(0);" onClick={this.login}>Log in
                                     </a>
                                 )
-                             }      
+                             }
                         </li>
                         <li>
                             <Link to="/profile:id">My Profile</Link>

@@ -67,7 +67,7 @@ const MainPage = React.createClass({
                                             <img src={projects.pictureUrl}/>
                                         </div>
                                         <Link to={"/profile/" + projects.id} key={idx}>
-                                            <p className="gitUsername">{'By: ' + projects.gitUsername}</p>
+                                            <p className="gitUsername">{'By: ' + projects.firstName}</p>
                                         </Link>
                                     </div>
 
