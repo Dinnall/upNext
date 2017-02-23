@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from 'react-router';
+import {Link, withRouter} from 'react-router';
 import Modal from 'react-modal';
 import Login from './login.jsx'
 
@@ -25,7 +25,7 @@ const Nav = React.createClass({
 
     },
     render() {
-        console.log(this);
+        console.log(this.state.user);
 
         return (
 
@@ -75,10 +75,13 @@ const Nav = React.createClass({
                   contentLabel="Modal"
 
                 >
-                  <Login onClose={(user)=>this.setState({
-                    showModal: false,
-                    user: user
-                  })} />
+                  <Login onClose={(user)=>{
+                    this.setState({
+                       showModal: false,
+                       user: user
+                    })
+                    this.props.router.push('/profile/' + user.id)
+                  }}/>
                 </Modal>
 
             </div>
@@ -104,4 +107,4 @@ const Nav = React.createClass({
     }
 })
 
-export default Nav;
+export default withRouter(Nav);
