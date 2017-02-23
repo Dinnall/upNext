@@ -50,6 +50,7 @@ const MainPage = React.createClass({
 
                 {/* <img className='rectangle_4' src='../images/rectangle_four.png' />
          <Link className ="signUp" to='/signup'>Sign Up</Link>
+
         <p className='share'>Share and connect.Upnext is a space for creators</p> */}
 
                 <div className='projects-section'>
@@ -73,6 +74,7 @@ const MainPage = React.createClass({
                                 )
                             })}
                     </div>
+
                 </div>
                 <div className="slogan-2">
                     <div className="slogan-master">

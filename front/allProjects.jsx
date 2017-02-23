@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {Link} from 'react-router';
+import Nav from './navBar.jsx';
 
 
 const allProjects = React.createClass({
@@ -22,8 +23,7 @@ const allProjects = React.createClass({
   render: function() {
     return (
       <div>
-
-        <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
+           <Nav/>
 
            <h2 className='allProjects'>All Available Projects</h2>
           <div className='secondComp'>
@@ -46,3 +46,4 @@ const allProjects = React.createClass({
 
 
 export default allProjects
+        // <Link to='/'><img className='page_1' src='../images/page_one.png' /></Link>
