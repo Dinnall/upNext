@@ -6,6 +6,7 @@ import '../src/style/App.css';
 // import '../src/style/nya.css';
 // import '../src/style/dee.css';
 import '../src/style/craig.css';
+import Nav from '../front/navBar.jsx'
 
 // Place All Componets here
 import SignUpPage from '../front/signUp.jsx';
@@ -23,6 +24,7 @@ var App = React.createClass({
   render() {
     return (
       <div>
+        <Nav />
         {this.props.children}
       </div>
     )
