@@ -23,7 +23,7 @@ const allProjects = React.createClass({
   render: function() {
     return (
       <div>
-           <Nav/>
+      
 
            <h2 className='allProjects'>All Available Projects</h2>
           <div className='secondComp'>
