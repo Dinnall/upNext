@@ -2,7 +2,8 @@ import React from 'react';
 import $ from 'jquery';
 import {withRouter} from "react-router";
 import Nav from './navBar.jsx';
-// import '../src/style/reset.css';
+import {Link} from 'react-router';
+
 
 const Profile = React.createClass({
     componentDidMount() {
@@ -56,18 +57,18 @@ const Profile = React.createClass({
                             </div>
                             <ul className="links">
                                 <li>
-                                    <img src="../images/icn-twitter.png" className="icn-twitter" height="35px" width="35px"></img>
+                                    <img src="../images/icn-twitter@3x.png" className="icn-twitter" height="35px" width="35px"></img>
                                 </li>
 
                                 <li>
-                                    <img src="../images/icn-github.png" className="icn-github" height="35px" width="35px"></img>
+                                    <img src="../images/icn-github@2x.png" className="icn-github" height="35px" width="35px"></img>
                                 </li>
 
                                 <li>
-                                    <img src="../images/icn-linkedin.png" className="icn-linkedin" height="35px" width="35px"></img>
+                                    <a href={this.state.linkedin} target="_blank"><img src="../images/icn-linkedin@3x.png" className="icn-linkedin" height="35px" width="35px"></img></a>
                                 </li>
                                 <li>
-                                    <img src="../images/icn-website.png" className="icn-website" height="35px" width="35px"></img>
+                                    <img src="../images/icn-website@3x.png" className="icn-website" height="35px" width="35px"></img>
                                 </li>
 
                             </ul>
@@ -76,16 +77,12 @@ const Profile = React.createClass({
 
                                 <div className="interact button">
 
-
-                                        Mentor Me
-
+                                    Mentor Me
 
                                 </div>
                                 <div className="interact button">
 
-
-                                        Hire Me!
-
+                                    Hire Me!
 
                                 </div>
 

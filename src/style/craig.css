@@ -1,18 +1,14 @@
 body {
-  /*font-family: 'Open Sans', sans-serif;*/
-  font-family: SourceSansPro;
-  background-color: #f0f1f1;
-  /*padding-left: 200px;
-  padding-right: 200px;*/
+    ffont-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0f1f1;
+    overflow-x: hidden;
 }
 
 .master-wrapper {
-  /*width: 100%;*/
-  height: auto;
-  padding-left: 5%;
-  padding-right: 5%;
+    height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-
 
 
 /*********************************** Nav Bar *******************************************/
@@ -55,12 +51,10 @@ nav.topnav li a#add-projects {
 
 li.rectangle-5 {
     border-radius: 29px;
-    /*width: 11%;*/
     height: 40px;
     margin-top: 5px;
     background-color: #027bc3;
     text-align: center;
-    /*min-width: 136px;*/
     padding: 0 3px;
 }
 
@@ -97,8 +91,8 @@ nav.topnav li.icon {
     }
 }
 
-/*************************************************************************************/
 
+/*************************************************************************************/
 
 .rectangle-2 {
     width: 100%;
@@ -153,12 +147,10 @@ nav.topnav li a#add-projects {
 
 li.rectangle-5 {
     border-radius: 29px;
-    /*width: 11%;*/
     height: 40px;
     margin-top: 5px;
     background-color: #027bc3;
     text-align: center;
-    /*min-width: 136px;*/
     padding: 0 3px;
 }
 
@@ -194,250 +186,191 @@ nav.topnav li.icon {
         text-align: left;
     }
 }
+
+
 /***************** End of Navigation Bar **************/
 
 
 /***************** Profile info section ***************/
 
 div.profile-info {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 70%;
-  width: 100%;
-  background-color: transparent;
-  margin-top: 15%;
-  margin: 10% auto;
-  /*padding: 0 0 0 0;*/
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 15%;
+    margin: 10% auto;
 }
 
-.name, .location, .position{
-  color: #404042;
-  text-align: center;
-  display: inherit;
+.name, .location, .position {
+    color: #404042;
+    text-align: center;
+    display: inherit;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .oval {
-  display: flex;
-  width: 200px;
-  height: 200px;
-  border-radius: 100px;
-  overflow: hidden;
-  text-align: center;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    overflow: hidden;
+    text-align: center;
 }
 
 .oval img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 ul.links {
-  list-style-type: none;
-  padding: 15px;
+    list-style-type: none;
+    padding: 15px;
 }
 
 ul.links li {
-  display: inline-block;
-  margin: 0 20px;
+    display: inline-block;
+    margin: 0 20px;
 }
 
-
-.interact-buttons  {
-  /*margin-left: -36px;*/
-  text-align: center;
-  /*display: inline-block;*/
-  list-style-type: none;
-  margin: 0 35px;
+.interact-buttons {
+    text-align: center;
+    list-style-type: none;
+    margin: 0 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
-
-
-/*.interact {
-  border-radius: 29px;
-
-  height: 40px;
-  margin-top: 5px;
-  background-color: #027bc3;
-  text-align: center;
-
-  padding: 0 3px;
-}*/
-
 
 .interact-buttons a#buttons {
-  /*list-style-type: none;*/
-  /*display: inline-block;*/
-  /*margin: 0 35px;*/
-  border: 2px solid #027bc3;
-  border-radius: 29px;
-  /*width: 12%;
-  height: 40px;
-  margin-top: 5px;*/
-  /*background-color: #027bc3;*/
-  padding: 0 15px;
+    border: 2px solid #027bc3;
+    border-radius: 29px;
+    padding: 0 15px;
 }
-
 
 .button {
-  border-radius: 29px;
-  /*width: 11%;*/
-  height: 40px;
-  color: #027bc3;
-  text-align: center;
-  /*min-width: 136px;*/
-  padding: 0 3px;
-  border: 2px solid #027bc3;
-  padding: 14px 16px;
+    border-radius: 37px;
+    height: 20px;
+    color: #027bc3;
+    text-align: center;
+    border: 2px solid #027bc3;
+    padding: 14px 70px;
+    margin: 0px 30px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
 }
 
-
-/*#buttons {
-  margin-top: 1px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: 100;
-  font-family: SourceSansPro;
-}*/
-
-
 .line {
-  width: 100%%;
-	height: 0.5px;
-	background-color: #e6e7e7;
-  margin-top: 4%;
-  margin-left: 20px;
-  margin-right: 20px;
+    width: 100%%;
+    height: 0.5px;
+    background-color: #e6e7e7;
+    margin-top: 4%;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 
 /**************************** project cards *************************/
-/*
-.project-wrapper {
-  width: 100%;
-  height: 100%;
-  border: 1px solid black;
-  padding: 0;
-}*/
 
 .projects-section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /*height: 70vh;*/
+    margin-top: 15%;
 }
 
 .rectangle {
-  height: 25vh;
-  width: 100%;
-  background-color: transparent;
-  /*padding: 0;
-  margin: 0;*/
-  /*text-align: center;*/
-  display: flex;
-  justify-content: space-between;
-  /*align-items: center;*/
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin-top: 5%;
+    height: 25%;
+    width: 70%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -10%;
 }
 
-
-/*.descript {
-	width: 71px;
-	height: 6px;
-	font-family: SourceSansPro;
-	font-size: 40px;
-	font-weight: 600;
-	font-style: normal;
-	font-stretch: normal;
-	line-height: 1.0;
-	letter-spacing: 0.1px;
-	text-align: left;
-	color: #404042;
-}*/
-
 .image-area {
-  display: flex;
-  width: 275px;
-  height: 200px;
-  /*border-radius: 100px;*/
-  overflow: hidden;
-  text-align: center;
-  /*background-color: white;*/
+    display: flex;
+    width: 275px;
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .image-area img {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .map-wrapper {
-  background-color: white;
-  padding: 0 10px 10px 10px;
-  margin: 20px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+    padding: 0 10px 10px 10px;
+    margin: 20px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
 }
-/*
-.map-wrapper:first-child {
-  margin-left: 0;
-}
-
-.map-wrapper:last-child {
-  margin-right: 0;
-}*/
-
 
 p {
-  margin-top: 5px;
-  margin-bottom: 5px;
-  font-family: 'Open Sans', sans-serif;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    color: #027bc3;
+    font-weight: bold;
 }
 
+a {
+    text-decoration: none;
+}
 
 
 /**************************** Upload **********************************/
-div.add-project-wrapper {
-  display: flex;
-  justify-content: center;
 
+div.add-project-wrapper {
+    display: flex;
+    justify-content: center;
 }
 
 div.add-project-form {
-  margin-top: 10%;
-  height: 650px;
-  width: 500px;
-  border-radius: 3px;
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
-  background-color: #ffffff;
-  display: flex;
-  /*justify-content: center;*/
-  flex-direction: column;
-  padding-left: 10px;
-  padding-right: 10px;
+    margin-top: 10%;
+    height: 650px;
+    width: 500px;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 input, textarea {
-  height: 31px;
-  width: 100%;
-  border: 1px solid #d1d2d4;
-  border-radius: 2px;
-  /*margin-top: 5%;*/
+    height: 31px;
+    width: 100%;
+    border: 1px solid #d1d2d4;
+    border-radius: 2px;
 }
 
 textarea {
-height: 200px;
+    height: 200px;
 }
 
 form span {
-display: block;
-margin-top: 3%;
-font-family: 'Open Sans', sans-serif;
-font-weight: lighter;;
-font-style: normal;
-font-stretch: normal;
-line-height: 1.0;
-letter-spacing: 0.1px;
+    display: block;
+    margin-top: 3%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.0;
+    letter-spacing: 0.1px;
 }
 
 button {

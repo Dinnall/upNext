@@ -7,12 +7,14 @@ import allProjects from '../front/allProjects.jsx';
 import FooterPage from './footer.jsx';
 
 const LogInPage = React.createClass ({
-  handleSubmit() {
+  handleSubmit(event) {
     event.preventDefault()
     var email = this.email
     var password = this.password
-    console.log(email)
-    console.log(password)
+
+    // console.log(email)
+    // console.log(password)
+
     {
       $.ajax({
         url: '/api/user/userId/3',
@@ -20,12 +22,13 @@ const LogInPage = React.createClass ({
       })
       .success ((data) => {
         console.log('it worked', data);
+        this.props.onClose(data)
       })
       // .catch((error) => {
       //   console.log(error)
       // })
     }
-    
+
   },
   render: function(){
     return (
