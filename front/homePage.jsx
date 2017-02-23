@@ -35,7 +35,7 @@ const MainPage = React.createClass({
         <div className='secondComp'>
             {this.state.project.length=== 0 ? "Loading..." : this.state.project.map((projects, idx)=> {
             return (
-                   <Link to={"/projects/" + projects.id} key={idx}>
+                   <Link to={"/profile/" + projects.id} key={idx}>
                 <div className="projectGrid">
                   <p className="projectTitle">{projects.title}</p>
                   <img className="videoBox" src={projects.pictureUrl} />

@@ -16,6 +16,7 @@ import MentorPage from '../front/becomeMentor.jsx';
 import allProjects from '../front/allProjects.jsx';
 import ProfilePage from '../front/profilePage.jsx';
 import UploadProject from '../front/uploadProject.jsx';
+import getOneProject from '../front/getOneProject.jsx';
 
 
 
@@ -38,6 +39,7 @@ ReactDOM.render(
         <Route path='/upload' component={UploadProject} />
         <Route path='/allProjects' component={allProjects} />
         <Route path='/profile/:id' component={ProfilePage} />
+        <Route path='/projects/:id' component={getOneProject} />
     </Route>
   </Router>,
   document.getElementById('root')

@@ -25,6 +25,7 @@ const UploadProject = React.createClass({
                 }
             }).done((data) => {
                 this.setState({project: data})
+                this.props.router.push('/');
             }).catch((error) => {
                 console.log(error);
             })
