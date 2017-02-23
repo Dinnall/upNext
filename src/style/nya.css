@@ -85,12 +85,12 @@ body {
 }
 
 .leftSUP {
-	background-color: green;
 	text-align: center;
+	margin-right: -225px
 }
 
 .rightSUP {
-	background-color: yellow;
+	text-align: center;
 }
 
 .SUPbutton {
