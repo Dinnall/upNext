@@ -46,7 +46,7 @@ const Nav = React.createClass({
                                     <a href="javascript:void(0);" onClick={this.login}>Log in
                                     </a>
                                 )
-}
+                             }      
                         </li>
                         <li>
                             <Link to="/profile:id">My Profile</Link>
