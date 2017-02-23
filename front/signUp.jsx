@@ -39,14 +39,15 @@ const SignUpPage = React.createClass ({
     return (
       <div className='flexContainerSUP'> 
         <div className='leftSUP'>
-          <h2>Showcase Your Projects!</h2>
-          <h3>Discover Up & Coming Talent <br/> in the Tech Industry</h3>
+          <h1>Showcase Your Projects!</h1>
+          <h2>Discover Up & Coming Talent <br/> in the Tech Industry</h2>
           <h3>Find Mentors to Help <br/> Develop Your Skills</h3>
         </div>
         <div className='rightSUP'>
           <div>
-            <h1 className='titleSUP'>Get Started!</h1>
+          <fieldset className='SUPbutton'>
             <form onSubmit={this.handleSubmit}>
+            <h1 className='titleSUP'>Get Started</h1>
               <input type="text" placeholder="First Name" ref={(input) => {this.firstName = input;}} required />
               <input type="text" placeholder="Last Name" ref={(input) => {this.lastName = input;}} required />
               <br/>
@@ -56,8 +57,9 @@ const SignUpPage = React.createClass ({
               <input type="text" placeholder="Linked In" required ref={(input) => {this.linkedin = input;}} required />
               <input type="text" placeholder="Password" required ref={(input) => {this.password = input;}} />
               <br/>
-              <Link to='/allProjects'><button className='SUPbutton' type="submit">Sign Up</button></Link>
+              <input type="submit" value='Sign Up'className='SUPbutton' />
             </form>
+          </fieldset>
           </div>
         </div>
       </div>
