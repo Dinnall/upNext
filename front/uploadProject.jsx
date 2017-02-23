@@ -40,9 +40,7 @@ const UploadProject = React.createClass({
     render: function() {
         return (
             <div>
-                <div className="rectangle-2">
-                    <Nav/>
-                </div>
+            
 							<div className="add-project-wrapper">
 								{/* <h1>Upload Project</h1> */}
                 <div className="add-project-form">

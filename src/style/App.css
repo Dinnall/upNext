@@ -9,7 +9,7 @@ html,body {
    }
 
 #hero {
-  background-attachment: fixed;
+  /*background-attachment: fixed;*/
   background-image: url(../../images/rectangle_four.png);
   background-size: 100%;
   background-repeat: no-repeat;

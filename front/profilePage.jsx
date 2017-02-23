@@ -29,9 +29,7 @@ const Profile = React.createClass({
         console.log("projects", this.state.projects)
         return (
             <div>
-                <div className="rectangle-2">
-                    <Nav/>
-                </div>
+          
 
                 <div className="My-Profile">
 
