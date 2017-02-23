@@ -43,6 +43,16 @@ User.sync({force: true})
     linkedin:'https://www.linkedin.com/in/craigdejean'
 
   },
+  {
+    firstName: 'jack',
+    lastName:'bower',
+    email:'craig@gmail.com',
+    password:'upnext',
+    imageUrl:'https://avatars3.githubusercontent.com/u/12685192?v=3&s=460',
+    bio:`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque Proin eget tortor risus.`,
+    linkedin:'https://www.linkedin.com/in/craigdejean'
+
+  },
 
 ]))
 
