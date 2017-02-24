@@ -15,7 +15,10 @@ function postNewUser(req, res) {
 		firstName: req.body.firstName,
 		lastName: req.body.lastName,
 		email: req.body.email,
-		password:req.body.password
+		password:req.body.password,
+		imageUrl:req.body.imageUrl,
+		bio: req.body.bio,
+		linkedin: req.body.linkedin
 
 	})
 	.then(function(newUser) {
