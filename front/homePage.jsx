@@ -61,7 +61,7 @@ const MainPage = React.createClass({
 
                                     <div key={idx} className="map-wrapper">
                                         <div className="descript">
-                                            <p>{projects.title}</p>
+                                          <Link to={"/projects/" + projects.id} key={idx}>  <p>{projects.title}</p> </Link>
                                         </div>
                                         <div className="image-area" src={projects.pictureUrl}>
                                             <img src={projects.pictureUrl}/>

@@ -293,6 +293,24 @@ ul.links li {
     flex-wrap: wrap;
     margin-top: -10%;
 }
+#allProjects {
+    height: 25%;
+    width: 90%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: -20%;
+}
+
+.page-descript {
+height: 200px;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
 .image-area {
     display: flex;
