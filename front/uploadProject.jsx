@@ -26,7 +26,6 @@ const UploadProject = React.createClass({
 
                 }
             }).done((data) => {
-                this.setState({project: data})
                 this.props.router.push('/allprojects')
             }).catch((error) => {
                 console.log(error);
@@ -51,7 +50,7 @@ const UploadProject = React.createClass({
 
                 <div className="upnext-form">
 
-                    <form onSubmit={this.handleSubmit}>
+
 
 
 
@@ -74,28 +73,28 @@ const UploadProject = React.createClass({
                                 this.firstName = input;
                             }} required/>
 
-                            <span>Name of your github repo</span>
+                            <span>Github repo</span>
                             <input type="text" ref={(input) => {
+                                this.gitRepo = input;
+                            }} required/>
+
+                            <span>App URL</span>
+                            <input type="url" ref={(input) => {
                                 this.url = input;
                             }} required/>
 
-                            <span>Your app URL</span>
+                            <span>Video URL</span>
                             <input type="url" ref={(input) => {
                                 this.videoUrl = input;
                             }} required/>
-
-                            <span>Your demo video URL</span>
+                            <span>Picture Url</span>
                             <input type="url" ref={(input) => {
                                 this.pictureUrl = input;
-                            }} required/>
-                            <span>Git repo</span>
-                            <input type="url" ref={(input) => {
-                                this.gitRepo = input;
                             }} required/>
 
                             <button type="submit">Post Project</button>
                         </form>
-                      </form>
+
                     </div>
                 </div>
             </div>

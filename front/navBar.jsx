@@ -47,19 +47,36 @@ const Nav = React.createClass({
                                     </a>
                                 )
                              }
+
                         </li>
+                        {this.state.user
+                            ? (
+                            <li>
+                                <Link to="/profile:id">My Profile</Link>
+                            </li>
+
+                            )
+                            : (
+                                null
+                            )
+                         }
                         <li>
-                            <Link to="/profile:id">My Profile</Link>
-                        </li>
-                        <li>
+
                             <Link to="/allProjects">All Projects</Link>
                         </li>
+                        {this.state.user
+                            ? (
+                              <li className="rectangle-5">
 
-                        <li className="rectangle-5">
+                                  <Link id="add-projects" to="/upload">+ Add Project</Link>
 
-                            <Link id="add-projects" to="/upload">+ Add Project</Link>
+                              </li>
 
-                        </li>
+                            )
+                            : (
+                                null
+                            )
+                         }
 
                         <li className="icon">
                             <a href="javascript:void(0);" onClick={this.onChange}>&#9776;</a>

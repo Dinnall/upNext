@@ -51,7 +51,8 @@ const MainPage = React.createClass({
 
                                     <div key={idx} className="map-wrapper">
                                         <div className="descript">
-                                         <Link to={"/projects/"+ projects.id}> <p>{projects.title}</p> </Link>
+                                          <Link to={"/projects/" + projects.id} key={idx}>  <p>{projects.title}</p> </Link>
+
                                         </div>
                                         <div className="image-area" src={projects.pictureUrl}>
                                             <img src={projects.pictureUrl}/>
@@ -70,7 +71,7 @@ const MainPage = React.createClass({
                     <div className="slogan-master">
                         <div className="slogan-2-child-1">
                             <p id="p-1">Share your work,</p>
-                            <p>Connect with community</p>
+                            <p>Connect with the community</p>
                         </div>
                         <div className="slogan-2-child-2">
                             <p>osehfo;hgoeihg;oiehqgohwqhgeopfihgoiehgfioe;hgo</p>
@@ -85,14 +86,20 @@ const MainPage = React.createClass({
 
                 <hr className="line"></hr>
 
+            <div id="slogan-master-2">
+                <div id="slogan-2-child-1">
+                    <p id="p-1-1">Become a Mentor!</p>
+                </div>
+              </div>
+
 
 
            <div className="bottom-banner">
-             <div className="mentor-mask">
+             {/* <div className="mentor-mask">
 
-             </div>
+             </div> */}
              <div className="mentor-text">
-               <h1>Hello</h1>
+               {/* <h1>Hello</h1> */}
              </div>
 
             {/* <img src='../images/mentor4.png' /> */}
