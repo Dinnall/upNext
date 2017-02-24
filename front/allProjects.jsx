@@ -23,10 +23,32 @@ const allProjects = React.createClass({
   render: function() {
     return (
       <div>
-      
 
-           <h2 className='allProjects'>All Available Projects</h2>
-          <div className='secondComp'>
+           <div className="page-descript">
+           <h2 className='allProjects-headline'>All Available Projects</h2>
+           </div>
+           <div className='projects-section'>
+               <div id="allProjects">{this.state.project.length === 0
+                       ? "Loading..."
+                       : this.state.project.map((projects, idx) => {
+                           return (
+
+                               <div key={idx} className="map-wrapper">
+                                   <div className="descript">
+                                     <Link to={"/projects/" + projects.id} key={idx}>  <p>{projects.title}</p> </Link>
+                                   </div>
+                                   <div className="image-area" src={projects.pictureUrl}>
+                                       <img src={projects.pictureUrl}/>
+                                   </div>
+                                   <Link to={"/profile/" + projects.id} key={idx}>
+                                       <p className="gitUsername">{'By: ' + projects.firstName}</p>
+                                   </Link>
+                               </div>
+
+                           )
+                       })}
+               </div>
+          {/* <div className='secondComp'>
             {this.state.project.length=== 0 ? "Loading..." : this.state.project.map((projects, idx)=> {
             return (
                    <Link to={"/projects/" + projects.id} key={idx}>
@@ -38,8 +60,9 @@ const allProjects = React.createClass({
                      </Link>
                     )
                      })}
-                </div>
+                </div> */}
           </div>
+        </div>
     )
   }
 })
