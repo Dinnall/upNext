@@ -40,10 +40,10 @@ const UploadProject = React.createClass({
     render: function() {
         return (
             <div>
-            
+
 							<div className="add-project-wrapper">
 								{/* <h1>Upload Project</h1> */}
-                <div className="add-project-form">
+                <div className="upnext-form">
 
                     <form onSubmit={this.handleSubmit}>
 
@@ -52,32 +52,32 @@ const UploadProject = React.createClass({
                         <input  type="text" placeholder="Title" ref={(input) => {
                             this.title = input;
                         }} required/>
-                        <br/>
+
 												 <span> Tell us about your project</span>
                         <textarea  type="textarea" placeholder="Description" ref={(input) => {
                             this.desc = input;
                         }}  required/>
-                        <br/>
+
                         <span> Add your github username</span>
                         <input  type="text" placeholder="gitUsername" ref={(input) => {
                             this.gitUsername = input;
                         }} required/>
-                        <br/>
+
 												<span>Name of your github repo</span>
                         <input  type="text" placeholder="gitRepo" ref={(input) => {
                             this.gitRepo = input;
                         }} required/>
-                        <br/>
+
 												 <span>Your app URL</span>
                         <input  type="url" placeholder="siteURL" ref={(input) => {
                             this.siteURL = input;
                         }} required/>
-                        <br/>
+
 												 <span>Your demo video URL</span>
                         <input  type="url" placeholder="videoURL" ref={(input) => {
                             this.videoURL = input;
                         }} required/>
-                        <br/>
+
                          <button type="submit">Post Project</button>
                     </form>
                 </div>

@@ -80,13 +80,13 @@ body {
 	padding: 45px 0px 10px 0px;
 }
 
-input[type=text] {
+/*input[type=text] {
   width: 100%;
   padding: 12px 20px;
   margin: 4px 0;
   box-sizing: border-box;
   border-radius: 5px;
-}
+}*/
 
 .titleSUP {
 	text-align: center;
@@ -94,7 +94,7 @@ input[type=text] {
 
 .leftSUP {
 	text-align: center;
-	padding-top: 50px; 
+	padding-top: 50px;
 	margin-right: -225px;
 }
 
