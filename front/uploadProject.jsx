@@ -12,7 +12,7 @@ const UploadProject = React.createClass({
     handleSubmit(event) {
         event.preventDefault()
         {
-            $.ajax({
+         $.ajax({
                 url: '/api/projects',
                 type: "POST",
                 data: {
@@ -44,8 +44,19 @@ const UploadProject = React.createClass({
         return (
             <div>
 
+<<<<<<< HEAD
                 <div className="add-project-wrapper">
                     <div className="upnext-form">
+=======
+
+
+				<div className="add-project-wrapper">
+								
+                <div className="upnext-form">
+
+                    <form onSubmit={this.handleSubmit}>
+
+>>>>>>> 0e0155b2b98f898f70404044de1c5b686e1dcbdc
 
                         <form onSubmit={this.handleSubmit}>
 
