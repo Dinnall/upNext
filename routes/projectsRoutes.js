@@ -30,6 +30,7 @@ const getSixProjects = (req, res) => {
 }
 
 function createProject (req, res) {
+	console.log(req.body)
 	Projects.create({
 		title: req.body.title,
 		description: req.body.description,
@@ -37,7 +38,7 @@ function createProject (req, res) {
 		gitRepo: req.body.gitRepo,
 		url: req.body.url,
 		videoUrl: req.body.videoUrl,
-		Pictureurl: req.body.pictureUrl
+		pictureUrl: req.body.pictureurl
 	})
 	.then(function(project) {
 
