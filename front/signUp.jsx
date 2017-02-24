@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
+import { IndexRoute,Link, Router, Route, browserHistory, hashHistory, } from 'react-router';
 import $ from 'jquery';
 
 import '../src/style/nya.css';
@@ -28,7 +28,10 @@ const SignUpPage = React.createClass ({
         }
       })
       .done((data) => {
+                console.log(data)
         this.setState({user: data})
+
+        this.props.router.push('/profile/' + data.id)
       })
       .catch((error) => {
         console.log(error)
@@ -38,16 +41,11 @@ const SignUpPage = React.createClass ({
   render: function(){
     return (
       <div className='flexContainerSUP'>
-        <div className='leftSUP'>
-          <h1>Showcase Your Projects!</h1>
-          <h2>Discover Up & Coming Talent <br/> in the Tech Industry</h2>
-          <h3>Find Mentors to Help <br/> Develop Your Skills</h3>
-        </div>
-        <div className='rightSUP'>
+        <div className='upnext-form'>
           <div>
-          <fieldset className='SUPbutton'>
             <form onSubmit={this.handleSubmit}>
             <h1 className='titleSUP'>Get Started</h1>
+              <span>Insert Title of your Project here</span>
               <input type="text" placeholder="First Name" ref={(input) => {this.firstName = input;}} required />
               <input type="text" placeholder="Last Name" ref={(input) => {this.lastName = input;}} required />
               <br/>
@@ -58,9 +56,8 @@ const SignUpPage = React.createClass ({
               <input type="text" placeholder="imageUrl" required ref={(input) => {this.imageUrl = input;}} required />
               <input type="text" placeholder="Password" required ref={(input) => {this.password = input;}} required />
               <br/>
-              <input type="submit" value='Sign Up'className='SUPbutton' />
+              <button type="submit">Sign Up</button>
             </form>
-          </fieldset>
           </div>
         </div>
       </div>
