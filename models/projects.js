@@ -3,41 +3,45 @@ module.exports = function(sequelize, DataTypes) {
   var Projects = sequelize.define('Projects', {
     title: {
       type: DataTypes.STRING,
-      allowNull: false},
+      allowNull: false
+    },
+
     description: {
       type: DataTypes.TEXT,
       allowNull: false,
       len: [200, 2000]
     },
+
     firstName: {
       type: DataTypes.STRING,
-      allowNull: false},
+      allowNull: false
+    },
+
     gitRepo: {
       type: DataTypes.STRING,
       allowNull: false},
+
     url: {
       type: DataTypes.STRING,
       allowNull: true,
       validate: {
-        isUrl: true } },
-    videoUrl:{
-      type: DataTypes.STRING,
-      allowNull:true,
-      validate:{
-        isUrl:true
-      }
+      isUrl: true }
     },
-    pictureUrl:{
+
+    videoUrl: {
       type: DataTypes.STRING,
       allowNull:true,
       validate: {
         isUrl:true
       }
     },
-    vote: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      defaultValue: '0'
+
+    pictureUrl: {
+      type: DataTypes.STRING,
+      allowNull:true,
+      validate: {
+        isUrl:true
+      }
     }
   },{
     classMethods: {

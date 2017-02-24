@@ -19,7 +19,6 @@ function postNewUser(req, res) {
 		imageUrl:req.body.imageUrl,
 		bio: req.body.bio,
 		linkedin: req.body.linkedin
-
 	})
 	.then(function(newUser) {
 		console.log(newUser)

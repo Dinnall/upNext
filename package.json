@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "webpack --watch & node server.js",
+    "start": "webpack --watch & nodemon server.js" ,
     "seed": "node ./seed/user-seed.js && node ./seed/projects-seed.js",
     "test": "mocha --watch"
   },
@@ -24,6 +24,7 @@
     "jquery": "^3.1.1",
     "latest-version": "^2.0.0",
     "mocha": "^3.2.0",
+    "nodemon": "^1.11.0",
     "pg": "^6.1.2",
     "react": "^15.4.1",
     "react-dom": "^15.4.1",

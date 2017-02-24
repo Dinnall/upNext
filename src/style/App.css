@@ -218,7 +218,7 @@ p#slogan-1 {
   background-color: grey;
   background-image: url(../../images/mentor4.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  /*background-size: cover;*/
   background-position: center center;
   position: relative;
 }

@@ -14,25 +14,50 @@ const allProjects=(req, res) => {
 	})
 	.catch((err)=> console.log(err))
 }
-  
-const createProject=(req, res) => {
-	console.log(req.body)
-	Projects.create(req.body)
-	.then((project)=> {
-		console.log(project)
+
+// const createProject=(req, res) => {
+// 	console.log(req.body)
+// 	Projects.create({
+// 		req.body})
+// 	.then((project)=> {
+// 		console.log(project)
+// 		res.send(project)
+// 	})
+// 	.catch((err)=> console.log(err))
+// }
+
+
+
+
+function createProject (req, res) {
+	Projects.create({
+		title: req.body.title,
+		description: req.body.description,
+		firstName: req.body.firstName,
+		gitRepo: req.body.gitRepo,
+		url: req.body.url,
+		videoUrl:req.body.videoUrl,
+		pictureUrl:req.body.pictureUrl
+	})
+	.then(function(project) {
+
 		res.send(project)
 	})
-	.catch((err)=> console.log(err))
+	.catch((err) => console.log(err))
 }
 
+
+
+
+
 const getOneProject=(req, res) => {
-	Projects.findById(req.params.id, 
+	Projects.findById(req.params.id,
 		{ include: [ User ]
 	})
 	.then((project)=> {
 		res.send(project)
 	})
-	.catch((err)=> console.log(err))
+	.catch((err)=> console.log('test', err))
 }
 
 const deleteProject =(req, res)=> {
