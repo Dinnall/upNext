@@ -46,11 +46,13 @@ const UploadProject = React.createClass({
 
 
 
+
 				<div className="add-project-wrapper">
-								
+
                 <div className="upnext-form">
 
                     <form onSubmit={this.handleSubmit}>
+
 
 
                         <form onSubmit={this.handleSubmit}>
