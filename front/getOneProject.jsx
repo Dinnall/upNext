@@ -86,7 +86,7 @@ export default getOneProject;
 
 //                             <div>
 
-//
+//<h1 className="name">{this.state.firstName} {this.state.lastName}</h1>
 
 //                                 <p className="location">
 //                                     New York, NY
