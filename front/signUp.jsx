@@ -37,7 +37,7 @@ const SignUpPage = React.createClass ({
   },
   render: function(){
     return (
-      <div className='flexContainerSUP'> 
+      <div className='flexContainerSUP'>
         <div className='leftSUP'>
           <h1>Showcase Your Projects!</h1>
           <h2>Discover Up & Coming Talent <br/> in the Tech Industry</h2>
@@ -55,7 +55,8 @@ const SignUpPage = React.createClass ({
               <input type="text" placeholder="Email" ref={(input) => {this.email = input;}} required />
               <br/>
               <input type="text" placeholder="Linked In" required ref={(input) => {this.linkedin = input;}} required />
-              <input type="text" placeholder="Password" required ref={(input) => {this.password = input;}} />
+              <input type="text" placeholder="imageUrl" required ref={(input) => {this.imageUrl = input;}} required />
+              <input type="text" placeholder="Password" required ref={(input) => {this.password = input;}} required />
               <br/>
               <input type="submit" value='Sign Up'className='SUPbutton' />
             </form>
