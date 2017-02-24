@@ -95,6 +95,7 @@ const UploadProject = React.createClass({
 
                             <button type="submit">Post Project</button>
                         </form>
+                      </form>
                     </div>
                 </div>
             </div>
