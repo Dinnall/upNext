@@ -21,7 +21,7 @@ const MainPage = React.createClass({
     },
     componentDidMount() {
         {
-            $.ajax({url: '/api/projects', type: "GET"}).done((data) => {
+            $.ajax({url: '/api/projects/home', type: "GET"}).done((data) => {
                 this.setState({project: data})
             })
         }
@@ -31,11 +31,6 @@ const MainPage = React.createClass({
             <div>
 
                 <div id="hero">
-
-
-
-
-
                     <div className="slogan">
                         <div className="22">
                             <p id="slogan-1">Share and connect.</p>
@@ -48,11 +43,6 @@ const MainPage = React.createClass({
 
                 </div>
 
-                {/* <img className='rectangle_4' src='../images/rectangle_four.png' />
-         <Link className ="signUp" to='/signup'>Sign Up</Link>
-
-        <p className='share'>Share and connect.Upnext is a space for creators</p> */}
-
                 <div className='projects-section'>
                     <div className="rectangle">{this.state.project.length === 0
                             ? "Loading..."
@@ -61,7 +51,7 @@ const MainPage = React.createClass({
 
                                     <div key={idx} className="map-wrapper">
                                         <div className="descript">
-                                            <p>{projects.title}</p>
+                                         <Link to={"/projects/"+ projects.id}> <p>{projects.title}</p> </Link>
                                         </div>
                                         <div className="image-area" src={projects.pictureUrl}>
                                             <img src={projects.pictureUrl}/>

@@ -25,6 +25,7 @@ const getOneProject = React.createClass({
     return(
       <div>
         <div>
+        
            <img src={this.state.projectDetail.pictureUrl} />
             <p>{this.state.projectDetail.description}</p>
            <div>
