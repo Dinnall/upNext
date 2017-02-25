@@ -4,7 +4,6 @@ import $ from 'jquery';
 import {Link} from 'react-router';
 import ReactPlayer from 'react-player'
 
-
 const getOneProject = React.createClass({
   getInitialState(){
     return {projectDetail: []}

@@ -9,10 +9,10 @@ const UploadProject = React.createClass({
         return {project: [null]}
     },
     componentDidMount() {},
-    handleSubmit(event) {
-        event.preventDefault()
+    handleSubmit(e) {
+        e.preventDefault()
         {
-         $.ajax({
+            $.ajax({
                 url: '/api/projects',
                 type: "POST",
                 data: {
@@ -22,7 +22,7 @@ const UploadProject = React.createClass({
                     gitRepo: this.gitRepo.value,
                     url: this.url.value,
                     videoUrl: this.videoUrl.value,
-                    Pictureurl: this.pictureUrl.value
+                    pictureurl: this.pictureUrl.value
 
                 }
             }).done((data) => {
@@ -43,16 +43,9 @@ const UploadProject = React.createClass({
         return (
             <div>
 
+                <div className="add-project-wrapper">
 
-
-
-				<div className="add-project-wrapper">
-
-                <div className="upnext-form">
-
-
-
-
+                    <div className="upnext-form">
 
                         <form onSubmit={this.handleSubmit}>
 
@@ -62,7 +55,8 @@ const UploadProject = React.createClass({
                             }} required/>
 
                             <span>
-                                Description </span>
+                                Description
+                            </span>
                             <textarea type="textarea" ref={(input) => {
                                 this.description = input;
                             }} required/>
