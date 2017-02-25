@@ -7,7 +7,7 @@ Projects.sync({force: true})
 //add the following four Projects to the database:
 .then(() => Projects.bulkCreate([
 	{
-	  title: 'Youtube',
+	  title: 'Gara Clothing',
 	  description: 'Tinder Swag',
 	  firstName: 'Michael',
 	  gitRepo: 'Tinder',
@@ -18,7 +18,7 @@ Projects.sync({force: true})
 	  UserId: 2
 	},
 	{
-	  title: "Facebook",
+	  title: "Monument Decor",
 	  description: 'A basic SoundCloud API client built with React, Redux, and Redux Saga.',
 	  firstName: 'Michael',
 	  gitRepo: 'soundcloud-redux',
@@ -29,7 +29,7 @@ Projects.sync({force: true})
 	  UserId: 1
 	},
 	{
-	  title: 'Linkedin',
+	  title: 'Perfect Pancake',
 	  description: 'SnapChat Swag',
 	  firstName: 'Craig',
 	  gitRepo: 'SnapChat',
@@ -41,7 +41,7 @@ Projects.sync({force: true})
 	},
 
 	{
-	  title: 'Instagram',
+	  title: 'Winter Escape',
 	  description: 'There are many versions of Javascript, and using React to do Tetris has become my goal.',
 	  firstName: 'Drake',
 	  gitRepo: 'react-tetris',
@@ -52,7 +52,7 @@ Projects.sync({force: true})
 	  UserId: 1
 	},
 	{
-	  title: "Twitter",
+	  title: "Knowledge Passion",
 	  description: 'This project looks at loops nested in loops',
 	  firstName: 'Nya',
 	  gitRepo: '',
@@ -63,7 +63,7 @@ Projects.sync({force: true})
 	  UserId: 2
 	},
 	{
-	  title: "Dribble",
+	  title: "Explore",
 	  description: 'This project looks at loops nested in loops',
 	  firstName: 'Pikachu',
 	  gitRepo: '',
@@ -74,7 +74,7 @@ Projects.sync({force: true})
 	  UserId: 3
 	},
 	{
-	  title: "Behance",
+	  title: "Enchance Trails",
 	  description: 'This project looks at loops nested in loops',
 	  firstName: 'Melanie',
 	  gitRepo: '',
@@ -85,18 +85,18 @@ Projects.sync({force: true})
 	  UserId: 1
 	},
 	{
-	  title: "Myspace",
+	  title: "Quicky Link",
 	  description: 'This project looks at loops nested in loops',
 	  firstName: 'Olga',
 	  gitRepo: '',
 	  url: [''],
 	  videoUrl: 'https://vimeo.com/139013372',
-	  pictureUrl: 'https://d13yacurqjgara.cloudfront.net/users/13307/screenshots/3272390/web_site_design_hbk_1x.jpg',
+	  pictureUrl: 'https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/72ef4c45978717.5879266096561.png',
 	  projectId: 5,
 	  UserId: 2
 	},
 	{
-	  title: "Quora",
+	  title: "LookBook for the Future",
 	  description: 'This project looks at loops nested in loops',
 	  firstName: 'Elle',
 	  gitRepo: '',
