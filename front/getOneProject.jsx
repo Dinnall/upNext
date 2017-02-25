@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import {Link} from 'react-router';
+import ReactPlayer from 'react-player'
 
 
 const getOneProject = React.createClass({
@@ -25,9 +26,8 @@ const getOneProject = React.createClass({
     return(
       <div>
         <div>
-        
-           <img src={this.state.projectDetail.pictureUrl} />
-            <p>{this.state.projectDetail.description}</p>
+        <ReactPlayer url={this.projectDetail.videoUrl} playing />
+        <p>{this.state.projectDetail.description}</p>
            <div>
          </div>
         </div>
