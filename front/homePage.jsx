@@ -21,7 +21,11 @@ const MainPage = React.createClass({
     },
     componentDidMount() {
         {
-            $.ajax({url: '/api/projects/home', type: "GET"}).done((data) => {
+            $.ajax({
+            url: '/api/projects/home', 
+            type: "GET"
+        })
+            .done((data) => {
                 this.setState({project: data})
             })
         }
