@@ -3,7 +3,6 @@ const router = require('express').Router();
 // Require in the models you will need to build out your routes;
 const User = require('../models').User;
 const Projects = require('../models').Projects;
-const Picture = require('../models').Picture;
 
 
 const allProjects=(req, res) => {
@@ -17,14 +16,13 @@ const allProjects=(req, res) => {
 // /api/projects/home
 const getSixProjects = (req, res) => {
 	Projects.findAll({
-      limit: 6,
-      include:[User]
+      include:[User],
+      limit: 6
     })
 	.then((projects) => {
 		res.send(projects)
 	})
 	.catch((err) => {
-		console.log("ERROR GETTING Six Projects====>", err)
 		res.sendStatus(500)
 	})
 }
@@ -69,13 +67,14 @@ const deleteProject =(req, res)=> {
 
 router.route('/')
 	.get(allProjects)
-	.post(createProject)
+	.post(createProject);
+
+router.route('/home')
+	.get(getSixProjects);
 
 router.route('/:id')
 	.get(getOneProject)
-	.delete(deleteProject)
+	.delete(deleteProject);
 
-router.route('/home')
-	.get(getSixProjects)
 
 module.exports=router;
