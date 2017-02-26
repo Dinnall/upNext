@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link, withRouter} from 'react-router';
 import Modal from 'react-modal';
-import Login from './logIn.jsx'
+import Login from './logIn.jsx';
+import signUp from './signUp.jsx';
 
 
 const modalStyles = {
@@ -27,6 +28,16 @@ const Nav = React.createClass({
         }
 
     },
+    componentWillUpdate(nextProps){
+      console.log(nextProps.location.query)
+      if(nextProps.location.query['login']) {
+        this.props.router.replace('/profile/' + nextProps.location.query['login'])
+        this.setState({
+          user: {id:nextProps.location.query['login']}
+        })
+      }
+    },
+
     render() {
 
 
@@ -55,7 +66,7 @@ const Nav = React.createClass({
                         {this.state.user
                             ? (
                             <li>
-                                <Link to="/profile:id">My Profile</Link>
+                                <Link to={"/profile/" + this.state.user.id}>My Profile</Link>
                             </li>
 
                             )

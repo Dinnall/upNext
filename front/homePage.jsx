@@ -22,7 +22,7 @@ const MainPage = React.createClass({
     componentDidMount() {
         {
             $.ajax({
-            url: '/api/projects/home', 
+            url: '/api/projects/home',
             type: "GET"
         })
             .done((data) => {
