@@ -78,11 +78,10 @@ const MainPage = React.createClass({
                             <p>Connect with the community</p>
                         </div>
                         <div className="slogan-2-child-2">
-                            <p>osehfo;hgoeihg;oiehqgohwqhgeopfihgoiehgfioe;hgo</p>
-                            <p>osehfo;hgoeihg;oiehqgohwqhg soihfoisdhfsghsgs sgsgdgwge</p>
-                            <p>osehfo;hgoeihg;oiehqgohwqhgreighoierhgoohhoherhgohgehrg</p>
-                            <p>osehfo;hgoeihg;oiehqgohwqhgreighoierhgoohhoherhgohgehrg</p>
-                            <p>osehfo;hgoeihg;oiehqgohwqhgreighoierhgoohhoherhgohgehrg</p>
+                            <p>UpNEXT is always seeking highly experienced individuals who want to give back to the community by offering their support.</p>
+                            <p>We are looking for mentors with a passion for sharing what they know.</p>
+                            <p>Students will communicate with their mentors online.</p>
+                            <p>If you are interested in becoming a mentor,we invite you to tell us more about yourself.</p>
                         </div>
                     </div>
 
@@ -92,19 +91,13 @@ const MainPage = React.createClass({
 
             <div id="slogan-master-2">
                 <div id="slogan-2-child-1">
-                    <p id="p-1-1">Become a Mentor!</p>
+                    <p>Become a Mentor!</p>
                 </div>
               </div>
 
 
 
            <div className="bottom-banner">
-             {/* <div className="mentor-mask">
-
-             </div> */}
-             <div className="mentor-text">
-               {/* <h1>Hello</h1> */}
-             </div>
 
             {/* <img src='../images/mentor4.png' /> */}
 

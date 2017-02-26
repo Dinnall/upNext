@@ -191,11 +191,7 @@ p#slogan-1 {
 }
 
 #p-1 {
-    margin-left: 36%;
-}
-
-#p-1-1 {
-
+    margin-left: 30%;
 }
 
 .slogan-2-child-2 p {
@@ -214,14 +210,10 @@ p#slogan-1 {
 }
 
 .slogan-2-child-1 {
-    /*background-color: yellow;*/
-    /*height: 100px;*/
     width: 82%;
 }
 
 #slogan-2-child-1 {
-    /*background-color: yellow;*/
-    /*height: 100px;*/
     width: 82%;
     color: white;
 }

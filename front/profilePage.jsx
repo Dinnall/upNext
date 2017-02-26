@@ -97,7 +97,7 @@ const Profile = React.createClass({
                                         return (
                                             <div key={idx} className="map-wrapper">
                                                 <div className="descript">
-                                                    <p>{val.title}</p>
+                                    <Link to={"/projects/" + val.id} key={idx}>  <p>{val.title}</p> </Link>
                                                 </div>
                                                 <div className="image-area">
                                                     <img src={val.pictureUrl}></img>
