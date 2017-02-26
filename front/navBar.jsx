@@ -11,7 +11,10 @@ const modalStyles = {
     right                 : 'auto',
     bottom                : 'auto',
     marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
+    transform             : 'translate(-50%, -50%)',
+    backgroundcolor      : '#f0f1f1',
+    height                : '30%',
+    width                 : '30%'
   }
 };
 
@@ -25,7 +28,7 @@ const Nav = React.createClass({
 
     },
     render() {
-        console.log(this.state.user);
+
 
         return (
 
