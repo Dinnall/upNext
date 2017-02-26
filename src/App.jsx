@@ -42,6 +42,7 @@ ReactDOM.render(
         <Route path='/allProjects' component={allProjects} />
         <Route path='/profile/:id' component={ProfilePage} />
         <Route path='/projects/:id' component={getOneProject} />
+        <Route path='/mentor' component={MentorPage} />
     </Route>
   </Router>,
   document.getElementById('root')

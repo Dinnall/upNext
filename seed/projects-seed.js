@@ -23,7 +23,7 @@ Projects.sync({force: true})
 	  firstName: 'Michael',
 	  gitRepo: 'soundcloud-redux',
 	  url: 'https://github.com/r-park/soundcloud-redux',
-	  videoUrl: 'https://soundcloud-redux.herokuapp.com/',
+	  videoUrl: 'https://www.youtube.com/watch?v=lzsN34mm2OI',
 	  pictureUrl: 'https://d13yacurqjgara.cloudfront.net/users/96387/screenshots/1795586/dribbble-7_1x.png',
 	  projectId: 2,
 	  UserId: 1
@@ -46,7 +46,7 @@ Projects.sync({force: true})
 	  firstName: 'Drake',
 	  gitRepo: 'react-tetris',
 	  url: 'https://github.com/chvin/react-tetris',
-	  videoUrl: 'https://camo.githubusercontent.com/589fa964de9bab21690a2c5ad036553de296c866/68747470733a2f2f696d672e616c6963646e2e636f6d2f7470732f5442316b764a794f565858585862686146585858585858585858582d3332302d3535352e676966',
+	  videoUrl: 'https://www.youtube.com/watch?v=zeQqHEAC6G8',
 	  pictureUrl: 'https://d13yacurqjgara.cloudfront.net/users/1051893/screenshots/3102519/winter.gif',
 	  projectId: 4,
 	  UserId: 1
