@@ -40,7 +40,7 @@ const allProjects = React.createClass({
                                    <div className="image-area" src={projects.pictureUrl}>
                                        <img src={projects.pictureUrl}/>
                                    </div>
-                                   <Link to={"/profile/" + projects.id} key={idx}>
+                                   <Link to={"/profile/" + projects.UserId} key={idx}>
                                        <p className="gitUsername">{'By: ' + projects.firstName}</p>
                                    </Link>
                                </div>

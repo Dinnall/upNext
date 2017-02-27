@@ -91,7 +91,7 @@ const MainPage = React.createClass({
 
             <div id="slogan-master-2">
                 <div id="slogan-2-child-1">
-                    <p>Become a Mentor!</p>
+                    <Link to='/mentor'><p>Become a Mentor!</p></Link>
                 </div>
               </div>
 

@@ -82,7 +82,7 @@ const Nav = React.createClass({
                             ? (
                               <li className="rectangle-5">
 
-                                  <Link id="add-projects" to="/upload">+ Add Project</Link>
+                                  <Link id="add-projects" to={"/upload/?user=" + this.state.user.id}>+ Add Project</Link>
 
                               </li>
 

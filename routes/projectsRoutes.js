@@ -36,7 +36,8 @@ function createProject (req, res) {
 		gitRepo: req.body.gitRepo,
 		url: req.body.url,
 		videoUrl: req.body.videoUrl,
-		pictureUrl: req.body.pictureurl
+		pictureUrl: req.body.pictureurl,
+		UserId: req.body.userId
 	})
 	.then(function(project) {
 

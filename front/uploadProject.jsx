@@ -22,7 +22,8 @@ const UploadProject = React.createClass({
                     gitRepo: this.gitRepo.value,
                     url: this.url.value,
                     videoUrl: this.videoUrl.value,
-                    pictureurl: this.pictureUrl.value
+                    pictureurl: this.pictureUrl.value,
+                    userId: this.props.location.query['user']
 
                 }
             }).done((data) => {
