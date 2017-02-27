@@ -29,7 +29,7 @@ const Profile = React.createClass({
         console.log("projects", this.state.projects)
         return (
             <div>
-          
+
 
                 <div className="My-Profile">
 
@@ -90,7 +90,7 @@ const Profile = React.createClass({
 
                         <div className="project-wrapper">
 
-                            <hr className="line"></hr>
+                            {/* <hr className="line"></hr> */}
 
                             <section className="projects-section">
                                 <div className="rectangle">{this.state.projects.map(function(val, idx) {

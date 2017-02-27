@@ -51,39 +51,39 @@ const UploadProject = React.createClass({
                         <form onSubmit={this.handleSubmit}>
 
                             <span>Insert Title of your Project here</span>
-                            <input type="text" ref={(input) => {
+                            <input  id="f1"  type="text" ref={(input) => {
                                 this.title = input;
                             }} required/>
 
                             <span>
                                 Description
                             </span>
-                            <textarea type="textarea" ref={(input) => {
+                            <textarea id="f11" type="textarea" ref={(input) => {
                                 this.description = input;
                             }} required/>
 
                             <span>
                                 First Name</span>
-                            <input type="text" ref={(input) => {
+                            <input  id="f2" type="text" ref={(input) => {
                                 this.firstName = input;
                             }} required/>
 
                             <span>Github repo</span>
-                            <input type="text" ref={(input) => {
+                            <input  id="f3" type="text" ref={(input) => {
                                 this.gitRepo = input;
                             }} required/>
 
                             <span>App URL</span>
-                            <input type="url" ref={(input) => {
+                            <input  id="f4" type="url" ref={(input) => {
                                 this.url = input;
                             }} required/>
 
                             <span>Video URL</span>
-                            <input type="url" ref={(input) => {
+                            <input  id="f5" type="url" ref={(input) => {
                                 this.videoUrl = input;
                             }} required/>
                             <span>Picture Url</span>
-                            <input type="url" ref={(input) => {
+                            <input  id="f6" type="url" ref={(input) => {
                                 this.pictureUrl = input;
                             }} required/>
 
