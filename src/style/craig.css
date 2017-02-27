@@ -4,10 +4,27 @@ body {
     overflow-x: hidden;
 }
 
+h1{
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .master-wrapper {
     height: auto;
     padding-left: 5%;
     padding-right: 5%;
+}
+.master-wrapper-project {
+    display: flex;
+    align-items: flex-start;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: center;
 }
 
 
@@ -204,11 +221,40 @@ div.profile-info {
     margin: 10% auto;
 }
 
-.name, .location, .position {
-    color: #404042;
-    text-align: center;
-    display: inherit;
+
+div.project-info {
+    display: flex;
+    align-items: center;
+    /*flex-direction: column;*/
+    height: 70%;
+    width: 100%;
+    background-color: transparent;
+    margin-top: 200px;
+    margin: 75px auto;
+    margin-left: 30%;
+}
+
+.descript-area {
+  height: 1000px;
+  width: 50%;
+  background-color: transparent;
+  margin-left: 50px;
+}
+
+#project-d {
+  color: #404042;
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.name, .location, .location a, .position, .position a{
+
     font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+.location a, .position a {
+  color:#027bc3;
 }
 
 .oval {
@@ -341,7 +387,6 @@ p {
     margin-top: 5px;
     margin-bottom: 5px;
     font-family: 'Open Sans', sans-serif;
-    color: #027bc3;
     font-weight: bold;
 }
 
