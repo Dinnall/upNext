@@ -16,7 +16,7 @@ html, body {
     width: 105%;
     /*height: 500px;*/
     margin: 0px;
-    margin: -1%;
+    /*margin: -1%;*/
     padding: -1%;
     display: flex;
     padding: 30px 10px 50px 20px;
@@ -302,6 +302,10 @@ p#slogan-1 {
     text-decoration: none;
     font-size: 25px;
     color: #fff;
+}
+
+.signUp a:visited {
+  color: #fff;
 }
 
 #sign-up-button {

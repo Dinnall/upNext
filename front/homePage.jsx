@@ -86,8 +86,8 @@ const MainPage = React.createClass({
                     </div>
 
                 </div>
-   
-                <hr className="line"></hr>
+
+                {/* <hr className="line"></hr> */}
 
             <div id="slogan-master-2">
                 <div id="slogan-2-child-1">

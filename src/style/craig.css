@@ -240,6 +240,9 @@ div.project-info {
   background-color: transparent;
   margin-left: 50px;
 }
+.descript a:visited {
+  color: #404042;
+}
 
 #project-d {
   color: #404042;
@@ -251,6 +254,7 @@ div.project-info {
 
     font-family: 'Source Sans Pro', sans-serif;
     text-decoration: none;
+    text-align: center;
 }
 
 .location a, .position a {
@@ -335,7 +339,7 @@ ul.links li {
     width: 90%;
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     margin-top: -10%;
@@ -345,10 +349,10 @@ ul.links li {
     width: 90%;
     background-color: transparent;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: -20%;
+    margin-top: -15%;
 }
 
 .page-descript {
@@ -388,11 +392,17 @@ p {
     margin-bottom: 5px;
     font-family: 'Open Sans', sans-serif;
     font-weight: bold;
+
 }
 
 a {
     text-decoration: none;
+
 }
+
+/*a:visited {
+  color: #404042;
+}*/
 
 
 /**************************** Upload **********************************/
@@ -456,7 +466,6 @@ padding: 25px 19px;
     min-width: 25%;
 }
 
-/*span {
-  font-weight: lighter;
-  font-family: 'Open Sans', sans-serif;
-}*/
+#name-area {
+  margin-left: 20px;
+}

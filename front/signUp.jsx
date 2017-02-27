@@ -52,31 +52,31 @@ const SignUpPage = React.createClass({
                         <form onSubmit={this.handleSubmit}>
                             {/* <h1 className='titleSUP'>Get Started</h1> */}
                             <span>First Name</span>
-                            <input type="text" ref={(input) => {
+                            <input id="f1" type="text" ref={(input) => {
                                 this.firstName = input;
                             }} required/>
                             <span>Last Name</span>
-                            <input type="text" ref={(input) => {
+                            <input id="f2" type="text" ref={(input) => {
                                 this.lastName = input;
                             }} required/>
                             <span>Bio</span>
-                            <input type="text" ref={(input) => {
+                            <input id="f3" type="text" ref={(input) => {
                                 this.bio = input;
                             }} required/>
                             <span>Your email</span>
-                            <input type="text" ref={(input) => {
+                            <input id="f4" type="text" ref={(input) => {
                                 this.email = input;
                             }} required/>
                             <span>LinkedIn</span>
-                            <input type="text" required ref={(input) => {
+                            <input id="f5" type="text" required ref={(input) => {
                                 this.linkedin = input;
                             }} required/>
                             <span>Image url</span>
-                            <input type="text" required ref={(input) => {
+                            <input id="f6" type="text" required ref={(input) => {
                                 this.imageUrl = input;
                             }} required/>
                             <span>Password</span>
-                            <input type="text" required ref={(input) => {
+                            <input id="f7" type="password" required ref={(input) => {
                                 this.password = input;
                             }} required/>
 

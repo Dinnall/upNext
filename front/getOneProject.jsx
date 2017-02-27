@@ -29,7 +29,7 @@ const getOneProject = React.createClass({
                   <div className="oval">
                       <img src={this.state.projectDetail.pictureUrl}/>
                   </div>
-                  <div>
+                  <div id="name-area">
                       <h1 className="name">{this.state.projectDetail.title}</h1>
                       <p className="position">
                           By: <Link to={'/profile/' + this.state.projectDetail.UserId}>{this.state.projectDetail.firstName}</Link>
