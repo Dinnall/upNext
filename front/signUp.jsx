@@ -36,7 +36,7 @@ const SignUpPage = React.createClass({
             }).done((data) => {
                 console.log(data)
                 this.setState({user: data})
-                this.props.router.push('/profile/' + data.id)
+                this.props.router.push('/profile/' + data.id + '?login=' + data.id)
             }).catch((error) => {
                 console.log(error)
             })
