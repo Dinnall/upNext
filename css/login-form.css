@@ -1,0 +1,108 @@
+.login-container {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  max-width: 300px;
+  margin: 0 auto 100px;
+  padding: 30px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  text-align: center;
+}
+
+.login-container input, textarea {
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.login-container button {
+  outline: 0;
+  background: #027bc3;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+
+.login-container .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.login-container .message a {
+  color: #EF3B3A;
+  text-decoration: none;
+}
+
+.login-container .thumbnail {
+  background: #EF3B3A;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 30px;
+  padding: 50px 30px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  box-sizing: border-box;
+}
+.login-container .thumbnail img {
+  display: block;
+  width: 100%;
+}
+
+
+.header-container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.header-container:before, .header-container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.header-container .header {
+  margin: 50px auto;
+  text-align: center;
+}
+.header-container .header h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.header-container .header span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.header-container .header span a {
+  color: #000000;
+  text-decoration: none;
+}
+.header-container .header span .fa {
+  color: #EF3B3A;
+}

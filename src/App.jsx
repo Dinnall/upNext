@@ -1,23 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { IndexRoute,Link, Router, Route, browserHistory, hashHistory } from 'react-router';
+import { IndexRoute, Link, Router, browserHistory, Route, hashHistory } from 'react-router';
 
-import '../src/style/App.css';
-// import '../src/style/nya.css';
-// import '../src/style/dee.css';
-import '../src/style/craig.css';
-import Nav from '../front/navBar.jsx'
 
-// Place All Componets here
-import SignUpPage from '../front/signUp.jsx';
-import LogInPage from '../front/logIn.jsx';
-import FooterPage from '../front/footer.jsx';
-import MainPage from '../front/homePage.jsx';
-import MentorPage from '../front/becomeMentor.jsx';
-import allProjects from '../front/allProjects.jsx';
-import ProfilePage from '../front/profilePage.jsx';
-import UploadProject from '../front/uploadProject.jsx';
-import getOneProject from '../front/getOneProject.jsx';
+import Nav from '../components/navBar.jsx';
+import LoginPage from '../components/logIn.jsx';
+import UserProfile from '../components/profile_page.jsx';
+import HomePage from '../components/home_page.jsx';
+import CreateUser from '../components/signUp.jsx';
+import UploadProject from '../components/project_upload';
+import AllProjects from '../components/all-projects';
+import Logout from '../components/logout';
+import UserProjects from '../components/OneuserProjects';
+import ProjectPage from '../components/project_page.jsx';
+
+
+// import '../css/reset.css';
+import '../css/Nav_styles.css';
+import '../css/Profile_page_styles.css';
+import '../css/project-styles.css';
+import '../css/home-page-styles.css';
+import '../css/Project-page-styles.css';
+import '../css/login-form.css';
+import '../css/app.css';
 
 
 
@@ -25,7 +30,7 @@ var App = React.createClass({
   render() {
     return (
       <div>
-        <Nav />
+      <Nav />
         {this.props.children}
       </div>
     )
@@ -33,16 +38,18 @@ var App = React.createClass({
 })
 
 ReactDOM.render(
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path='/' component={App}>
-      <IndexRoute component={MainPage} />
-        <Route path='/signup' component={SignUpPage} />
-        <Route path='/login' component={LogInPage} />
-        <Route path='/upload' component={UploadProject} />
-        <Route path='/allProjects' component={allProjects} />
-        <Route path='/profile/:id' component={ProfilePage} />
-        <Route path='/projects/:id' component={getOneProject} />
-        <Route path='/mentor' component={MentorPage} />
+      <IndexRoute component={HomePage}/>
+      <Route path='/profile_page/:id' component={UserProfile}/>
+      <Route path='/profile_page' component={UserProfile}/>
+      <Route path='/logIn' component={LoginPage}/>
+      <Route path='/signUp' component={CreateUser}/>
+      <Route path='/project_upload' component={UploadProject}/>
+      <Route path='/all-projects' component={AllProjects}/>
+      <Route path='/logout' component={Logout}/>
+      <Route path='/projects/:id' component={UserProjects}/>
+      <Route path='/project_page/:id' component={ProjectPage}/>
     </Route>
   </Router>,
   document.getElementById('root')

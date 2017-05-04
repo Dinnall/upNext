@@ -1,0 +1,39 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #f0f1f1;
+    overflow-x: hidden;
+}
+
+h1{
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  text-decoration: none;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+a {
+  text-decoration: none;
+}
+
+form {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
